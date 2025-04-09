@@ -1,31 +1,140 @@
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --font-body: 'Helvetica Neue', sans-serif;
+  --font-heading: 'Helvetica Neue', sans-serif;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-bg: #f9f9f9;
+  --color-fg: #1a1a1a;
+  --color-accent: #333;
+  --color-muted: #666;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --spacing-s: 0.5rem;
+  --spacing-m: 1rem;
+  --spacing-l: 2rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0 var(--spacing-m) var(--spacing-m);
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  max-width: 960px;
+  margin-inline: auto;
 }
 
-#navbar ul li {display: inline-block; margin-right: 2em}
-h1 {font-weight: bold; font-size: 25px}
-h2 {font-weight: bold; font-size: 20px}
-h3 {font-weight: bold; font-size: 15px}
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  margin: var(--spacing-m) 0 var(--spacing-s);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1.2px
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-top: var(--spacing-m);
+  color: var(--color-muted);
+}
+
+p {
+  margin-bottom: var(--spacing-m);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav {
+  /*margin: 0  -1rem;*/
+  margin: 0;
+  border-color: #222;
+  border-style: solid;
+  border-width: 1px 0;
+  border-radius: 0 0 .5em .5em;
+  padding: var(--spacing-s);
+  background-color: #444;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-m);
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  justify-content: center;
+}
+
+nav a {
+  font-weight: 500;
+  padding: var(--spacing-s) var(--spacing-m);
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  color: #EEE;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+}
+
+section.tech li {display: inline-block; background: #333; color: #EEE; border-radius: 5px; padding: 3px 10px;
+  margin-right: 5px; margin-bottom: 5px; font-family: monospace; font-size: 97% }
+
+section.features {
+  background-color: #f0f0f0;
+  padding: var(--spacing-s) var(--spacing-m);
+  border-left: 3px solid var(--color-accent);
+  margin-bottom: var(--spacing-m);
+}
+
+#main-header {display: flex; height: 100px; border-radius: .5em  .5em 0 0; overflow: hidden; margin-top: .5em}
+#main-header img {height: 100%; width: auto}
+#main-header h1 {margin-left: .5em}
+#main-header .subtitle {display: block; font-size: 80% }
+
+.timed-item {display: flex}
+.timed-item .date {width: 7rem}
+.timed-item .title {margin: 0}
+
+.projets-list {display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: .5rem}
+.project-item .title .side-infos {font-weight: normal; font-size: 80%}
+.project-image {width: 100%; height: 100%;}
+
+.skills-list .tech {display: flex}
+.skills-list .tech strong {width: 7em}
+.wrap-link {cursor: pointer}
+.hidden {display: none}
+
+@media (max-width: 600px) {
+  body {
+    padding: var(--spacing-s);
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+
+  .projets-list {grid-template-columns: repeat(1, 1fr);}
+}

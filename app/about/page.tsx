@@ -2,15 +2,18 @@ import Image from "next/image";
 import Head from "next/head";
 import {getAllData} from "@/lib/getData";
 import TimedItem from "@/app/components/TimedItem";
+import {Metadata} from "next";
+
+const data = getAllData();
+export const metadata: Metadata = {
+  title: data.title,
+  description: 'Portfolio de Benoît Guchet',
+}
 
 export default function About() {
-    const data = getAllData();
+
     return (
         <div>
-            <Head>
-                <title>{data.title}</title>
-                <meta name="description" content="Portfolio de Benoît Guchet - {data.title}"/>
-            </Head>
             <h1>A propos</h1>
             <p>{data.a_propos.presentation}</p>
             <p>{data.a_propos.profil}</p>

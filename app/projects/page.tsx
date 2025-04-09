@@ -2,8 +2,13 @@ import Image from "next/image";
 import Head from "next/head";
 import {getAllData} from "@/lib/getData";
 import Link from "next/link";
+import { Metadata } from 'next'
+import WrapLink from "@/app/bg/WrapLink";
 //import {useRouter} from "next/navigation";
 
+export const metadata: Metadata = {
+ title: 'Projets',
+}
 
 export default async function Projects(params) {
     const query =  await params.searchParams;
@@ -16,31 +21,32 @@ export default async function Projects(params) {
 
     return (
         <div>
-            <Head>
-                <title>{categoryName}</title>
-            </Head>
-            <h1>{categoryName}</h1>
-            <ul>
+            <h1 className="page-title">{categoryName}</h1>
+            <ul className="projets-list">
                 {data.projets.filter(project => project.category == category)
                     .map((project, index) => (
-                    <li key={index}>
-                        <h2>{project.titre}</h2>
-                        {project.description &&
-                            <p>{project.description}</p>
-                        }
-                        {project.features &&
-                            <section className="features">
-                                <h3>Fonctionnalités :</h3>
-                                <ul>{project.features.map(name => <li>{name}</li>)}</ul>
-                            </section>
-                        }
-                        {project.tech &&
-                            <section className="tech">
-                                <h3>Stack :</h3>
-                                <ul>{project.tech.map(name => <li>{name}</li>)}</ul>
-                            </section>
-                        }
-                        <Link href={"projects/" + project.id}>Voir</Link>
+                    <li key={index} className="project project-item">
+                        <WrapLink>
+                            <Image src={'/images/' + (project.image || 'no-image.jpg')}
+                                   alt="" quality={75} className="project-image"
+                                   width={500}
+                                   height={300}/>
+                            <h2 className="title">
+                                {project.titre}
+                                {project.date &&
+                                    <time className="side-infos"> ({ project.date })</time>
+                                }
+                            </h2>
+                            {project.description &&
+                                <p>{project.description}</p>
+                            }
+                            {project.tech &&
+                                <section className="tech">
+                                    <ul>{project.tech.map(name => <li>{name}</li>)}</ul>
+                                </section>
+                            }
+                            <Link href={"projects/" + project.id}>Voir</Link>
+                        </WrapLink>
                     </li>
                 ))}
             </ul>

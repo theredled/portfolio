@@ -8,36 +8,36 @@
     "presentation": "Je suis développeur freelance, spécialisé en Symfony, architecture back-end, Vanilla JS, et architecture CSS. Curieux, rigoureux, et à l’aise sur des missions courtes où il faut comprendre vite, livrer propre et s’adapter rapidement.",
     "profil": "Développeur full-stack avec plus de 15 ans d'expérience, j'ai notamment conçu, intégré et maintenu de nombreuses applications de petite et surtout grande envergure (SaaS, marque blanche, i18n...) principalement sous Symfony. J'ai également pratiqué la customisation intense de CMS (Magento, Drupal, Prestashop, Wordpress). Bien que spécialisé backend, je possède également une vraie expertise frontend, notamment en termes d'intégration pixel-perfect. Fortes capacités d'adaptation.",
     "competences_techniques": [
-      "PHP",
-      "Symfony",
+      "Symfony / PHP",
       "Vanilla JS",
-      "CSS/SASS/LESS",
+      "CSS / LESS",
       "SQL"
     ]
   },
   "parcours": [
     {
-      "date": "2010 -- auj.",
-      "title": "Contributions à des projets open-source (modules Symfony, plugins PhpStorm, Mastodon...)"
-    },
-    {
-      "date": "2022 -- auj.",
-      "title": "Conception de périphériques audio/MIDI impliquant micro-contrôleurs et électronique."
-    },
-    {
-      "date": "2010 -- auj.",
+      "date": "2010 — auj.",
       "title": "Architecte / Développeur web freelance"
     },
     {
-      "date": "2006 -- 2012",
+      "date": "2010 — auj.",
+      "title": "Contributions à des projets open-source (modules Symfony, plugins PhpStorm, Mastodon...)"
+    },
+    {
+      "date": "2022 — auj.",
+      "title": "Conception de périphériques audio/MIDI impliquant micro-contrôleurs et électronique."
+    },
+
+    {
+      "date": "2006 — 2012",
       "title": "Lead developer full-stack chez Flydesigners / BB&PP / Uuneek"
     },
     {
-      "date": "2002 -- 2005",
+      "date": "2002 — 2005",
       "title": "Divers travaux étudiants : ouvrier d'usine, réceptionniste d'hôtel, travailleur du bâtiment, vendanges."
     },
     {
-      "date": "2002 -- auj.",
+      "date": "2002 — auj.",
       "title": "Musicien"
     }
   ],
@@ -80,6 +80,7 @@
       "id": 3,
       "category": ["web"],
       "titre": "Ce portfolio",
+      "date": "2025",
       "description": "Développement d'un portfolio simple",
       "tech": [
         "NoSQL / MongoDB",
@@ -89,12 +90,15 @@
     {
       "id": 4,
       "category": ["web"],
+      "date": "2020-2022",
       "titre": "Oteam.io",
+      "image": "Qualispace-1.jpg",
       "description": "Évolution de qualispace.fr vers un SaaS multi-tenant. Développeur Lead.",
       "features": [
         "Évolution vers un SaaS commercialisé",
         "Direction d'équipe",
-        "Intégration pixel-perfect"
+        "Intégration pixel-perfect",
+        "Développement d'une bibliothèque de composants Vanilla JS"
       ],
       "tech": [
         "Symfony 5",
@@ -109,6 +113,7 @@
     },
     {
       "id": 5,
+      "date": "2017-2020",
       "category": ["web"],
       "titre": "Qualispace.fr",
       "description": "Application métier, domaine de la maîtrise d'œuvre.",
@@ -136,6 +141,7 @@
       "id": 6,
       "category": ["web"],
       "titre": "Larchitecturedaujourdhui.fr",
+      "image": "AA-1.jpg",
       "description": "Magazine historique d'architecture.",
       "features": [
         "Vente en ligne et gestion des abonnements",
@@ -332,19 +338,19 @@
         "title": "Certification PHP 5 (Zend Certified PHP 5 Engineer)"
       },
       {
-        "date": "2005 -- 2006",
+        "date": "2005 — 2006",
         "title": "Licence Professionnelle de Création Multimédia, Université de La Rochelle (FR), Mention AB"
       },
       {
-        "date": "2005 -- 2006",
+        "date": "2005 — 2006",
         "title": "Licence de Musique et Musicologie – Option Recherche, Université de Tours (FR), Mention AB"
       }
     ],
-    "langues": {
-      "français": "Langue maternelle",
-      "anglais": "Courant",
-      "italien": "Bases"
-    },
+    "langues": [
+      {"name": "Français", "level": "Langue maternelle"},
+      {"name": "Anglais", "level": "Courant"},
+      {"name": "Italien", "level": "Bases"}
+    ],
     "musique": "Multi-instrumentiste, compositeur, producteur et chanteur, création et participation à de nombreux projets, principalement entre pop, musique expérimentale et folk – ex. Fairy Tales in Yoghourt, Bantam Lyons.",
     "interets": [
       "Arts en général",
