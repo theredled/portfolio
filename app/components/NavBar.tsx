@@ -32,9 +32,10 @@ export default function NavBar() {
             <nav id="navbar">
               <ul>
                   <li><Link href="/about">À propos</Link></li>
-                  <li><Link href="/projects">Développement Web</Link></li>
-                  <li><Link href="/projects?category=audio">Développement MIDI/Audio</Link></li>
+                  <li><Link href="/projects">Web</Link></li>
+                  <li><Link href="/projects?category=audio">MIDI/Audio</Link></li>
                   <li><Link href="/skills">Compétences</Link></li>
+                  <li><Link href="/contact">Contact</Link></li>
               </ul>
           </nav>
             {/*<NavigationMenu.Root className="NavigationMenuRoot">

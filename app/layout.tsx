@@ -34,21 +34,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-
     <html lang="en">
-    <head>
-      <link
-                        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-                        rel="stylesheet"
-                      />
-    </head>
-    <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-            <NavBar></NavBar>
-            {children}
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="1" />
+        <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet" />
+
+        <link
+                          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+                          rel="stylesheet"
+                        />
+      </head>
+      <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+              <NavBar></NavBar>
+              {children}
       </body>
     </html>
-
   );
 }

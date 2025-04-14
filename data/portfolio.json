@@ -6,12 +6,20 @@
   "title": "Développeur full-stack freelance – Symfony / Vanilla JS",
   "a_propos": {
     "presentation": "Je suis développeur freelance, spécialisé en Symfony, architecture back-end, Vanilla JS, et architecture CSS. Curieux, rigoureux, et à l’aise sur des missions courtes où il faut comprendre vite, livrer propre et s’adapter rapidement.",
-    "profil": "Développeur full-stack avec plus de 15 ans d'expérience, j'ai notamment conçu, intégré et maintenu de nombreuses applications de petite et surtout grande envergure (SaaS, marque blanche, i18n...) principalement sous Symfony. J'ai également pratiqué la customisation intense de CMS (Magento, Drupal, Prestashop, Wordpress). Bien que spécialisé backend, je possède également une vraie expertise frontend, notamment en termes d'intégration pixel-perfect. Fortes capacités d'adaptation.",
+    "profil": "Développeur full-stack avec plus de 15 ans d'expérience, j'ai notamment conçu, intégré et maintenu de nombreuses applications de petite et grande envergure (SaaS, marque blanche, i18n...) principalement sous Symfony. J'ai également pratiqué la customisation intense de CMS (Magento, Drupal, Prestashop, Wordpress). Bien que spécialisé backend, je possède également une vraie expertise frontend, notamment en termes d'intégration fidèle aux maquettes. Fortes capacités d'adaptation. ",
+
     "competences_techniques": [
       "Symfony / PHP",
-      "Vanilla JS",
-      "CSS / LESS",
-      "SQL"
+      "Architecture / Clean Code / DDD",
+      "Vanilla JS / ES6+",
+      "Tests (PHPUnit)",
+      "API REST / JSON",
+      "CSS sémantique / LESS",
+      "SQL avancé"
+    ],
+    "learning": [
+      "React / NextJS",
+      "Python"
     ]
   },
   "parcours": [
@@ -45,8 +53,8 @@
     {
       "id": 1,
       "category": ["audio"],
-      "titre": "Boîtier MIDI pour Yamaha Reface CP (extensible à d'autres modèles)",
-      "description": "Conception d'un boitier sous Rasperry PI",
+      "titre": "Boîtier MIDI multi-usages pour clavier",
+      "description": "Conception d'un boitier MIDI sous Rasperry PI, avec fonctionnalités spéciales pour le clavier Yamaha Reface CP",
       "features": [
         "Contrôle de vélocité",
         "Sampler",
@@ -81,7 +89,9 @@
       "category": ["web"],
       "titre": "Ce portfolio",
       "date": "2025",
-      "description": "Développement d'un portfolio simple",
+      "image": "Portfolio-1.png",
+
+      "description": "Développement d'un portfolio simple pour montée en compétence NextJS / React",
       "tech": [
         "NoSQL / MongoDB",
         "NextJS / React / Strapi"
@@ -92,55 +102,62 @@
       "category": ["web"],
       "date": "2020-2022",
       "titre": "Oteam.io",
+
       "image": "Qualispace-1.jpg",
-      "description": "Évolution de qualispace.fr vers un SaaS multi-tenant. Développeur Lead.",
+      "description": "Évolution de Qualispace.fr vers un SaaS multi-tenant. Développeur Lead.",
       "features": [
         "Évolution vers un SaaS commercialisé",
         "Direction d'équipe",
-        "Intégration pixel-perfect",
-        "Développement d'une bibliothèque de composants Vanilla JS"
+        "Intégration pixel-perfect et responsive",
+        "Développement d'une bibliothèque de composants Vanilla JS",
+        "Développement d'un framework MVC en Vanilla JS"
       ],
       "tech": [
         "Symfony 5",
-        "CSS/SASS",
-        "Webpack",
-        "UML",
-        "Docker",
-        "CI/CD",
         "SaaS",
-        "Couverture tests > 90%"
+        "Tests (PHPUnit - couverture > 90%)",
+        "API REST",
+        "Webpack",
+        "CI/CD",
+        "Docker",
+        "UML",
+        "JS (ES6)",
+        "Intégration web responsive"
       ]
     },
     {
       "id": 5,
       "date": "2017-2020",
       "category": ["web"],
+      "image": "Qualispace-1.jpg",
       "titre": "Qualispace.fr",
       "description": "Application métier, domaine de la maîtrise d'œuvre.",
       "features": [
+        "Conception d'un toolkit/framework Vanilla JS",
         "Diagramme de Grant dynamique",
-        "Gestion des droits et notifications",
+        "Gestion fine des droits d’accès",
+        "Notifications in-app / mail",
         "Application hors-ligne",
-        "Statistiques et plannings détaillés",
-        "Notifications, Gestion de droits, Plannings, Cartes, Statistiques"
+        "Statistiques",
+        "Plannings",
+        "Cartes customisées sous Google Maps"
       ],
       "tech": [
         "Symfony 4",
+        "Tests (PHPUnit)",
+        "Intégration web responsive",
+        "JS Vanilla (ES6)",
+        "Génération de PDF",
+        "WebSocket / Local Storage",
         "PHP",
-        "MySQL",
-        "Doctrine ORM",
-        "JavaScript",
-        "JQuery",
-        "HTML5 / CSS3",
-        "PDF",
-        "WebSocket",
-        "Conception d'un MVC front-end"
+        "MySQL"
       ]
     },
     {
       "id": 6,
       "category": ["web"],
       "titre": "Larchitecturedaujourdhui.fr",
+      "date": "2015-2017",
       "image": "AA-1.jpg",
       "description": "Magazine historique d'architecture.",
       "features": [
@@ -160,6 +177,9 @@
     {
       "id": 7,
       "category": ["web"],
+      "date": "2013-2016",
+      "image": "Elystel-1.png",
+
       "titre": "Elystel",
       "description": "Hôtels de luxe.",
       "features": [
@@ -178,40 +198,51 @@
       "id": 8,
       "category": ["web"],
       "titre": "Vinylunity.com",
+      "date": "2010-2013",
+      "image": "Vinylunity-1.png",
+
       "description": "Vente/Échange de disques vinyles.",
       "features": [
         "Vente et échange de disques vinyles en ligne",
         "Intégration de paiement avec Paypal et autres APIs"
       ],
       "tech": [
-        "Symfony 1",
+        "Symfony 2",
+        "Tests automatisés (PHPUnit)",
         "Paypal et autres APIs"
       ]
     },
     {
       "id": 9,
       "category": ["web"],
+      "date": "2009-2013",
+
       "titre": "BB&PP / Uuneek",
-      "description": "Plateforme conceptuelle de musique utilisée par des artistes comme David Guetta, Joachim Garraud, Akhenaton.",
+      "description": "Plateforme conceptuelle (SaaS multi-tenant) de musique utilisée par des artistes comme David Guetta, Joachim Garraud, Akhenaton.",
       "features": [
         "Plateforme utilisée par des artistes reconnus",
         "Backend sous Symfony avec gestion de multi-sites et marque blanche",
         "Conception d'un e-commerce propriétaire"
       ],
       "tech": [
-        "Symfony 2",
+        "Symfony 1",
+        "SaaS",
+        "API REST",
+        "Tests automatisés (PHPUnit)",
         "MySQL",
         "Doctrine ORM",
         "Frontend",
         "XML",
         "Apache",
         "Linux",
-        "Clusters serveurs"
+        "Clustering"
       ]
     },
     {
       "id": 10,
       "category": ["web"],
+      "date": "2009-2016",
+
       "titre": "Hellfestshop.com, Pavageau.fr, Directlub.com",
       "description": "E-commerce basés sur Magento.",
       "features": [
@@ -230,6 +261,8 @@
     {
       "id": 11,
       "category": ["web"],
+      "date": "2007-2009",
+
       "titre": "Bubblebeat.com",
       "description": "Plateforme de musique électronique. Plus de 40,000 références.",
       "features": [
@@ -239,7 +272,7 @@
       ],
       "tech": [
         "PHP/MySQL",
-        "Conception d'un framework \"maison\"",
+        "Conception d'un framework homemade",
         "Frontend",
         "Backends multiples",
         "Versionning",
@@ -248,7 +281,7 @@
     }
   ],
   "competences": {
-    "conception_methodologie": "Architecture logicielle, POO, design patterns, responsive design, TDD, accessibilité et HTML sémantique. Je m’intéresse particulièrement à l’UML, aux méthodes Agiles et à l’eXtreme Programming, ainsi qu’à l’ergonomie, l’esthétique, les standards du web et les bonnes pratiques de développement. J’ai également une activité régulière dans l’open source.",
+    "conception_methodologie": "Développeur full-stack sensible à la qualité du code, à l’ergonomie et à la pérennité des applications. J’intègre les bonnes pratiques de l’OOP, des tests, de l’accessibilité, et du design responsive.\n\nCurieux et impliqué, je m'intéresse aux méthodes agiles (Scrum / XP), à l’UML, et je contribue activement à des projets open source.",
     "tech": {
 
       "expertise": {
@@ -261,23 +294,32 @@
         ],
         "frameworks": [
           "Symfony",
-          "Jquery"
+          "*Jquery"
         ],
         "cms": [
           "Magento",
-          "Prestashop",
-          "Wordpress"
+          "Prestashop"
+        ],
+        "domaines": [
+          "SaaS",
+          "Architecture / Clean Code",
+          "Tests (Phpunit)",
+          "API REST",
+          "Versionning (Git)",
+          "Intégration web responsive"
         ]
       },
       "bon_niveau": {
         "cms": [
-          "Drupal"
+          "React / NextJS",
+          "Drupal",
+          "Wordpress"
         ],
         "langages": [
           "Python",
           "C++",
           "C",
-          "Shell"
+          "BASH"
         ],
         "domaines": [
           "Arduino / Raspberry PI",
@@ -287,25 +329,28 @@
       },
       "bases": {
         "langages": [
-          "VB",
-          "Basic",
-          "Pascal",
-          "Flash/AS3"
+          "Ruby",
+          "Typescript",
+          "*VB",
+          "*Basic",
+          "*Pascal",
+          "*Flash/AS3"
         ],
         "frameworks": [
           "Django",
-          "Zend Framework"
+          "Ruby on Rails",
+          "*Zend Framework"
         ]
       },
       "outils_annexes": {
         "outils": [
-          "Apache",
+          "Docker",
           "Git",
+          "Webpack",
+          "Apache",
           "Github",
           "Gitlab",
-          "SASS",
-          "Webpack",
-          "Docker"
+          "SASS"
         ],
         "os": [
           "Linux",
@@ -320,7 +365,7 @@
         "divers": [
           "Photoshop",
           "Illustrator",
-          "Flash",
+          "*Flash",
           "MaxMSP",
           "LaTeX"
         ]
@@ -335,15 +380,15 @@
     "formation_distinctions": [
       {
         "date": "2009",
-        "title": "Certification PHP 5 (Zend Certified PHP 5 Engineer)"
+        "title": "Certification PHP (Zend Certified Engineer)"
       },
       {
         "date": "2005 — 2006",
-        "title": "Licence Professionnelle de Création Multimédia, Université de La Rochelle (FR), Mention AB"
+        "title": "Licence Professionnelle de Création Multimédia, Université de La Rochelle (FR), AB"
       },
       {
         "date": "2005 — 2006",
-        "title": "Licence de Musique et Musicologie – Option Recherche, Université de Tours (FR), Mention AB"
+        "title": "Licence de Musique et Musicologie – Option Recherche, Université de Tours (FR), AB"
       }
     ],
     "langues": [

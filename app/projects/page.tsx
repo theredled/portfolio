@@ -4,7 +4,9 @@ import {getAllData} from "@/lib/getData";
 import Link from "next/link";
 import { Metadata } from 'next'
 import WrapLink from "@/app/bg/WrapLink";
+import Breadcrumbs from "@/app/components/Breadcrumbs";
 //import {useRouter} from "next/navigation";
+
 
 export const metadata: Metadata = {
  title: 'Projets',
@@ -18,21 +20,28 @@ export default async function Projects(params) {
 
 
     const categoryName = data.categories[category];
+    const pageTitle = categoryName;
 
     return (
         <div>
-            <h1 className="page-title">{categoryName}</h1>
+            <Breadcrumbs breadcrumbsList={[
+                {label: 'Projets'},
+                {label: pageTitle}
+            ]}></Breadcrumbs>
+            <h1 className="page-title">{categoryName} <span className="weak">– sélection</span></h1>
             <ul className="projets-list">
                 {data.projets.filter(project => project.category == category)
                     .map((project, index) => (
                     <li key={index} className="project project-item">
                         <WrapLink>
-                            <Image src={'/images/' + (project.image || 'no-image.jpg')}
-                                   alt="" quality={75} className="project-image"
-                                   width={500}
-                                   height={300}/>
+                            <div className="image-container">
+                                <Image src={'/images/' + (project.image || 'no-image.jpg')}
+                                       alt="" quality={75} className="project-image"
+                                       width={500}
+                                       height={300}/>
+                            </div>
                             <h2 className="title">
-                                {project.titre}
+                                <span>{project.titre}</span>
                                 {project.date &&
                                     <time className="side-infos"> ({ project.date })</time>
                                 }
@@ -42,7 +51,12 @@ export default async function Projects(params) {
                             }
                             {project.tech &&
                                 <section className="tech">
-                                    <ul>{project.tech.map(name => <li>{name}</li>)}</ul>
+                                    <ul>
+                                        {project.tech.slice(0, 6).map((name, i) => <li>{name}</li>)}
+                                        {project.tech.length > 6 &&
+                                            <li className="etc">...</li>
+                                        }
+                                    </ul>
                                 </section>
                             }
                             <Link href={"projects/" + project.id}>Voir</Link>
