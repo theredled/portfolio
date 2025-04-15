@@ -6,6 +6,7 @@
     --color-fg: #1a1a1a;
     --color-accent: #333;
     --color-muted: #666;
+    --color-contrast: #0177FF;
 
     --spacing-s: 0.5rem;
     --spacing-m: 1rem;
@@ -67,44 +68,34 @@ ul {
     list-style-type: none;
     padding-left: 0;
 }
+.text-with-icon svg {vertical-align: top; margin-right: .2em}
+.title .side-infos {font-weight: normal; font-size: 80%; white-space: nowrap}
 
-nav { margin: 0; border-color: #222; border-style: solid; border-width: 1px 0; border-radius: 0 0 .5em .5em;
-    padding: var(--spacing-s); background-color: #444; position: sticky; top: 0;}
+#navbar { margin: 0; border-color: #222; border-style: solid; border-width: 1px 0; border-radius: 0 0 .5em .5em;
+    padding: var(--spacing-s); background-color: #222; position: sticky; top: 0;z-index: 10;}
+#navbar ul {display: flex;flex-wrap: wrap;column-gap: var(--spacing-m);padding: 0;list-style: none;
+    margin: 0;justify-content: center;}
+#navbar a {letter-spacing: -.5px;font-weight: 500;padding: var(--spacing-s) var(--spacing-m);border-radius: 4px;
+    transition: background-color 0.2s; color: #EEE;}
+#navbar a:hover {background-color: rgba(0, 0, 0, 0.05);text-decoration: none;}
+#navbar-toggler {display: none}
 
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-m);
-    padding: 0;
-    list-style: none;
-    margin: 0;
-    justify-content: center;
-}
+.breadcrumbs {display: flex; color: #555; padding: .8em 1em; margin: 0; font-size: 80%; /*border-bottom: 1px solid #CCC*/}
+.breadcrumbs a {color: #555}
+.breadcrumbs .home svg {vertical-align: middle}
+.breadcrumbs li:not(:last-of-type):after {content: ' / '; margin-right: 5px }
+.breadcrumbs li:last-of-type {color: black}
 
-nav a {
-    font-weight: 500;
-    padding: var(--spacing-s) var(--spacing-m);
-    border-radius: 4px;
-    transition: background-color 0.2s;
-    color: #EEE;
-}
 
-nav a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-    text-decoration: none;
-}
+#main {/*background: white;     padding: 0 1em 1em; border-radius: .5em;    border-top: 1px solid #CCC;*/}
 
 .tech li {display: inline-block; background: #333; color: #EEE; border-radius: 5px; padding: 3px 10px;
-    margin-right: 5px; margin-bottom: 5px; font-family: "Martian Mono", monospace; font-size: 70% }
+    margin-right: 5px; margin-bottom: 2px; font-family: "Martian Mono", monospace; font-size: 70% }
 .tech.important li {font-size: 90% }
-.tech li.etc {background: none;    color: black;}
+.tech li.etc {background: none;    color: black; font-family: inherit;}
 
-.features {
-    background-color: #f0f0f0;
-    padding: var(--spacing-s) var(--spacing-m);
-    border-left: 3px solid var(--color-accent);
-    margin-bottom: var(--spacing-m);
-}
+.features {background-color: #f0f0f0;    padding: var(--spacing-s) var(--spacing-m);    border-left: 3px solid var(--color-accent);
+    margin-bottom: var(--spacing-m);}
 
 .weak {font-size: 80%; font-weight: normal;}
 
@@ -120,24 +111,31 @@ nav a:hover {
 .projets-list {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-column-gap: .5rem; grid-row-gap: 1rem; }
 .projets-list .project-item {}
 
-.project-item h2 {margin: .3em 0 0}
-.project-item .title .side-infos {font-weight: normal; font-size: 80%; white-space: nowrap}
+.project-item h2 {margin: .5em 0 0}
 .project-item .image-container {width: 100%; aspect-ratio: 1.8; overflow: hidden; display: flex; align-items: center;
     background: white}
-.project-image {width: 100%; height: fit-content;   }
+.project-image {width: 100%; height: fit-content;      filter: saturate(0.5); }
+.project-item .description {margin: .5em 0}
+
+.project .category {display: inline-block; background: #AAA; color: white; border-radius: 5px; padding: 3px 10px;
+    margin-right: 5px; margin-bottom: 2px; font-size: 70%}
+.single-project .gallery ul {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-column-gap: 1rem; grid-row-gap: 1rem;}
+.single-project .title .side-infos {font-size: 60%;}
+
 
 .skills-list .tech {display: flex}
 .skills-list .tech strong {width: 7em; flex-shrink: 0;}
 
-.skills-list  {display: grid;   grid-template-columns: 1fr 1fr;  grid-auto-rows: auto; grid-column-gap: 2em;}
+.skills-list  {display: grid;   grid-template-columns: 1fr 1fr;  grid-auto-rows: auto; grid-column-gap: 2em; margin-bottom: 1.5em}
 .skills-list .level-section.level-expertise {  grid-column-start: 1 ; grid-column-end: 3;}
 .skills-list .level-section.level-expertise .tech li {font-size:90%}
 .skills-list .level-section:not(.level-expertise) strong {color: #777}
-.skills-list .level-section:not(.level-expertise) h2 {font-size: 1.2rem}
+.skills-list .level-section:not(.level-expertise) h2 {font-size: 1.2rem; margin-top: 1.2em;}
 .skills-list .level-section:not(.level-expertise) .tech li {background-color: #777; font-size:70%}
 
 .skills-list .level-section.level-bases {grid-column: 1 ; grid-row: 3; }
 .skills-list .level-section.level-outils_annexes {grid-column: 2 ; grid-row-start: 2; grid-row-end: 4}
+.skills-list .tech-category {margin-bottom: 4px}
 
 .wrap-link {cursor: pointer}
 
@@ -145,12 +143,11 @@ nav a:hover {
 
 .section-content {padding-left: 2em}
 
-.breadcrumbs {display: flex; color: #555; padding: .8em 1em; margin: 0; font-size: 80%; border-bottom: 1px solid #CCC}
-.breadcrumbs a {color: #555}
-.breadcrumbs .home svg {vertical-align: middle}
-.breadcrumbs li:not(:last-of-type):after {content: ' / '; margin-right: 5px }
-.breadcrumbs li:last-of-type {color: black}
+.modal {display: flex; align-items: center;  justify-content: center;}
+.modal {    background-color: var(--color-contrast) }
+.modal img {  outline: none}
 
+.MuiBackdrop-root {z-index: 5}
 
 @media (max-width: 900px) {
     .projets-list {grid-template-columns: repeat(2, 1fr);}
@@ -166,26 +163,33 @@ nav a:hover {
         padding-top: 0;
     }
 
-    nav ul {
-        flex-direction: column;
-    }
+    #navbar {width: 100%; left: 0;top: 0; border-radius: 0; background: none; border: none;
+        position: fixed;}
+    #navbar.open {background: black }
+
+
+    #navbar-toggler {display: block;background: rgba(255, 255, 255, .5);border: none;
+        top: 0.5em; height: 72px;}
+    #navbar.open #navbar-toggler{background: none; color: white; padding-left: var(--spacing-m)}
+    /*#navbar-toggler {display: none}*/
+    #navbar ul {flex-direction: column; display: none; padding-bottom: 1em;   }
+    #navbar a {display: block}
+    #navbar.open ul {display: flex}
 
     .projets-list {grid-template-columns: repeat(1, 1fr);}
 
     .skills-list  {display: block;}
     .skills-list .tech {display: block}
     .skills-list .tech strong {display: block; margin: 1em 0 .5em}
+
+
 }
 
 @media (max-width: 400px) {
     #main-header h1 {margin-top: 0px; margin-left: .3em; font-size: 1.40em}
-
     #main-header .title {}
-
     #main-header .subtitle {font-size: 70%}
-
     #main-header {height: 70px}
 
     .timed-item {display: block; margin-bottom: 1em;}
-
 }
