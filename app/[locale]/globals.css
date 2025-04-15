@@ -83,8 +83,8 @@ button.link {border: none; background: none; cursor: pointer}
 #navbar .link:hover {text-decoration: none; color: white;}
 #navbar-toggler {display: none}
 
-.breadcrumbs {display: flex; color: #555; padding: .8em 1em; margin: 0; font-size: 80%; /*border-bottom: 1px solid #CCC*/}
-.breadcrumbs a {color: #555}
+.breadcrumbs {display: flex; color: #555; padding: .8em 1em; margin: 0; font-size: 80%; text-transform: capitalize;/*border-bottom: 1px solid #CCC*/}
+.breadcrumbs a {color: #555; }
 .breadcrumbs .home svg {vertical-align: middle}
 .breadcrumbs li:not(:last-of-type):after {content: ' / '; margin-right: 5px }
 .breadcrumbs li:last-of-type {color: black}
