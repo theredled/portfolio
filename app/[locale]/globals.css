@@ -172,9 +172,9 @@ button.link {border: none; background: none; cursor: pointer}
         padding-top: 0;
     }
 
-    #navbar {width: 100%; left: 0;top: 0; border-radius: 0; background: none; border: none;
+    #navbar { left: 0;top: 0; border-radius: 0; background: none; border: none;
         position: fixed;}
-    #navbar.open {background: black }
+    #navbar.open {background: black; width: 100%; }
 
 
     #navbar-toggler {display: block;background: rgba(255, 255, 255, .5);border: none;

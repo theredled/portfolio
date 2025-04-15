@@ -19,7 +19,7 @@ export default async function Project({params}: {params: any}) {
             <Breadcrumbs breadcrumbsList={[
                 {label: t('projects')},
                 {label: categoryName, url: '/projects/?category=' + project.category},
-                {label: project.titre}
+                {label: tData(project.titre)}
             ]}></Breadcrumbs>
 
             <main id="main" className="project single-project">
@@ -32,19 +32,19 @@ export default async function Project({params}: {params: any}) {
                 <p className="category">{categoryName}</p>
 
                 {project.description &&
-                    <p>{project.description}</p>
+                    <p>{tData(project.description)}</p>
                 }
                 {project.features &&
                     <section className="features">
-                        <h3>Fonctionnalités :</h3>
+                        <h3>{t('features')}</h3>
 
-                        <ul className="section-content">{project.features.map((name:string) => <li>{name}</li>)}</ul>
+                        <ul className="section-content">{project.features.map((name:string) => <li>{tData(name)}</li>)}</ul>
                     </section>
                 }
                 {project.tech &&
                     <section className="tech">
                         <h3>Stack :</h3>
-                        <ul className="section-content">{project.tech.map((name: string) => <li>{name}</li>)}</ul>
+                        <ul className="section-content">{project.tech.map((name: string) => <li>{tData(name)}</li>)}</ul>
                     </section>
                 }
 

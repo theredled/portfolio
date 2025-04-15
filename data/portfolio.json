@@ -91,18 +91,36 @@
       "category": [
         "audio"
       ],
-      "titre": "Boîtier MIDI multi-usages pour clavier",
-      "description": "Conception d'un boitier MIDI sous Rasperry PI, avec fonctionnalités spéciales pour le clavier Yamaha Reface CP",
+      "titre": {
+        "fr": "Boîtier MIDI multi-usages pour clavier",
+        "en": "Multi-purpose MIDI box for keyboard"
+      },
+      "description": {
+        "fr": "Conception d'un boitier MIDI sous Rasperry PI, avec fonctionnalités spéciales pour le clavier Yamaha Reface CP",
+        "en": "Design of a MIDI box using Raspberry PI, with special features for the Yamaha Reface CP keyboard"
+      },
       "features": [
-        "Contrôle de vélocité",
-        "Sampler",
-        "Sauvegarde de presets"
+        {
+          "fr": "Contrôle de vélocité",
+          "en": "Velocity control"
+        },
+        {
+          "fr": "Sampler",
+          "en": "Sampler"
+        },
+        {
+          "fr": "Sauvegarde de presets",
+          "en": "Preset saving"
+        }
       ],
       "tech": [
         "Raspberry PI",
         "MIDI",
         "DSP",
-        "Fonctionnalités propriétaires",
+        {
+          "fr": "Fonctionnalités propriétaires",
+          "en": "Proprietary features"
+        },
         "C",
         "Python"
       ]
@@ -112,17 +130,35 @@
       "category": [
         "audio"
       ],
-      "titre": "Chaos Box",
-      "description": "Générateur de signal CV aléatoire pondéré",
+      "titre": {
+        "fr": "Chaos Box",
+        "en": "Chaos Box"
+      },
+      "description": {
+        "fr": "Générateur de signal CV aléatoire pondéré",
+        "en": "Weighted random CV signal generator"
+      },
       "features": [
-        "Circuit de contrôle (potentiomètres)",
-        "Génération de signal",
-        "Filtres HP et LP"
+        {
+          "fr": "Circuit de contrôle (potentiomètres)",
+          "en": "Control circuit (potentiometers)"
+        },
+        {
+          "fr": "Génération de signal",
+          "en": "Signal generation"
+        },
+        {
+          "fr": "Filtres HP et LP",
+          "en": "HP and LP filters"
+        }
       ],
       "tech": [
         "Arduino",
         "C",
-        "Électronique"
+        {
+          "fr": "Électronique",
+          "en": "Electronics"
+        }
       ]
     },
     {
@@ -130,10 +166,16 @@
       "category": [
         "web"
       ],
-      "titre": "Ce portfolio",
+      "titre": {
+        "fr": "Ce portfolio",
+        "en": "This portfolio"
+      },
       "date": "2025",
       "image": "Portfolio-1.png",
-      "description": "Développement d'un portfolio simple pour montée en compétence NextJS / React",
+      "description": {
+        "fr": "Développement d'un portfolio simple pour montée en compétence NextJS / React",
+        "en": "Development of a simple portfolio to gain proficiency in NextJS / React"
+      },
       "tech": [
         "NextJS / React / Strapi",
         "i18n",
@@ -156,25 +198,49 @@
         "Qualispace-4.jpg",
         "Qualispace-5.jpg"
       ],
-      "description": "Évolution de Qualispace.fr vers un SaaS multi-tenant. Développeur Lead.",
+      "description": {
+        "fr": "Évolution de Qualispace.fr vers un SaaS multi-tenant. Développeur Lead.",
+        "en": "Evolution of Qualispace.fr into a multi-tenant SaaS. Lead Developer."
+      },
       "features": [
-        "Évolution vers un SaaS commercialisé",
-        "Direction d'équipe",
-        "Intégration pixel-perfect et responsive",
-        "Développement d'une bibliothèque de composants Vanilla JS",
-        "Développement d'un framework MVC en Vanilla JS"
+        {
+          "fr": "Évolution vers un SaaS commercialisé",
+          "en": "Transition to a commercialized SaaS"
+        },
+        {
+          "fr": "Direction d'équipe",
+          "en": "Team leadership"
+        },
+        {
+          "fr": "Intégration pixel-perfect et responsive",
+          "en": "Pixel-perfect and responsive integration"
+        },
+        {
+          "fr": "Développement d'une bibliothèque de composants Vanilla JS",
+          "en": "Development of a Vanilla JS component library"
+        },
+        {
+          "fr": "Développement d'un framework MVC en Vanilla JS",
+          "en": "Development of a Vanilla JS MVC framework"
+        }
       ],
       "tech": [
         "Symfony 5",
         "SaaS",
-        "Tests (PHPUnit - couverture > 90%)",
+        {
+          "fr": "Tests (PHPUnit - couverture > 90%)",
+          "en": "Tests (PHPUnit - coverage > 90%)"
+        },
         "API REST",
         "Webpack",
         "CI/CD",
         "Docker",
         "UML",
         "JS (ES6)",
-        "Intégration web responsive"
+        {
+          "fr": "Intégration web responsive",
+          "en": "Responsive web integration"
+        }
       ]
     },
     {
@@ -185,22 +251,55 @@
       ],
       "image": "Qualispace-1.jpg",
       "titre": "Qualispace.fr",
-      "description": "Application métier, domaine de la maîtrise d'œuvre.",
+      "description": {
+        "fr": "Application métier, domaine de la maîtrise d'œuvre.",
+        "en": "Business application in the field of project management."
+      },
       "features": [
-        "Conception d'un toolkit/framework Vanilla JS",
-        "Diagramme de Grant dynamique",
-        "Gestion fine des droits d’accès",
-        "Notifications in-app / mail",
-        "Application hors-ligne",
-        "Statistiques",
-        "Plannings",
-        "Cartes customisées sous Google Maps"
+        {
+          "fr": "Conception d'un toolkit/framework Vanilla JS",
+          "en": "Design of a Vanilla JS toolkit/framework"
+        },
+        {
+          "fr": "Diagramme de Grant dynamique",
+          "en": "Dynamic Gantt chart"
+        },
+        {
+          "fr": "Gestion fine des droits d’accès",
+          "en": "Granular access rights management"
+        },
+        {
+          "fr": "Notifications in-app / mail",
+          "en": "In-app / email notifications"
+        },
+        {
+          "fr": "Application hors-ligne",
+          "en": "Offline application"
+        },
+        {
+          "fr": "Statistiques",
+          "en": "Statistics"
+        },
+        {
+          "fr": "Plannings",
+          "en": "Schedules"
+        },
+        {
+          "fr": "Cartes customisées sous Google Maps",
+          "en": "Customized maps using Google Maps"
+        }
       ],
       "tech": [
         "Symfony 4",
-        "Tests (PHPUnit)",
-        "Intégration web responsive",
-        "JS Vanilla (ES6)",
+        {
+          "fr": "Tests (PHPUnit)",
+          "en": "Testing (PHPUnit)"
+        },
+        {
+          "fr": "Intégration web responsive",
+          "en": "Responsive web integration"
+        },
+        "Vanilla JS (ES6)",
         "Bootstrap",
         "WebSocket / Local Storage",
         "Génération de PDF",
@@ -216,11 +315,23 @@
       "titre": "Larchitecturedaujourdhui.fr",
       "date": "2015-2017",
       "image": "AA-1.jpg",
-      "description": "Magazine historique d'architecture. Fusion WP/Prestashop.",
+      "description": {
+        "fr": "Magazine historique d'architecture. Fusion WP/Prestashop.",
+        "en": "Historic architecture magazine. Fusion of WP/Prestashop."
+      },
       "features": [
-        "Vente en ligne et gestion des abonnements",
-        "Fusion de deux CMS (Wordpress et Prestashop)",
-        "Intégration d'APIs externes"
+        {
+          "fr": "Vente en ligne et gestion des abonnements",
+          "en": "Online sales and subscription management"
+        },
+        {
+          "fr": "Fusion de deux CMS (Wordpress et Prestashop)",
+          "en": "Fusion of two CMS (Wordpress and Prestashop)"
+        },
+        {
+          "fr": "Intégration d'APIs externes",
+          "en": "Integration of external APIs"
+        }
       ],
       "tech": [
         "Prestashop",
@@ -228,7 +339,10 @@
         "i18n",
         "MySQL",
         "PHP",
-        "API externes",
+        {
+          "fr": "API externes",
+          "en": "External APIs"
+        },
         "Git"
       ]
     },
@@ -240,10 +354,19 @@
       "date": "2013-2016",
       "image": "Elystel-1.png",
       "titre": "Elystel",
-      "description": "Hôtels de luxe, site multi-instances.",
+      "description": {
+        "fr": "Hôtels de luxe, site multi-instances.",
+        "en": "Luxury hotels, multi-instance site."
+      },
       "features": [
-        "Site multi-domaine et multi-language",
-        "Customisation de Drupal pour des besoins spécifiques"
+        {
+          "fr": "Site multi-domaine et multi-language",
+          "en": "Multi-domain and multi-language site"
+        },
+        {
+          "fr": "Customisation de Drupal pour des besoins spécifiques",
+          "en": "Customization of Drupal for specific needs"
+        }
       ],
       "tech": [
         "Drupal 7",
@@ -260,16 +383,31 @@
       "titre": "Vinylunity.com",
       "date": "2010-2013",
       "image": "Vinylunity-1.png",
-      "description": "Vente/Échange de disques vinyles.",
+      "description": {
+        "fr": "Vente/Échange de disques vinyles.",
+        "en": "Sale/Exchange of vinyl records."
+      },
       "features": [
-        "Vente et échange de disques vinyles en ligne",
-        "Intégration de paiement avec Paypal et autres APIs"
+        {
+          "fr": "Vente et échange de disques vinyles en ligne",
+          "en": "Online sale and exchange of vinyl records"
+        },
+        {
+          "fr": "Intégration de paiement avec Paypal et autres APIs",
+          "en": "Payment integration with Paypal and other APIs"
+        }
       ],
       "tech": [
         "Symfony 2",
-        "Tests automatisés (PHPUnit)",
+        {
+          "fr": "Tests automatisés (PHPUnit)",
+          "en": "Automated tests (PHPUnit)"
+        },
         "Paypal",
-        "API externes",
+        {
+          "fr": "API externes",
+          "en": "External APIs"
+        },
         "i18n"
       ]
     },
@@ -280,17 +418,32 @@
       ],
       "date": "2009-2013",
       "titre": "BB&PP / Uuneek",
-      "description": "Plateforme conceptuelle (SaaS multi-tenant) de musique utilisée par des artistes comme David Guetta, Joachim Garraud, Akhenaton.",
+      "description": {
+        "fr": "Plateforme conceptuelle (SaaS multi-tenant) de musique utilisée par des artistes comme David Guetta, Joachim Garraud, Akhenaton.",
+        "en": "Conceptual music platform (multi-tenant SaaS) used by artists like David Guetta, Joachim Garraud, Akhenaton."
+      },
       "features": [
-        "Plateforme utilisée par des artistes reconnus",
-        "Backend sous Symfony avec gestion de multi-sites et marque blanche",
-        "Conception d'un e-commerce propriétaire"
+        {
+          "fr": "Plateforme utilisée par des artistes reconnus",
+          "en": "Platform used by renowned artists"
+        },
+        {
+          "fr": "Backend sous Symfony avec gestion de multi-sites et marque blanche",
+          "en": "Symfony backend with multi-site and white-label management"
+        },
+        {
+          "fr": "Conception d'un e-commerce propriétaire",
+          "en": "Design of a proprietary e-commerce"
+        }
       ],
       "tech": [
         "Symfony 1",
         "SaaS",
         "API REST",
-        "Tests automatisés (PHPUnit)",
+        {
+          "fr": "Tests automatisés (PHPUnit)",
+          "en": "Automated tests (PHPUnit)"
+        },
         "i18n",
         "MySQL",
         "Doctrine ORM",
@@ -308,10 +461,19 @@
       ],
       "date": "2009-2016",
       "titre": "Hellfestshop.com, Pavageau.fr, Directlub.com",
-      "description": "E-commerce basés sur Magento.",
+      "description": {
+        "fr": "E-commerce basés sur Magento.",
+        "en": "E-commerce based on Magento."
+      },
       "features": [
-        "Développement e-commerce sur Magento",
-        "Personnalisation avancée des modules"
+        {
+          "fr": "Développement e-commerce sur Magento",
+          "en": "E-commerce development on Magento"
+        },
+        {
+          "fr": "Personnalisation avancée des modules",
+          "en": "Advanced module customization"
+        }
       ],
       "tech": [
         "Magento",
@@ -329,15 +491,30 @@
       ],
       "date": "2007-2009",
       "titre": "Bubblebeat.com",
-      "description": "Plateforme de musique électronique. Plus de 40,000 références.",
+      "description": {
+        "fr": "Plateforme de musique électronique. Plus de 40,000 références.",
+        "en": "Electronic music platform. Over 40,000 references."
+      },
       "features": [
-        "Plateforme de musique électronique avec plus de 40,000 références",
-        "Conception d'un framework propriétaire",
-        "Développement backend et frontend"
+        {
+          "fr": "Plateforme de musique électronique avec plus de 40,000 références",
+          "en": "Electronic music platform with over 40,000 references"
+        },
+        {
+          "fr": "Conception d'un framework propriétaire",
+          "en": "Design of a proprietary framework"
+        },
+        {
+          "fr": "Développement backend et frontend",
+          "en": "Backend and frontend development"
+        }
       ],
       "tech": [
         "PHP/MySQL",
-        "Conception d'un framework homemade",
+        {
+          "fr": "Conception d'un framework homemade",
+          "en": "Design of a homemade framework"
+        },
         "i18n",
         "Frontend",
         "Backends multiples",
@@ -449,22 +626,38 @@
     "formation_distinctions": [
       {
         "date": "2009",
-        "title": "Certification PHP (Zend Certified Engineer)"
+        "title": {
+          "fr": "Certification PHP (Zend Certified Engineer)",
+          "en": "PHP Certification (Zend Certified Engineer)"
+        }
       },
       {
         "date": "2005 — 2006",
-        "title": "Licence Professionnelle de Création Multimédia, Université de La Rochelle (FR), AB"
+        "title": {
+          "fr": "Licence Professionnelle de Création Multimédia, Université de La Rochelle (FR), AB",
+          "en": "Professional Bachelor's Degree in Multimedia Creation, University of La Rochelle (FR), AB"
+        }
       },
       {
         "date": "2002 — 2005",
-        "title": "Licence de Musique et Musicologie – Option Recherche, Université de Tours (FR), AB"
-      },      {
+        "title": {
+          "fr": "Licence de Musique et Musicologie – Option Recherche, Université de Tours (FR), AB",
+          "en": "Bachelor's Degree in Music and Musicology – Research Option, University of Tours (FR), AB"
+        }
+      },
+      {
         "date": "2002",
-        "title": "Bac Scientifique, option Sciences de l'Ingénieur, B"
+        "title": {
+          "fr": "Bac Scientifique, option Sciences de l'Ingénieur, B",
+          "en": "Scientific Baccalaureate, Engineering Sciences option, B"
+        }
       },
       {
         "date": "1995 — 1998",
-        "title": "Apprentissage de la programmation en autodidacte – production de jeux et programmes utilitaires (Langages QBasic / Pascal  / Visual Basic)"
+        "title": {
+          "fr": "Apprentissage de la programmation en autodidacte – production de jeux et programmes utilitaires (Langages QBasic / Pascal / Visual Basic)",
+          "en": "Self-taught programming – development of games and utility programs (Languages: QBasic / Pascal / Visual Basic)"
+        }
       }
     ],
     "langues": [

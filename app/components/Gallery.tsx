@@ -3,10 +3,13 @@
 import Image from "next/image";
 import {Fade, Modal} from "@mui/material";
 import {useState} from "react";
+import {useI18n} from "@/locales/client";
 
 export default function Gallery({project}: {project: Record<any, any>}) {
     const [modalImage, setModalImage] = useState("false");
     const [modalOpen, setModalOpen] = useState(false);
+
+    const t =  useI18n();
 
     const handleOpen = (imageUrl: string) => {
         setModalImage(imageUrl);
@@ -32,7 +35,7 @@ export default function Gallery({project}: {project: Record<any, any>}) {
 
             </Modal>
             <section className="gallery">
-                <h2>Aperçu</h2>
+                <h2>{t('gallery.apercu')}</h2>
                 <ul className="section-content">
                     {project.gallery.map((fileName: string) =>
                       <li onClick={(e) => {

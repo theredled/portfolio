@@ -32,5 +32,6 @@ export default {
   ides: "IDEs",
   divers: "Miscellaneous",
   formations: "Education / Certifications",
-  languages: "Spoken Languages"
+  languages: "Spoken Languages",
+  'features': "Features"
 } as const

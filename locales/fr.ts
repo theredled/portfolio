@@ -32,6 +32,7 @@ export default {
   ides: "IDEs",
   divers: "Divers",
   formations: "Formations / Certifications",
-  languages: "Langues"
+  languages: "Langues",
+    'features': "Fonctionnalitéss"
 
 } as const
