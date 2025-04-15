@@ -35,7 +35,7 @@ export default async function Projects(params: any) {
                 {label: t('projects')},
                 {label: pageTitle}
             ]}></Breadcrumbs>
-            <h1 className="page-title">{categoryName} <span className="weak">– sélection</span></h1>
+            <h1 className="page-title">{categoryName} <span className="weak">– {t('category.selection')}</span></h1>
             <ul className="projets-list">
                 {data.projets.filter((project: Record<any, any>) => project.category == category)
                     .map((project: Record<any, any>, index: number) => (

@@ -1,20 +1,23 @@
 import {getAllData} from "@/lib/getData";
 import Breadcrumbs from "@/app/components/Breadcrumbs";
 import Gallery from "@/app/components/Gallery";
+import {tData} from "@/lib/getServerData";
+import {getI18n} from "@/locales/server";
 
 export default async function Project({params}: {params: any}) {
     const paramsList =  await params;
     const id = paramsList.id;
     const data = getAllData();
+    const t = await getI18n();
 
     const project = data.projets.filter((p: Record<any, any>) => p.id.toString() == id).at(0);
-    const categoryName = data.categories[project.category];
+    const categoryName = tData(data.categories[project.category]);
     project.gallery = project.gallery || project.image && [project.image];
 
     return (
         <div>
             <Breadcrumbs breadcrumbsList={[
-                {label: 'Projets'},
+                {label: t('projects')},
                 {label: categoryName, url: '/projects/?category=' + project.category},
                 {label: project.titre}
             ]}></Breadcrumbs>
