@@ -1,7 +1,13 @@
 {
   "categories": {
-    "audio": "Développement Audio / MIDI",
-    "web": "Développement Web"
+    "audio": {
+      "fr": "Développement Audio / MIDI",
+      "en": "Audio / MIDI development"
+    },
+    "web": {
+      "fr": "Développement Web",
+      "en": "Web development"
+    }
   },
   "title": {
     "fr": "Développeur full-stack freelance – Symfony / Vanilla JS",
@@ -12,10 +18,22 @@
       "Symfony / PHP",
       "Architecture / Clean Code / DDD",
       "Vanilla JS / ES6+",
-      "Tests (PHPUnit)",
-      "API REST / JSON",
-      "CSS sémantique / LESS",
-      "SQL avancé"
+      {
+        "fr": "Tests (PHPUnit)",
+        "en": "Testing (PHPUnit)"
+      },
+      {
+        "fr": "API REST / JSON",
+        "en": "REST API / JSON"
+      },
+      {
+        "fr": "CSS sémantique / LESS",
+        "en": "Modular CSS / LESS"
+      },
+      {
+        "fr": "SQL avancé",
+        "en": "Advanced SQL"
+      }
     ],
     "learning": [
       "React / NextJS",
@@ -25,35 +43,54 @@
   },
   "parcours": [
     {
-      "date": "2010 — auj.",
-      "title": "Architecte / Développeur web freelance"
+      "date": "2010+",
+      "title": {
+        "fr": "Architecte / Développeur web freelance",
+        "en": "Freelance Web Architect / Developer"
+      }
     },
     {
-      "date": "2010 — auj.",
-      "title": "Contributions à des projets open-source (modules Symfony, plugins PhpStorm, Mastodon...)"
+      "date": "2010+",
+      "title": {
+        "fr": "Contributions à des projets open-source (modules Symfony, plugins PhpStorm, Mastodon...)",
+        "en": "Contributions to open-source projects (Symfony modules, PhpStorm plugins, Mastodon...)"
+      }
     },
     {
-      "date": "2022 — auj.",
-      "title": "Conception de périphériques audio/MIDI impliquant micro-contrôleurs et électronique."
+      "date": "2022+",
+      "title": {
+        "fr": "Conception de périphériques audio/MIDI impliquant micro-contrôleurs et électronique.",
+        "en": "Designing audio/MIDI devices involving microcontrollers and electronics."
+      }
     },
-
     {
       "date": "2006 — 2012",
-      "title": "Lead developer full-stack chez Flydesigners / BB&PP / Uuneek"
+      "title": {
+        "fr": "Lead developer full-stack chez Flydesigners / BB&PP / Uuneek",
+        "en": "Lead full-stack developer at Flydesigners / BB&PP / Uuneek"
+      }
     },
     {
       "date": "2002 — 2005",
-      "title": "Divers travaux étudiants : ouvrier d'usine, réceptionniste d'hôtel, travailleur du bâtiment, vendanges."
+      "title": {
+        "fr": "Divers travaux étudiants : ouvrier d'usine, réceptionniste d'hôtel, travailleur du bâtiment, vendanges.",
+        "en": "Various student jobs: factory worker, hotel receptionist, construction worker, grape picking."
+      }
     },
     {
-      "date": "2002 — auj.",
-      "title": "Musicien"
+      "date": "2002+",
+      "title": {
+        "fr": "Musicien",
+        "en": "Musician"
+      }
     }
   ],
   "projets": [
     {
       "id": 1,
-      "category": ["audio"],
+      "category": [
+        "audio"
+      ],
       "titre": "Boîtier MIDI multi-usages pour clavier",
       "description": "Conception d'un boitier MIDI sous Rasperry PI, avec fonctionnalités spéciales pour le clavier Yamaha Reface CP",
       "features": [
@@ -69,9 +106,12 @@
         "C",
         "Python"
       ]
-    },    {
+    },
+    {
       "id": 2,
-      "category": ["audio"],
+      "category": [
+        "audio"
+      ],
       "titre": "Chaos Box",
       "description": "Générateur de signal CV aléatoire pondéré",
       "features": [
@@ -87,24 +127,27 @@
     },
     {
       "id": 3,
-      "category": ["web"],
+      "category": [
+        "web"
+      ],
       "titre": "Ce portfolio",
       "date": "2025",
       "image": "Portfolio-1.png",
-
       "description": "Développement d'un portfolio simple pour montée en compétence NextJS / React",
       "tech": [
-        "NoSQL / MongoDB",
         "NextJS / React / Strapi",
-        "Typescript"
+        "i18n",
+        "Typescript",
+        "NoSQL / MongoDB"
       ]
     },
     {
       "id": 4,
-      "category": ["web"],
+      "category": [
+        "web"
+      ],
       "date": "2020-2022",
       "titre": "Oteam.io",
-
       "image": "Qualispace-1.jpg",
       "gallery": [
         "Qualispace-1.jpg",
@@ -113,7 +156,6 @@
         "Qualispace-4.jpg",
         "Qualispace-5.jpg"
       ],
-
       "description": "Évolution de Qualispace.fr vers un SaaS multi-tenant. Développeur Lead.",
       "features": [
         "Évolution vers un SaaS commercialisé",
@@ -138,7 +180,9 @@
     {
       "id": 5,
       "date": "2017-2020",
-      "category": ["web"],
+      "category": [
+        "web"
+      ],
       "image": "Qualispace-1.jpg",
       "titre": "Qualispace.fr",
       "description": "Application métier, domaine de la maîtrise d'œuvre.",
@@ -166,7 +210,9 @@
     },
     {
       "id": 6,
-      "category": ["web"],
+      "category": [
+        "web"
+      ],
       "titre": "Larchitecturedaujourdhui.fr",
       "date": "2015-2017",
       "image": "AA-1.jpg",
@@ -188,10 +234,11 @@
     },
     {
       "id": 7,
-      "category": ["web"],
+      "category": [
+        "web"
+      ],
       "date": "2013-2016",
       "image": "Elystel-1.png",
-
       "titre": "Elystel",
       "description": "Hôtels de luxe, site multi-instances.",
       "features": [
@@ -207,11 +254,12 @@
     },
     {
       "id": 8,
-      "category": ["web"],
+      "category": [
+        "web"
+      ],
       "titre": "Vinylunity.com",
       "date": "2010-2013",
       "image": "Vinylunity-1.png",
-
       "description": "Vente/Échange de disques vinyles.",
       "features": [
         "Vente et échange de disques vinyles en ligne",
@@ -227,9 +275,10 @@
     },
     {
       "id": 9,
-      "category": ["web"],
+      "category": [
+        "web"
+      ],
       "date": "2009-2013",
-
       "titre": "BB&PP / Uuneek",
       "description": "Plateforme conceptuelle (SaaS multi-tenant) de musique utilisée par des artistes comme David Guetta, Joachim Garraud, Akhenaton.",
       "features": [
@@ -254,9 +303,10 @@
     },
     {
       "id": 10,
-      "category": ["web"],
+      "category": [
+        "web"
+      ],
       "date": "2009-2016",
-
       "titre": "Hellfestshop.com, Pavageau.fr, Directlub.com",
       "description": "E-commerce basés sur Magento.",
       "features": [
@@ -274,9 +324,10 @@
     },
     {
       "id": 11,
-      "category": ["web"],
+      "category": [
+        "web"
+      ],
       "date": "2007-2009",
-
       "titre": "Bubblebeat.com",
       "description": "Plateforme de musique électronique. Plus de 40,000 références.",
       "features": [
@@ -296,9 +347,11 @@
     }
   ],
   "competences": {
-    "conception_methodologie": "Développeur full-stack sensible à la qualité du code, à l’ergonomie et à la pérennité des applications. J’intègre les bonnes pratiques de l’OOP, des tests, de l’accessibilité, et du design responsive.\n\nCurieux et impliqué, je m'intéresse aux méthodes agiles (Scrum / XP), à l’UML, et je contribue activement à des projets open source.",
+    "conception_methodologie": {
+      "fr": "Développeur full-stack sensible à la qualité du code, à l’ergonomie et à la pérennité des applications. J’intègre les bonnes pratiques de l’OOP, des tests, de l’accessibilité, et du design responsive. Curieux et impliqué, je m'intéresse aux méthodes agiles (Scrum / XP), à l’UML, et je contribue activement à des projets open source.",
+      "en": "Full-stack developer focused on code quality, usability, and the sustainability of applications. I incorporate best practices in OOP, testing, accessibility, and responsive design. Curious and engaged, I’m interested in agile methods (Scrum / XP), UML, and I actively contribute to open-source projects."
+    },
     "tech": {
-
       "expertise": {
         "langages": [
           "PHP 8",
@@ -412,9 +465,36 @@
       }
     ],
     "langues": [
-      {"name": "Français", "level": "Langue maternelle"},
-      {"name": "Anglais", "level": "Courant"},
-      {"name": "Italien", "level": "Bases"}
+      {
+        "name": {
+          "fr": "Français",
+          "en": "French"
+        },
+        "level": {
+          "fr": "Langue maternelle",
+          "en": "Native language"
+        }
+      },
+      {
+        "name": {
+          "fr": "Anglais",
+          "en": "English"
+        },
+        "level": {
+          "fr": "Courant",
+          "en": "Proficient / Fluent"
+        }
+      },
+      {
+        "name": {
+          "fr": "Italien",
+          "en": "Italian"
+        },
+        "level": {
+          "fr": "Bases",
+          "en": "Basic knowledge"
+        }
+      }
     ],
     "musique": "Multi-instrumentiste, compositeur, producteur et chanteur, création et participation à de nombreux projets, principalement entre pop, musique expérimentale et folk – ex. Fairy Tales in Yoghourt, Bantam Lyons.",
     "interets": [

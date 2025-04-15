@@ -37,7 +37,6 @@ export default function Gallery({project}: {project: Record<any, any>}) {
                     {project.gallery.map((fileName: string) =>
                       <li onClick={(e) => {
                           const $img = e.currentTarget.querySelector('img');
-                          console.log($img);
 
                           if ($img == null)
                               return;

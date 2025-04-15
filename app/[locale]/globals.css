@@ -7,6 +7,7 @@
     --color-accent: #333;
     --color-muted: #666;
     --color-contrast: #0177FF;
+    --color-contrast-opacity: rgb(1, 119, 255, .5);
 
     --spacing-s: 0.5rem;
     --spacing-m: 1rem;
@@ -27,6 +28,7 @@ body {
     line-height: 1.6;
     max-width: 960px;
     margin-inline: auto;
+    /*font-size: 15px;*/
 }
 
 h1, h2, h3 {
@@ -70,14 +72,15 @@ ul {
 }
 .text-with-icon svg {vertical-align: top; margin-right: .2em}
 .title .side-infos {font-weight: normal; font-size: 80%; white-space: nowrap}
+button.link {border: none; background: none; cursor: pointer}
 
 #navbar { margin: 0; border-color: #222; border-style: solid; border-width: 1px 0; border-radius: 0 0 .5em .5em;
-    padding: var(--spacing-s); background-color: #222; position: sticky; top: 0;z-index: 10;}
-#navbar ul {display: flex;flex-wrap: wrap;column-gap: var(--spacing-m);padding: 0;list-style: none;
-    margin: 0;justify-content: center;}
-#navbar a {letter-spacing: -.5px;font-weight: 500;padding: var(--spacing-s) var(--spacing-m);border-radius: 4px;
-    transition: background-color 0.2s; color: #EEE;}
-#navbar a:hover {background-color: rgba(0, 0, 0, 0.05);text-decoration: none;}
+    padding: 0 ; background-color: #222; position: sticky; top: 0;z-index: 10; /*font-size: 14px*/}
+#navbar ul {display: flex;flex-wrap: wrap;column-gap: 3em;padding: 0 var(--spacing-l);list-style: none;
+    margin: 0;justify-content: left; align-items: center;}
+#navbar .link {letter-spacing: -.5px;font-weight: 500;padding: var(--spacing-s) 0;border-radius: 4px;
+    transition: background-color 0.2s; color: #e1e1e1; display: inline-block}
+#navbar .link:hover {text-decoration: none; color: white;}
 #navbar-toggler {display: none}
 
 .breadcrumbs {display: flex; color: #555; padding: .8em 1em; margin: 0; font-size: 80%; /*border-bottom: 1px solid #CCC*/}
@@ -149,14 +152,20 @@ ul {
 
 .MuiBackdrop-root {z-index: 5}
 
+#locale-menu {/*position: absolute; */    right: 10px; margin-left: auto; /*margin-right: 10px*/}
+#locale-menu button {border: none; background: none; /*position: absolute; right: 0; top: 0*/ color: #ccc;
+    text-transform: uppercase; font-weight: 100; display: inline-block}
+
 @media (max-width: 900px) {
     .projets-list {grid-template-columns: repeat(2, 1fr);}
+    #main-header .subtitle {font-size: 50%}
+    #navbar{font-size: 80%}
+    #navbar ul{column-gap: 2.5em; padding: 0 var(--spacing-m);}
 }
 
 @media (max-width: 600px) {
     #main-header h1 {margin-top: 5px}
     #main-header .title {}
-    #main-header .subtitle {font-size: 50%}
 
     body {
         padding: var(--spacing-s);
@@ -169,7 +178,7 @@ ul {
 
 
     #navbar-toggler {display: block;background: rgba(255, 255, 255, .5);border: none;
-        top: 0.5em; height: 72px;}
+        top: 0.5em; left: .5em; height: 72px; position: relative}
     #navbar.open #navbar-toggler{background: none; color: white; padding-left: var(--spacing-m)}
     /*#navbar-toggler {display: none}*/
     #navbar ul {flex-direction: column; display: none; padding-bottom: 1em;   }

@@ -1,8 +1,36 @@
 
 export default {
-  'hello': 'Hello',
-  'about': 'About me',
+  'about': 'About',
 
-  'hello.world': 'Hello world!',
-  'welcome': 'Hello {name}!'
+  'expertises.principales': 'Main skills',
+  'appetence.pour': 'Secondary skills',
+  'parcours': 'Career',
+
+  'category.selection': 'selection',
+  'projects': 'Projects',
+  'gallery.apercu': 'Preview',
+
+  'navbar.projects.web': 'Web projects',
+  'navbar.projects.audio': 'MIDI/Audio projects',
+  'skills': 'Skills',
+  'contact': 'Contact',
+  'contact.me': 'Get in touch',
+
+  'home': 'Home',
+  'reseaux': 'Socials',
+  'musique': 'Music stuff',
+  expertise: "Expertise",
+  bon_niveau: "Regular use",
+  bases: "Occasional use",
+  outils_annexes: "Additional tools",
+  langages: "Languages",
+  frameworks: "Frameworks",
+  cms: "CMS",
+  domaines: "Concepts",
+  os: "Operating Systems",
+  outils: "Tools",
+  ides: "IDEs",
+  divers: "Miscellaneous",
+  formations: "Education / Certifications",
+  languages: "Spoken Languages"
 } as const

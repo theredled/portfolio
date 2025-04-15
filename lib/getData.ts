@@ -1,4 +1,3 @@
-import {micromark} from 'micromark'
 import { useI18n, useScopedI18n, useCurrentLocale } from '@/locales/client'
 
 // /lib/getData.ts
@@ -8,17 +7,19 @@ import data from '@/data/portfolio.json'
 
 export function getAllData(): Record<any, any> {
     if (cache) return cache;
-    /*const res = await fetch('https://api.example.com/data');
-    const json = await res.json();*/
+
     const json = data;
     cache = json;
-    console.log('data', data)
 
     return json;
 }
 
-export function tData(i18nData: Record<any, any>): string {
+export function tData(i18nData: any): string {
     const locale = useCurrentLocale();
+
+    if (typeof i18nData === 'string')
+        return i18nData;
+
     const t: string = i18nData[locale] || Object.values(i18nData).at(0);
     return t;
 }

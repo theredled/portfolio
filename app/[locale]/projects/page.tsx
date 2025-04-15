@@ -5,26 +5,34 @@ import Link from "next/link";
 import { Metadata } from 'next'
 import WrapLink from "@/app/bg/WrapLink";
 import Breadcrumbs from "@/app/components/Breadcrumbs";
+import {tData} from "@/lib/getServerData";
+import {getI18n} from "@/locales/server";
 //import {useRouter} from "next/navigation";
 
-export const metadata: Metadata = {
- title: 'Projets',
-}
 
+
+export async function generateMetadata(): Promise<Metadata> {
+    const t = await getI18n();
+
+    return {
+      title: t('projects')
+    }
+}
 export default async function Projects(params: any) {
     const query =  await params.searchParams;
     const category = query.category || 'web';
+    const t = await getI18n();
 
     const data = getAllData();
 
 
-    const categoryName = data.categories[category];
+    const categoryName = tData(data.categories[category]);
     const pageTitle = categoryName;
 
     return (
         <div>
             <Breadcrumbs breadcrumbsList={[
-                {label: 'Projets'},
+                {label: t('projects')},
                 {label: pageTitle}
             ]}></Breadcrumbs>
             <h1 className="page-title">{categoryName} <span className="weak">– sélection</span></h1>

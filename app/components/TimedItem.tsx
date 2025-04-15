@@ -1,7 +1,8 @@
+import {tData} from "@/lib/getServerData";
+
 export default function TimedItem({item}: {item: any}) {
-    console.log(item)
     return <div className="timed-item">
-        <time className="date">{item.date}</time>
-        <h4 className="title">{item.title}</h4>
+        <time className="date">{tData(item.date)}</time>
+        <h4 className="title">{tData(item.title)}</h4>
     </div>
 }
