@@ -1,4 +1,4 @@
-import About from "@/app/about/page";
+import About from "@/app/[locale]/about/page";
 
 export default function Home() {
   return <About />;

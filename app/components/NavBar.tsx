@@ -1,112 +1,64 @@
+'use client'
 import Link from "next/link";
-/*import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
-import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"*/
-import { NavigationMenu } from "radix-ui";
 import Image from "next/image";
-import {getAllData} from "@/lib/getData";
+import SortIcon from '@mui/icons-material/Sort';
+import {useEffect, useRef, useState} from "react";
+import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
+import {Backdrop} from "@mui/material";
+import { useI18n, useScopedI18n, useCurrentLocale } from '@/locales/client'
+import {tData} from "@/lib/getData";
 
-export default function NavBar() {
-    const data = getAllData();
+export default  function NavBar(params: object) {
+    const data: object = params.data;
+    const locale = useCurrentLocale();
+    const [menuOpen, setMenuOpen] = useState(false);
+    const menuTogglerRef = useRef<HTMLButtonElement>(null);
+    const t =  useI18n()
+
+    useEffect(() => {
+        const listener = (e: Event) => {
+            const isOpeningMenu = e.currentTarget == menuTogglerRef.current
+                || menuTogglerRef.current?.contains(e.currentTarget)
+            ;
+
+            if (menuOpen && !isOpeningMenu)
+                setMenuOpen(false);
+        };
+
+        document.addEventListener("click", listener);
+        return () => {
+            document.removeEventListener("click", listener);
+        };
+    }, [menuOpen, setMenuOpen, menuTogglerRef]);
+
+
     return (
         <>
             <header id="main-header">
-                <Image alt="" src={'/images/header.jpg'} width="200" height="130" />
+                <Image alt="" src={'/images/header.jpg'} width="200" height="130"/>
                 <h1>
                     <span className="title">
                         Benoît Guchet
                     </span>
                     <span className="subtitle">
-                        {data.title}
+                        {tData(data.title)}
                     </span>
                 </h1>
             </header>
-            <nav id="navbar">
-              <ul>
-                  <li><Link href="/about">À propos</Link></li>
-                  <li><Link href="/projects">Web</Link></li>
-                  <li><Link href="/projects?category=audio">MIDI/Audio</Link></li>
-                  <li><Link href="/skills">Compétences</Link></li>
-                  <li><Link href="/contact">Contact</Link></li>
-              </ul>
-          </nav>
-            {/*<NavigationMenu.Root className="NavigationMenuRoot">
-                <NavigationMenu.List className="NavigationMenuList">
-                    <NavigationMenu.Item>
-                        <NavigationMenu.Link className="NavigationMenuLink" href="/about">
-                            À propos
-                        </NavigationMenu.Link>
-                    </NavigationMenu.Item>
-                    <NavigationMenu.Item>
-                        <NavigationMenu.Link className="NavigationMenuLink" href="/projects">
-                            Développement Web
-                        </NavigationMenu.Link>
-                    </NavigationMenu.Item>
-                    <NavigationMenu.Item>
-                        <NavigationMenu.Link className="NavigationMenuLink" href="/projects?category=audio">
-                            Développement MIDI/Audio
-                        </NavigationMenu.Link>
-                    </NavigationMenu.Item>
-                    <NavigationMenu.Item>
-                        <NavigationMenu.Link className="NavigationMenuLink" href="/skills">
-                            Compétences
-                        </NavigationMenu.Link>
-                    </NavigationMenu.Item>
-                </NavigationMenu.List>
-            </NavigationMenu.Root>*/}
+            <Backdrop open={menuOpen}></Backdrop>
+            <nav id="navbar" className={menuOpen ? 'open' : ''} >
+                <button id="navbar-toggler" onClick={() => setMenuOpen(!menuOpen)} ref={menuTogglerRef}>
+                    <SortIcon fontSize="large">Menu</SortIcon>
+                </button>
+                <ul>
+                    <li><Link href="/about">{t('about')}</Link></li>
+                    <li><Link href="/projects">Projets Web</Link></li>
+                    <li><Link href="/projects?category=audio">Projets MIDI/Audio</Link></li>
+                    <li><Link href="/skills">Compétences</Link></li>
+                    <li><Link href="/contact">Contact</Link></li>
+                </ul>
+            </nav>
+
         </>
     );
-
-    /*return (
-        <NavigationMenu>
-          <NavigationMenuList>
-            <NavigationMenuItem>
-                <Link href="/about" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                        À propos
-                    </NavigationMenuLink>
-                </Link>
-            </NavigationMenuItem>
-              <NavigationMenuItem>
-                  <Link href="/projects" legacyBehavior passHref>
-                      <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                          Développement Web
-                      </NavigationMenuLink>
-                  </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                  <Link href="/projects?category=audio" legacyBehavior passHref>
-                      <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                          Développement MIDI/Audio
-                      </NavigationMenuLink>
-                  </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                  <Link href="/skills" legacyBehavior passHref>
-                      <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                          Compétences
-                      </NavigationMenuLink>
-                  </Link>
-              </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-    );*/
 }
-/*
-              <nav id="navbar">
-                        <ul>
-                            <li><Link href="/about">À propos</Link></li>
-                            <li><Link href="/projects">Développement Web</Link></li>
-                            <li><Link href="/projects?category=audio">Développement MIDI/Audio</Link></li>
-                            <li><Link href="/skills">Compétences</Link></li>
-                        </ul>
-                    </nav>
-        */

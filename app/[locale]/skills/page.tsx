@@ -16,8 +16,8 @@ export default function Skills() {
 
     const catLabels = {
         expertise: "Expertise",
-        bon_niveau: "Bon niveau",
-        bases: "Intérêt",
+        bon_niveau: "Pratique régulière",
+        bases: "Pratique ponctuelle",
         outils_annexes: "Outils annexes",
         langages: "Langages",
         frameworks: "Frameworks",
@@ -43,10 +43,10 @@ export default function Skills() {
                     <h2>{catLabels[levelName]}</h2>
                     <ul className="section-content">
                         {Object.entries(techList[levelName]).map(([catName, list], i) =>
-                            <li key={catName}>
+                            <li key={catName} className="tech-category">
                                 <section className="tech">
                                     <strong>{catLabels[catName]}</strong>
-                                    <ul className="section-content">
+                                    <ul className="">
                                         {list.filter(name => name.charAt(0) != '*').map(name => <li>{name}</li>)}
                                     </ul>
                                 </section>

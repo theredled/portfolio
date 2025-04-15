@@ -7,12 +7,11 @@ import WrapLink from "@/app/bg/WrapLink";
 import Breadcrumbs from "@/app/components/Breadcrumbs";
 //import {useRouter} from "next/navigation";
 
-
 export const metadata: Metadata = {
  title: 'Projets',
 }
 
-export default async function Projects(params) {
+export default async function Projects(params: object) {
     const query =  await params.searchParams;
     const category = query.category || 'web';
 
@@ -30,8 +29,8 @@ export default async function Projects(params) {
             ]}></Breadcrumbs>
             <h1 className="page-title">{categoryName} <span className="weak">– sélection</span></h1>
             <ul className="projets-list">
-                {data.projets.filter(project => project.category == category)
-                    .map((project, index) => (
+                {data.projets.filter((project: object) => project.category == category)
+                    .map((project: object, index: number) => (
                     <li key={index} className="project project-item">
                         <WrapLink>
                             <div className="image-container">
@@ -47,12 +46,12 @@ export default async function Projects(params) {
                                 }
                             </h2>
                             {project.description &&
-                                <p>{project.description}</p>
+                                <p className="description">{project.description}</p>
                             }
                             {project.tech &&
                                 <section className="tech">
                                     <ul>
-                                        {project.tech.slice(0, 6).map((name, i) => <li>{name}</li>)}
+                                        {project.tech.slice(0, 6).map((name: string) => <li>{name}</li>)}
                                         {project.tech.length > 6 &&
                                             <li className="etc">...</li>
                                         }

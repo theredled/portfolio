@@ -1,6 +1,5 @@
 import {micromark} from 'micromark'
-import { promises as fs } from 'fs';
-
+import { useI18n, useScopedI18n, useCurrentLocale } from '@/locales/client'
 
 // /lib/getData.ts
 let cache: object | null = null;
@@ -18,9 +17,8 @@ export function getAllData() {
     return json;
 }
 
-export async function getDocumentContent(name: string) {
-    const fileContent: string = await fs.readFile(process.cwd() + '/data/' + name + ".md", 'utf8') ;
-    //const fileContent: string = await req.text() ;
-    const html: string = micromark(fileContent);
-    return html;
+export function tData(i18nData: object): string {
+    const locale = useCurrentLocale();
+    const t: string = i18nData[locale] || Object.values(i18nData).at(0);
+    return t;
 }

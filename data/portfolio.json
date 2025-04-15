@@ -3,11 +3,11 @@
     "audio": "Développement Audio / MIDI",
     "web": "Développement Web"
   },
-  "title": "Développeur full-stack freelance – Symfony / Vanilla JS",
+  "title": {
+    "fr": "Développeur full-stack freelance – Symfony / Vanilla JS",
+    "en": "Full-stack freelance developer – Symfony / Vanilla JS"
+  },
   "a_propos": {
-    "presentation": "Je suis développeur freelance, spécialisé en Symfony, architecture back-end, Vanilla JS, et architecture CSS. Curieux, rigoureux, et à l’aise sur des missions courtes où il faut comprendre vite, livrer propre et s’adapter rapidement.",
-    "profil": "Développeur full-stack avec plus de 15 ans d'expérience, j'ai notamment conçu, intégré et maintenu de nombreuses applications de petite et grande envergure (SaaS, marque blanche, i18n...) principalement sous Symfony. J'ai également pratiqué la customisation intense de CMS (Magento, Drupal, Prestashop, Wordpress). Bien que spécialisé backend, je possède également une vraie expertise frontend, notamment en termes d'intégration fidèle aux maquettes. Fortes capacités d'adaptation. ",
-
     "competences_techniques": [
       "Symfony / PHP",
       "Architecture / Clean Code / DDD",
@@ -19,6 +19,7 @@
     ],
     "learning": [
       "React / NextJS",
+      "Typescript",
       "Python"
     ]
   },
@@ -94,7 +95,8 @@
       "description": "Développement d'un portfolio simple pour montée en compétence NextJS / React",
       "tech": [
         "NoSQL / MongoDB",
-        "NextJS / React / Strapi"
+        "NextJS / React / Strapi",
+        "Typescript"
       ]
     },
     {
@@ -104,6 +106,14 @@
       "titre": "Oteam.io",
 
       "image": "Qualispace-1.jpg",
+      "gallery": [
+        "Qualispace-1.jpg",
+        "Qualispace-2.jpg",
+        "Qualispace-3.jpg",
+        "Qualispace-4.jpg",
+        "Qualispace-5.jpg"
+      ],
+
       "description": "Évolution de Qualispace.fr vers un SaaS multi-tenant. Développeur Lead.",
       "features": [
         "Évolution vers un SaaS commercialisé",
@@ -147,8 +157,9 @@
         "Tests (PHPUnit)",
         "Intégration web responsive",
         "JS Vanilla (ES6)",
-        "Génération de PDF",
+        "Bootstrap",
         "WebSocket / Local Storage",
+        "Génération de PDF",
         "PHP",
         "MySQL"
       ]
@@ -159,7 +170,7 @@
       "titre": "Larchitecturedaujourdhui.fr",
       "date": "2015-2017",
       "image": "AA-1.jpg",
-      "description": "Magazine historique d'architecture.",
+      "description": "Magazine historique d'architecture. Fusion WP/Prestashop.",
       "features": [
         "Vente en ligne et gestion des abonnements",
         "Fusion de deux CMS (Wordpress et Prestashop)",
@@ -168,6 +179,7 @@
       "tech": [
         "Prestashop",
         "Wordpress",
+        "i18n",
         "MySQL",
         "PHP",
         "API externes",
@@ -181,7 +193,7 @@
       "image": "Elystel-1.png",
 
       "titre": "Elystel",
-      "description": "Hôtels de luxe.",
+      "description": "Hôtels de luxe, site multi-instances.",
       "features": [
         "Site multi-domaine et multi-language",
         "Customisation de Drupal pour des besoins spécifiques"
@@ -189,9 +201,8 @@
       "tech": [
         "Drupal 7",
         "PHP",
-        "MySQL",
-        "Apache",
-        "Linux"
+        "i18n",
+        "MySQL"
       ]
     },
     {
@@ -209,7 +220,9 @@
       "tech": [
         "Symfony 2",
         "Tests automatisés (PHPUnit)",
-        "Paypal et autres APIs"
+        "Paypal",
+        "API externes",
+        "i18n"
       ]
     },
     {
@@ -229,6 +242,7 @@
         "SaaS",
         "API REST",
         "Tests automatisés (PHPUnit)",
+        "i18n",
         "MySQL",
         "Doctrine ORM",
         "Frontend",
@@ -273,6 +287,7 @@
       "tech": [
         "PHP/MySQL",
         "Conception d'un framework homemade",
+        "i18n",
         "Frontend",
         "Backends multiples",
         "Versionning",
@@ -310,8 +325,11 @@
         ]
       },
       "bon_niveau": {
-        "cms": [
+        "frameworks": [
           "React / NextJS",
+          "Tailwind CSS"
+        ],
+        "cms": [
           "Drupal",
           "Wordpress"
         ],
@@ -319,7 +337,7 @@
           "Python",
           "C++",
           "C",
-          "BASH"
+          "*BASH"
         ],
         "domaines": [
           "Arduino / Raspberry PI",
@@ -345,11 +363,9 @@
       "outils_annexes": {
         "outils": [
           "Docker",
-          "Git",
+          "Git / Github / Gitlab",
           "Webpack",
           "Apache",
-          "Github",
-          "Gitlab",
           "SASS"
         ],
         "os": [
@@ -359,8 +375,8 @@
         ],
         "ides": [
           "IntelliJ/PhpStorm",
-          "Eclipse",
-          "Netbeans"
+          "*Eclipse",
+          "*Netbeans"
         ],
         "divers": [
           "Photoshop",
@@ -387,8 +403,12 @@
         "title": "Licence Professionnelle de Création Multimédia, Université de La Rochelle (FR), AB"
       },
       {
-        "date": "2005 — 2006",
+        "date": "2002 — 2005",
         "title": "Licence de Musique et Musicologie – Option Recherche, Université de Tours (FR), AB"
+      },
+      {
+        "date": "1995 — 1998",
+        "title": "Apprentissage de la programmation en autodidacte – production de jeux et programmes utilitaires (Langages QBasic / Pascal  / Visual Basic)"
       }
     ],
     "langues": [
