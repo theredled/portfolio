@@ -1,4 +1,4 @@
-export default function TimedItem({item}) {
+export default function TimedItem({item}: {item: any}) {
     console.log(item)
     return <div className="timed-item">
         <time className="date">{item.date}</time>

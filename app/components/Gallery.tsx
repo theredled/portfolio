@@ -4,7 +4,7 @@ import Image from "next/image";
 import {Fade, Modal} from "@mui/material";
 import {useState} from "react";
 
-export default function Gallery({project}: {project: object}) {
+export default function Gallery({project}: {project: Record<any, any>}) {
     const [modalImage, setModalImage] = useState("false");
     const [modalOpen, setModalOpen] = useState(false);
 
@@ -39,6 +39,8 @@ export default function Gallery({project}: {project: object}) {
                           const $img = e.currentTarget.querySelector('img');
                           console.log($img);
 
+                          if ($img == null)
+                              return;
                           return handleOpen($img.src);
                       }}>
                           <Image src={'/images/' + (fileName || 'no-image.jpg')}

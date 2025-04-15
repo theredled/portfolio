@@ -11,7 +11,7 @@ export const metadata: Metadata = {
  title: 'Projets',
 }
 
-export default async function Projects(params: object) {
+export default async function Projects(params: any) {
     const query =  await params.searchParams;
     const category = query.category || 'web';
 
@@ -29,8 +29,8 @@ export default async function Projects(params: object) {
             ]}></Breadcrumbs>
             <h1 className="page-title">{categoryName} <span className="weak">– sélection</span></h1>
             <ul className="projets-list">
-                {data.projets.filter((project: object) => project.category == category)
-                    .map((project: object, index: number) => (
+                {data.projets.filter((project: Record<any, any>) => project.category == category)
+                    .map((project: Record<any, any>, index: number) => (
                     <li key={index} className="project project-item">
                         <WrapLink>
                             <div className="image-container">

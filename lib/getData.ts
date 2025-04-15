@@ -6,7 +6,7 @@ let cache: object | null = null;
 
 import data from '@/data/portfolio.json'
 
-export function getAllData() {
+export function getAllData(): Record<any, any> {
     if (cache) return cache;
     /*const res = await fetch('https://api.example.com/data');
     const json = await res.json();*/
@@ -17,7 +17,7 @@ export function getAllData() {
     return json;
 }
 
-export function tData(i18nData: object): string {
+export function tData(i18nData: Record<any, any>): string {
     const locale = useCurrentLocale();
     const t: string = i18nData[locale] || Object.values(i18nData).at(0);
     return t;

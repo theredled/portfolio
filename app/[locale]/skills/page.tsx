@@ -14,7 +14,7 @@ export default function Skills() {
     const data = getAllData();
     const techList = data.competences.tech;
 
-    const catLabels = {
+    const catLabels: Record<any, any> = {
         expertise: "Expertise",
         bon_niveau: "Pratique régulière",
         bases: "Pratique ponctuelle",
@@ -38,16 +38,17 @@ export default function Skills() {
             <h1>Compétences</h1>
             <p>{data.competences.conception_methodologie}</p>
             <ul className="skills-list">
-            {['expertise', 'bon_niveau', 'bases', 'outils_annexes'].map((levelName) => (
+            {['expertise', 'bon_niveau', 'bases', 'outils_annexes'].map((levelName: string) => (
                 <li key={levelName} className={'level-section level-' + levelName}>
                     <h2>{catLabels[levelName]}</h2>
                     <ul className="section-content">
-                        {Object.entries(techList[levelName]).map(([catName, list], i) =>
+                        {Object.entries(techList[levelName]).map(([catName, list]: any, i: number) =>
                             <li key={catName} className="tech-category">
                                 <section className="tech">
                                     <strong>{catLabels[catName]}</strong>
                                     <ul className="">
-                                        {list.filter(name => name.charAt(0) != '*').map(name => <li>{name}</li>)}
+                                        {list.filter((name: string) => name.charAt(0) != '*')
+                                            .map((name: string) => <li>{name}</li>)}
                                     </ul>
                                 </section>
                             </li>)}
@@ -58,12 +59,12 @@ export default function Skills() {
 
             <h1>Formations / Certifications</h1>
             <ul className="section-content">
-                {data.misc.formation_distinctions.map(item => <li><TimedItem item={item} /></li>)}
+                {data.misc.formation_distinctions.map((item: Record<any, any>) => <li><TimedItem item={item} /></li>)}
             </ul>
 
             <h1>Langues</h1>
             <ul className="section-content">
-                {data.misc.langues.map(({name, level}) => <li><strong>{name}</strong> : {level}</li>)}
+                {data.misc.langues.map(({name, level}: {name: string, level: string}) => <li><strong>{name}</strong> : {level}</li>)}
             </ul>
 
         </div>

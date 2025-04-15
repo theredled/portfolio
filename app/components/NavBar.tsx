@@ -8,8 +8,8 @@ import {Backdrop} from "@mui/material";
 import { useI18n, useScopedI18n, useCurrentLocale } from '@/locales/client'
 import {tData} from "@/lib/getData";
 
-export default  function NavBar(params: object) {
-    const data: object = params.data;
+export default  function NavBar(params: any) {
+    const data: Record<any, any> = params.data;
     const locale = useCurrentLocale();
     const [menuOpen, setMenuOpen] = useState(false);
     const menuTogglerRef = useRef<HTMLButtonElement>(null);
@@ -17,6 +17,9 @@ export default  function NavBar(params: object) {
 
     useEffect(() => {
         const listener = (e: Event) => {
+
+            if (!(e.currentTarget instanceof Node))
+                return;
             const isOpeningMenu = e.currentTarget == menuTogglerRef.current
                 || menuTogglerRef.current?.contains(e.currentTarget)
             ;
