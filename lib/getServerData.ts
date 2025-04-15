@@ -25,7 +25,7 @@ export function getAllData(): Record<any, any> {
     return json;
 }
 
-export async function tData(i18nData: any): string {
+export async function tData(i18nData: any): Promise<string> {
     const locale = await getCurrentLocale();
 
     if (typeof i18nData === 'string')

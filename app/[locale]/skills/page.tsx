@@ -17,23 +17,9 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 export default async function Skills() {
     const data = getAllData();
-    const t = await getI18n();
+    const t: any = await getI18n();
     const techList = data.competences.tech;
 
-    /*const catLabels: Record<any, any> = {
-        expertise: "Expertise",
-        bon_niveau: "Pratique régulière",
-        bases: "Pratique ponctuelle",
-        outils_annexes: "Outils annexes",
-        langages: "Langages",
-        frameworks: "Frameworks",
-        cms: "CMS",
-        domaines: "Domaines",
-        os: "OS",
-        outils: "Outils",
-        ides: "IDEs",
-        divers: "Divers"
-    }*/
 
     return (
         <div>

@@ -36,7 +36,7 @@ export default  function NavBar(params: any) {
         };
     }, [menuOpen, setMenuOpen, menuTogglerRef]);
 
-    const nextLocale = localesList.filter((name: string) => locale != name).at(0) || 'fr';
+    const nextLocale: any = localesList.filter((name: string) => locale != name).at(0) || 'fr';
 
     return (
         <>
