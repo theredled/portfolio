@@ -7,6 +7,7 @@
     --color-accent: #333;
     --color-muted: #666;
     --color-contrast: #0177FF;
+    --color-complement: #ff7701;
     --color-contrast-opacity: rgb(1, 119, 255, .5);
 
     --spacing-s: 0.5rem;
@@ -24,7 +25,8 @@ body {
     font-family: var(--font-body);
     font-weight: 400;
     color: var(--color-fg);
-    background-color: var(--color-bg);
+    /*background-color: var(--color-bg);*/
+    background-color: var(--color-contrast-opacity);
     line-height: 1.6;
     max-width: 960px;
     margin-inline: auto;
@@ -50,7 +52,8 @@ h2 {
 h3 {
     font-size: 1.1rem;
     margin-top: var(--spacing-m);
-    color: var(--color-muted);
+    /*color: var(--color-complement);*/
+    color: #333;
 }
 
 p {
@@ -83,7 +86,8 @@ button.link {border: none; background: none; cursor: pointer}
 #navbar .link:hover {text-decoration: none; color: white;}
 #navbar-toggler {display: none}
 
-.breadcrumbs {display: flex; color: #555; padding: .8em 1em; margin: 0; font-size: 80%; text-transform: capitalize;/*border-bottom: 1px solid #CCC*/}
+.breadcrumbs {display: flex; color: #555; padding: .8em 1em; margin: 0; font-size: 80%; text-transform: capitalize;
+    white-space: nowrap;/*border-bottom: 1px solid #CCC*/}
 .breadcrumbs a {color: #555; }
 .breadcrumbs .home svg {vertical-align: middle}
 .breadcrumbs li:not(:last-of-type):after {content: ' / '; margin-right: 5px }
@@ -115,16 +119,19 @@ button.link {border: none; background: none; cursor: pointer}
 .projets-list .project-item {}
 
 .project-item h2 {margin: .5em 0 0}
-.project-item .image-container {width: 100%; aspect-ratio: 1.8; overflow: hidden; display: flex; align-items: center;
+.project-item .image-container {width: 100%; aspect-ratio: 1.78; overflow: hidden; display: flex; align-items: center;
     background: white}
-.project-image {width: 100%; height: fit-content;      filter: saturate(0.5); }
+.project-image {width: 100%; height: fit-content;      /*filter: saturate(0.5);*/filter: saturate(1.4); }
 .project-item .description {margin: .5em 0}
 
-.project .category {display: inline-block; background: #AAA; color: white; border-radius: 5px; padding: 3px 10px;
-    margin-right: 5px; margin-bottom: 2px; font-size: 70%}
-.single-project .gallery ul {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-column-gap: 1rem; grid-row-gap: 1rem;}
+.project .category {display: inline-block; background: var(--color-complement); color: white; border-radius: 5px;
+    margin-right: 5px; margin-bottom: 2px; font-size: .8rem; font-weight: normal;letter-spacing: 0; padding: 3px 10px;
+    vertical-align: text-bottom; margin-left: 1em;}
+.single-project .gallery ul {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-column-gap: 1rem;
+    grid-row-gap: 1rem;}
 .single-project .title .side-infos {font-size: 60%;}
-
+.single-project .tech h3 {display: none}
+.single-project .features li {list-style: inside disc; }
 
 .skills-list .tech {display: flex}
 .skills-list .tech strong {width: 7em; flex-shrink: 0;}
@@ -178,7 +185,7 @@ button.link {border: none; background: none; cursor: pointer}
 
 
     #navbar-toggler {display: block;background: rgba(255, 255, 255, .5);border: none;
-        top: 0.5em; left: .5em; height: 72px; position: relative}
+        top: 0.6em; left: .6em; height: 100px; width: 70px; position: relative; border-radius: .5em 0 0 0  }
     #navbar.open #navbar-toggler{background: none; color: white; padding-left: var(--spacing-m)}
     /*#navbar-toggler {display: none}*/
     #navbar ul {flex-direction: column; display: none; padding-bottom: 1em;   }
@@ -199,6 +206,8 @@ button.link {border: none; background: none; cursor: pointer}
     #main-header .title {}
     #main-header .subtitle {font-size: 70%}
     #main-header {height: 70px}
-
+    #navbar-toggler {height: 72px; }
     .timed-item {display: block; margin-bottom: 1em;}
+
+    .breadcrumbs {padding-left: 0}
 }

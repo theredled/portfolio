@@ -24,27 +24,28 @@ export default async function Project({params}: {params: any}) {
 
             <main id="main" className="project single-project">
 
-                <h1 className="title"><span>{project.titre}</span>
+                <h1 className="title"><span>{ tData(project.titre)}</span>
                     {project.date &&
                         <time className="side-infos"> ({ project.date })</time>
                     }
+                    <span className="category">{categoryName}</span>
                 </h1>
-                <p className="category">{categoryName}</p>
+
 
                 {project.description &&
                     <p>{tData(project.description)}</p>
+                }
+                {project.tech &&
+                    <section className="tech">
+                        <h3>Stack :</h3>
+                        <ul>{project.tech.map((name: string) => <li>{tData(name)}</li>)}</ul>
+                    </section>
                 }
                 {project.features &&
                     <section className="features">
                         <h3>{t('features')}</h3>
 
                         <ul className="section-content">{project.features.map((name:string) => <li>{tData(name)}</li>)}</ul>
-                    </section>
-                }
-                {project.tech &&
-                    <section className="tech">
-                        <h3>Stack :</h3>
-                        <ul className="section-content">{project.tech.map((name: string) => <li>{tData(name)}</li>)}</ul>
                     </section>
                 }
 
