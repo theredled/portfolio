@@ -191,8 +191,8 @@
       "date": "2025",
       "image": "Portfolio-1.jpg",
       "description": {
-        "fr": "Développement d'un portfolio simple pour montée en compétence NextJS / React",
-        "en": "Development of a simple portfolio to gain proficiency in NextJS / React"
+        "fr": "Développement d'un portfolio multilingue simple pour montée en compétence NextJS / React",
+        "en": "Development of a simple multilingual portfolio to gain proficiency in NextJS / React"
       },
       "tech": [
         "NextJS / React / Strapi",
