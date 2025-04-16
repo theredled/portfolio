@@ -172,6 +172,7 @@ button.link {border: none; background: none; cursor: pointer}
     #main-header .subtitle {font-size: 50%}
     #navbar{font-size: 80%}
     #navbar ul{column-gap: 2.5em; padding: 0 var(--spacing-m);}
+    .about-grid{ display: block}
 }
 
 @media (max-width: 600px) {
