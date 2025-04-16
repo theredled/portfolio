@@ -15,9 +15,13 @@
   },
   "a_propos": {
     "competences_techniques": [
-      "Symfony / PHP",
+      "Symfony 7 / PHP 8",
       "Architecture / Clean Code / DDD",
       "Vanilla JS / ES6+",
+      {
+        "fr": "CSS modulaire / LESS",
+        "en": "Modular CSS / LESS"
+      },
       {
         "fr": "Tests (PHPUnit)",
         "en": "Testing (PHPUnit)"
@@ -26,10 +30,7 @@
         "fr": "API REST / JSON",
         "en": "REST API / JSON"
       },
-      {
-        "fr": "CSS sémantique / LESS",
-        "en": "Modular CSS / LESS"
-      },
+
       {
         "fr": "SQL avancé",
         "en": "Advanced SQL"
@@ -92,6 +93,8 @@
         "audio"
       ],
       "image": "MidiMagic-1.jpg",
+      "date": "2023-2024",
+
       "titre": {
         "fr": "Boîtier MIDI multi-usages pour clavier",
         "en": "Multi-purpose MIDI box for keyboard"
@@ -143,6 +146,7 @@
         "audio"
       ],
       "image": "ChaosBox-1.jpg",
+      "date": "2024",
       "titre": "Chaos Box",
       "description": {
         "fr": "Générateur de signal CV aléatoire pondéré",
@@ -694,7 +698,7 @@
           "Javascript/ECMAScript 6"
         ],
         "frameworks": [
-          "Symfony",
+          "Symfony 6/7",
           "*Jquery"
         ],
         "cms": [
@@ -712,7 +716,7 @@
       },
       "bon_niveau": {
         "frameworks": [
-          "React / NextJS",
+          "React 19 / NextJS 15",
           "Tailwind CSS"
         ],
         "cms": [
