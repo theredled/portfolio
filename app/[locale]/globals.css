@@ -115,6 +115,10 @@ button.link {border: none; background: none; cursor: pointer}
 .timed-item .date {width: 7rem; flex-shrink: 0;}
 .timed-item .title {margin: 0}
 
+.about-grid{display: grid;    grid-template-columns: 1.8fr 1.2fr; grid-gap: 2em; grid-template-rows: 1fr 1fr}
+.about-grid .secondary-skills {grid-column: 2; grid-row: 2}
+.about-grid .presentation {grid-column: 1; grid-row-start: 1; grid-row-end: 3}
+
 .projets-list {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-column-gap: .5rem; grid-row-gap: 1rem; }
 .projets-list .project-item {}
 

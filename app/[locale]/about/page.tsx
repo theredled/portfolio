@@ -34,23 +34,25 @@ export default async function About() {
             ]}></Breadcrumbs>
             <main id="main">
                 <h1>{t('about')}</h1>
-                <section>
-                    <div className="section-content">
-                        <div><Interweave disableFilters={true} content={presentation} /></div>
-                    </div>
-                </section>
-                <section className="tech important">
-                    <h2>{t('expertises.principales')}</h2>
-                    <ul className="section-content">
-                        {data.a_propos.competences_techniques.map((name: string, i: number) => <li key={i}>{tData(name)}</li>)}
-                    </ul>
-                </section>
-                <section className="tech important">
-                    <h2>{t('appetence.pour')}</h2>
-                    <ul className="section-content">
-                        {data.a_propos.learning.map((name: string, i: number) => <li key={i}>{tData(name)}</li>)}
-                    </ul>
-                </section>
+                <div className="about-grid">
+                    <section className="presentation">
+                        <div className="section-content">
+                            <div><Interweave disableFilters={true} content={presentation} /></div>
+                        </div>
+                    </section>
+                    <section className="tech important primary-skills">
+                        <h2>{t('expertises.principales')}</h2>
+                        <ul className="section-content">
+                            {data.a_propos.competences_techniques.map((name: string, i: number) => <li key={i}>{tData(name)}</li>)}
+                        </ul>
+                    </section>
+                    <section className="tech important secondary-skills">
+                        <h2>{t('appetence.pour')}</h2>
+                        <ul className="section-content">
+                            {data.a_propos.learning.map((name: string, i: number) => <li key={i}>{tData(name)}</li>)}
+                        </ul>
+                    </section>
+                </div>
 
                 <h2>{t('parcours')}</h2>
                 <ul className="section-content">

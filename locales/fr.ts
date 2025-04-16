@@ -3,7 +3,7 @@ export default {
   'about': 'À propos',
 
   'expertises.principales': 'Expertises principales',
-  'appetence.pour': 'Appétence pour',
+  'appetence.pour': 'Autres compétences',
   'parcours': 'Parcours',
 
   'category.selection': 'sélection',
