@@ -52,7 +52,7 @@ export default  function NavBar(params: any) {
     return (
         <>
             <header id="main-header">
-                <Link href="/"><Image alt="" src={'/images/header.jpg'} width="200" height="130"/></Link>
+                <Link href="/"><Image alt="" src={'/images/header.jpg'} width="150" height="100"/></Link>
                 <h1>
                     <span className="title">
                         Benoît Guchet
