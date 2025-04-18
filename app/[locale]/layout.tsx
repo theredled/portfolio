@@ -52,6 +52,14 @@ export default async function RootLayout({params, children}:
                   gtag('config', 'G-EL0JKV2RPQ');
                   `}
                 </script>
+                <script type="text/javascript">{`
+                    var _iub = _iub || [];
+                    _iub.csConfiguration = {"siteId":4001707,"cookiePolicyId":64747451,"lang":"en","storage":{"useSiteId":true}};
+                    `}
+                </script>
+                <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/4001707.js"></script>
+                <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+                <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charSet="UTF-8" async></script>
 
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
