@@ -2,6 +2,7 @@ import type {Metadata} from "next";
 import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import NavBar from "@/app/components/NavBar";
+
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -14,6 +15,7 @@ import Head from 'next/head'
 import data from '@/data/portfolio.json'
 import {getAllData} from "@/lib/getData";
 import {I18nProviderClient} from '@/locales/client'
+import Script from "next/script";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -41,6 +43,16 @@ export default async function RootLayout({params, children}:
     return (
             <html lang={locale}>
             <head>
+                <Script async src="https://www.googletagmanager.com/gtag/js?id=G-EL0JKV2RPQ"></Script>
+                <Script>{`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-EL0JKV2RPQ');
+                  `}
+                </Script>
+
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
                 <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap"

@@ -19,8 +19,8 @@ export async function generateMetadata(): Promise<Metadata> {
     }
 }
 export default async function Projects(params: any) {
-    const query =  await params.searchParams;
-    const category = query.category || 'web';
+    //const query =  await params.searchParams;
+    const category = params.category || 'web';
     const t = await getI18n();
 
     const data = getAllData();
@@ -40,7 +40,7 @@ export default async function Projects(params: any) {
                 {data.projets.filter((project: Record<any, any>) => project.category == category)
                     .map((project: Record<any, any>, index: number) => (
                     <li key={index} className="project project-item">
-                        <WrapLink>
+                        <a href={"/projects/" + project.id} className="block-link">
                             <div className="image-container">
                                 <Image src={'/images/' + (project.image || 'no-image.jpg')}
                                        alt="" quality={75} className="project-image"
@@ -66,8 +66,7 @@ export default async function Projects(params: any) {
                                     </ul>
                                 </section>
                             }
-                            <Link href={"projects/" + project.id}>Voir</Link>
-                        </WrapLink>
+                        </a>
                     </li>
                 ))}
             </ul>

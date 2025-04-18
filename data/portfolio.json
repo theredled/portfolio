@@ -15,12 +15,12 @@
   },
   "a_propos": {
     "competences_techniques": [
-      "Symfony 7 / PHP 8",
+      "Symfony / PHP",
       "Architecture / Clean Code / DDD",
-      "Vanilla JS / ES6+",
+      "Vanilla JS",
       {
-        "fr": "CSS modulaire / LESS",
-        "en": "Modular CSS / LESS"
+        "fr": "CSS modulaire / Sass",
+        "en": "Modular CSS / Sass"
       },
       {
         "fr": "Tests (PHPUnit)",
@@ -188,8 +188,13 @@
         "fr": "Ce portfolio",
         "en": "This portfolio"
       },
+      "hover": {
+        "zoom-position":"0% 0%"
+      },
+      "url": "/",
+      "github": "https://github.com/theredled/portfolio",
       "date": "2025",
-      "image": "Portfolio-1.jpg",
+      "image": "Portfolio-3-blanc.jpg",
       "description": {
         "fr": "Développement d'un portfolio multilingue simple pour montée en compétence NextJS / React",
         "en": "Development of a simple multilingual portfolio to gain proficiency in NextJS / React"
@@ -206,6 +211,10 @@
       "category": [
         "web"
       ],
+      "hover": {
+        "zoom-position":"0% 100%"
+      },
+      "url": "https://oteam.io",
       "date": "2020-2022",
       "titre": "Oteam.io",
       "image": "Oteam-cover.jpg",
@@ -298,7 +307,7 @@
         "CI/CD",
         "Docker",
         "UML",
-        "JS (ES6)",
+        "JS",
         "Offline app",
         {
           "fr": "Intégration web responsive",
@@ -315,6 +324,7 @@
       ],
       "image": "Qualispace-1.jpg",
       "titre": "Qualispace.fr",
+      "url": "https://oteam.io",
       "description": {
         "fr": "Application métier, domaine de la maîtrise d'œuvre. Développeur Lead.",
         "en": "Business application in the building sector. Lead dev."
@@ -355,7 +365,7 @@
           "fr": "Intégration web responsive",
           "en": "Responsive web integration"
         },
-        "Vanilla JS (ES6)",
+        "Vanilla JS",
         "Bootstrap",
         "WebSocket / Local Storage",
         "Génération de PDF",
@@ -369,6 +379,8 @@
       "category": [
         "web"
       ],
+      "url": "https://www.larchitecturedaujourdhui.fr",
+
       "titre": "Larchitecturedaujourdhui.fr",
       "date": "2015-2017",
       "image": "AA-1.jpg",
@@ -403,7 +415,7 @@
         "Git"
       ]
     },{
-      "id": 6.5,
+      "id": "100",
       "category": [
         "web"
       ],
@@ -468,6 +480,7 @@
       "titre": "Vinylunity.com",
       "date": "2010-2013",
       "image": "Vinylunity-1.jpg",
+      "url": "https://www.vinylunity.com/",
       "description": {
         "fr": "Vente/Échange de disques vinyles. Développement Backend.",
         "en": "Sale/Exchange of vinyl records. Backend development."
@@ -531,6 +544,7 @@
       ],
       "date": "2009-2013",
       "titre": "BB&PP / Uuneek",
+      "image": "Ondemand-1.jpg",
       "description": {
         "fr": "Plateforme SaaS conceptuelle de musique utilisée par plus de 30 artistes (David Guetta, Akhenaton...). Développeur Lead.",
         "en": "Conceptual SaaS music platform used by 30+ artists  (David Guetta, Akhenaton...). Lead dev."
@@ -598,6 +612,7 @@
       "category": [
         "web"
       ],
+      "image": "Hellfest-1.jpg",
       "date": "2009-2016",
       "titre": "Hellfestshop.com, Pavageau.fr, Directlub.com",
       "description": {
@@ -617,7 +632,7 @@
       "tech": [
         "Magento",
         "Zend Framework",
-        "Frontend",
+        "HTML/CSS",
         "UML",
         "Apache",
         "Linux"

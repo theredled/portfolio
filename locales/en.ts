@@ -33,5 +33,8 @@ export default {
   divers: "Miscellaneous",
   formations: "Education / Certifications",
   languages: "Spoken Languages",
-  'features': "Features"
+  'features': "Features",
+  'Tech': "Tech",
+  'visit': 'Visit'
+
 } as const

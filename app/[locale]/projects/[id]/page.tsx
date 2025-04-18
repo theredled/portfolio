@@ -3,6 +3,8 @@ import Breadcrumbs from "@/app/components/Breadcrumbs";
 import Gallery from "@/app/components/Gallery";
 import {tData} from "@/lib/getServerData";
 import {getI18n} from "@/locales/server";
+import LinkIcon from '@mui/icons-material/Link';
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default async function Project({params}: {params: any}) {
     const paramsList =  await params;
@@ -12,7 +14,8 @@ export default async function Project({params}: {params: any}) {
 
     const project = data.projets.filter((p: Record<any, any>) => p.id.toString() == id).at(0);
     const categoryName = tData(data.categories[project.category]);
-    project.gallery = project.gallery || project.image && [project.image];
+    console.log('project.gallery', project.gallery);
+    //project.gallery = project.gallery || [];
 
     return (
         <div>
@@ -28,7 +31,17 @@ export default async function Project({params}: {params: any}) {
                     {project.date &&
                         <time className="side-infos"> ({ project.date })</time>
                     }
-                    <span className="category">{categoryName}</span>
+                    <span className=" category">{categoryName}</span>
+                    {project.url &&
+                        <a href={project.url} className="side-infos link">
+                            <LinkIcon>{t('visit')}</LinkIcon>
+                        </a>
+                    }
+                    {project.github &&
+                        <a href={project.url} className="side-infos link">
+                            <GitHubIcon>Github</GitHubIcon>
+                        </a>
+                    }
                 </h1>
 
 

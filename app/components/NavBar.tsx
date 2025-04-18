@@ -7,16 +7,19 @@ import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
 import {Backdrop} from "@mui/material";
 import {useI18n, useScopedI18n, useCurrentLocale, useChangeLocale} from '@/locales/client'
 import {tData} from "@/lib/getData";
+import {usePathname} from "next/navigation";
 
 export default  function NavBar(params: any) {
     const data: Record<any, any> = params.data;
     const locale = useCurrentLocale();
+    const currentPathName = usePathname();
     const localesList: string[] = ['fr', 'en'];
     const [menuOpen, setMenuOpen] = useState(false);
     const menuTogglerRef = useRef<HTMLButtonElement>(null);
     const t =  useI18n()
     const changeLocale = useChangeLocale();
 
+    //-- menu mobile
     useEffect(() => {
         const listener = (e: Event) => {
 
@@ -37,6 +40,14 @@ export default  function NavBar(params: any) {
     }, [menuOpen, setMenuOpen, menuTogglerRef]);
 
     const nextLocale: any = localesList.filter((name: string) => locale != name).at(0) || 'fr';
+
+    const navLinks = [
+        {label: t('about'), url: '/about'},
+        {label: t('navbar.projects.web'), url: '/projects'},
+        {label: t('navbar.projects.audio'), url: '/projects-category/audio'},
+        {label: t('skills'), url: '/skills'},
+        {label: t('contact'), url: '/contact'}
+    ];
 
     return (
         <>
@@ -59,11 +70,14 @@ export default  function NavBar(params: any) {
                     <SortIcon fontSize="large">Menu</SortIcon>
                 </button>
                 <ul>
-                    <li><Link className="link" href="/about">{t('about')}</Link></li>
-                    <li><Link className="link" href="/projects">{t('navbar.projects.web')}</Link></li>
-                    <li><Link className="link" href="/projects?category=audio">{t('navbar.projects.audio')}</Link></li>
-                    <li><Link className="link" href="/skills">{t('skills')}</Link></li>
-                    <li><Link className="link" href="/contact">{t('contact')}</Link></li>
+                    {navLinks.map(({label, url}: {label: string, url: string}, i: number) => {
+                        const isActive = (currentPathName === `/${locale}${url}`);
+                        return (
+                            <li><Link className={"link" + (isActive ? " active" : '')} href={url}>
+                                <span>{label}</span>
+                            </Link></li>
+                        )
+                    })}
                     <li id="locale-menu">
                         <button className="link" onClick={(e: any) => changeLocale(nextLocale)}>
                             {nextLocale}
