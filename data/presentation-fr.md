@@ -1,4 +1,4 @@
-Je suis développeur freelance, spécialisé en **Symfony**, **architecture back-end**, **React/Next.js** et **CSS modulaire**.
+Je suis développeur freelance, basé sur Nantes et spécialisé en **Symfony**, **architecture back-end**, **React/Next.js** et **CSS modulaire**.
 **Curieux**, **rigoureux**, j’interviens efficacement sur des missions courtes où il faut comprendre vite, livrer propre et s’adapter rapidement.
 
 Autodidacte et passionné depuis la fin de l'enfance, j’ai poussé au maximum les langages à ma disposition (*QBasic, Pascal, VB*), en créant jeux et outils maison.

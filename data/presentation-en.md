@@ -1,4 +1,4 @@
-I'm a freelance developer, specialized in **Symfony**, **back-end architecture**, **React / Next.js**, and **modular CSS**.
+I'm a freelance developer, living in Nantes (FR), specialized in **Symfony**, **back-end architecture**, **React / Next.js**, and **modular CSS**.
 **Curious** and **meticulous**, I thrive in short-term projects where quick understanding, clean delivery, and adaptability are key.
 
 Self-taught and passionate since childhood, I’ve pushed every language I had access to (*QBasic, Pascal, VB*), building custom games and tools.
