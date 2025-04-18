@@ -7,7 +7,7 @@ export default {
   'parcours': 'Parcours',
 
   'category.selection': 'sélection',
-  'projects': 'projets',
+  'projects': 'Projets',
   'gallery.apercu': 'Aperçu',
 
   'navbar.projects.web': 'Projets Web',
