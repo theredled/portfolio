@@ -18,6 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: t('projects')
     }
 }
+
 export default async function Projects(params: any) {
     //const query =  await params.searchParams;
     const category = params.category || 'web';
