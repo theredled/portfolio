@@ -36,10 +36,10 @@
       "Typescript",
       "Python",
 
-            {
-              "fr": "SQL avancé",
-              "en": "Advanced SQL"
-            }
+          {
+            "fr": "SQL avancé",
+            "en": "Advanced SQL"
+          }
     ]
   },
   "parcours": [
