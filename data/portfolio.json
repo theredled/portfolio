@@ -10,12 +10,13 @@
     }
   },
   "title": {
-    "fr": "Développeur full-stack freelance – Symfony / Vanilla JS",
-    "en": "Full-stack freelance developer – Symfony / Vanilla JS"
+    "fr": "Développeur full-stack freelance – Symfony / React / Next.js",
+    "en": "Full-stack freelance developer – Symfony / React / Next.js"
   },
   "a_propos": {
     "competences_techniques": [
       "Symfony / PHP",
+      "React / NextJS",
       "Architecture / Clean Code / DDD",
       "Vanilla JS",
       {
@@ -29,17 +30,16 @@
       {
         "fr": "API REST / JSON",
         "en": "REST API / JSON"
-      },
-
-      {
-        "fr": "SQL avancé",
-        "en": "Advanced SQL"
       }
     ],
     "learning": [
-      "React / NextJS",
       "Typescript",
-      "Python"
+      "Python",
+
+            {
+              "fr": "SQL avancé",
+              "en": "Advanced SQL"
+            }
     ]
   },
   "parcours": [
@@ -196,11 +196,12 @@
       "date": "2025",
       "image": "Portfolio-3-blanc.jpg",
       "description": {
-        "fr": "Développement d'un portfolio multilingue simple pour montée en compétence NextJS / React",
+        "fr": "Développement d'un portfolio multilingue pour montée en compétence NextJS / React",
         "en": "Development of a simple multilingual portfolio to gain proficiency in NextJS / React"
       },
       "tech": [
-        "NextJS / React / Strapi",
+        "NextJS / React",
+        "Strapi",
         "i18n",
         "Typescript",
         "NoSQL / MongoDB"
@@ -710,7 +711,7 @@
           "MySQL 8",
           "HTML 5",
           "CSS 3",
-          "Javascript/ECMAScript 6"
+          "Javascript/ECMAScript 2025"
         ],
         "frameworks": [
           "Symfony 6/7",
