@@ -30,6 +30,8 @@ export async function tData(i18nData: any): Promise<string> {
 
     if (typeof i18nData === 'string')
         return i18nData;
+    if (!i18nData)
+        throw new Error('i18nData is empty')
 
     const t: string = i18nData[locale] || Object.values(i18nData).at(0);
     return t;

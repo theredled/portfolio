@@ -1,12 +1,13 @@
 {
   "categories": {
-    "audio": {
-      "fr": "Audio / MIDI",
-      "en": "Audio / MIDI"
-    },
+
     "web": {
       "fr": "Web",
       "en": "Web"
+    },
+    "audio": {
+      "fr": "Audio / MIDI",
+      "en": "Audio / MIDI"
     }
   },
   "title": {
@@ -218,7 +219,7 @@
       "url": "https://oteam.io",
       "date": "2020-2022",
       "titre": "Oteam.io",
-      "image": "Oteam-cover.jpg",
+      "image": "Qualispace-6.jpg",
       "gallery": [
         "Qualispace-1.jpg",
         "Qualispace-2.jpg",
@@ -238,6 +239,10 @@
         {
           "fr": "Direction d'équipe",
           "en": "Team leadership"
+        },
+        {
+          "fr": "Formalisation du modèle via UML (70 entités)",
+          "en": "Model formalization using UML (70 entities)"
         },
         {
           "fr": "Application utilisable hors-ligne",
@@ -715,7 +720,7 @@
         ],
         "frameworks": [
           "Symfony 6/7",
-          "*Jquery"
+          "Jquery"
         ],
         "cms": [
           "Magento",

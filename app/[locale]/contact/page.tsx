@@ -33,6 +33,7 @@ export default async function Contact() {
             <Breadcrumbs breadcrumbsList={[
                 {label: t('contact')},
             ]}></Breadcrumbs>
+            <main id="main">
 
             <h1>{t('contact.me')}</h1>
             <div className="section-content">
@@ -65,7 +66,7 @@ export default async function Contact() {
                     </ul>
                 </div>
             </section>
-
+            </main>
         </div>
     );
 }

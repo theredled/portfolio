@@ -7,9 +7,9 @@ import WrapLink from "@/app/bg/WrapLink";
 import Breadcrumbs from "@/app/components/Breadcrumbs";
 import {tData} from "@/lib/getServerData";
 import {getI18n} from "@/locales/server";
+import CardsScroller from "@/app/components/CardsScroller";
+import ProjectsList from "@/app/components/ProjectsList";
 //import {useRouter} from "next/navigation";
-
-
 
 export async function generateMetadata(): Promise<Metadata> {
     const t = await getI18n();
@@ -21,56 +21,44 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function Projects(params: any) {
     //const query =  await params.searchParams;
-    const category = params.category || 'web';
+    const category = params.category || null;
+
     const t = await getI18n();
 
     const data = getAllData();
 
+    //const pageTitle = categoryName;
 
-    const categoryName = tData(data.categories[category]);
-    const pageTitle = categoryName;
+    //const projectsList = data.projets.filter((project: Record<any, any>) => project.category == category);
+    console.log('cats', data.categories, Object.keys(data.categories));
 
     return (
         <div>
             <Breadcrumbs breadcrumbsList={[
                 {label: t('projects')},
-                {label: pageTitle}
+                //{label: pageTitle}
             ]}></Breadcrumbs>
-            <h1 className="page-title">{categoryName} <span className="weak">– {t('category.selection')}</span></h1>
-            <ul className="projets-list">
-                {data.projets.filter((project: Record<any, any>) => project.category == category)
-                    .map((project: Record<any, any>, index: number) => (
-                    <li key={index} className="project project-item">
-                        <a href={"/projects/" + project.id} className="block-link">
-                            <div className="image-container">
-                                <Image src={'/images/' + (project.image || 'no-image.jpg')}
-                                       alt="" quality={75} className="project-image"
-                                       width={500}
-                                       height={300}/>
-                            </div>
-                            <h2 className="title">
-                                <span>{tData(project.titre)}</span>
-                                {project.date &&
-                                    <time className="side-infos"> ({ project.date })</time>
-                                }
-                            </h2>
-                            {project.description &&
-                                <p className="description">{tData(project.description)}</p>
-                            }
-                            {project.tech &&
-                                <section className="tech">
-                                    <ul>
-                                        {project.tech.slice(0, 6).map((name: string) => <li>{tData(name)}</li>)}
-                                        {project.tech.length > 6 &&
-                                            <li className="etc">...</li>
-                                        }
-                                    </ul>
-                                </section>
-                            }
-                        </a>
-                    </li>
-                ))}
-            </ul>
+            <main id="main">
+                <CardsScroller>
+                {
+                    Object.keys(data.categories).map((catToken: string, i:number) => {
+                        const projectsList = data.projets.filter((project: Record<any, any>) => project.category == catToken);
+                        const categoryName = tData(data.categories[catToken]);
+                        const HeaderTag = i == 0 ? 'h1' : 'h2';
+
+                        return (
+                                <div className="card">
+                                    <HeaderTag className="card-title page-title">
+                                        {categoryName}
+                                        <span className="weak"> – {t('category.selection')}</span>
+                                    </HeaderTag>
+                                    <ProjectsList projects={projectsList}></ProjectsList>
+                                </div>
+                        );
+                    })
+                }
+                </CardsScroller>
+            </main>
         </div>
     );
 }

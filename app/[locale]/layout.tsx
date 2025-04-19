@@ -1,22 +1,10 @@
 import type {Metadata} from "next";
 import {Geist, Geist_Mono} from "next/font/google";
-import "./globals.css";
+import "../globals.css";
+import "./projects/styles.css";
 import NavBar from "@/app/components/NavBar";
-
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-//import "@radix-ui/themes/styles.css";
-//import { Theme } from "@radix-ui/themes";
-//import "@radix-ui/themes/layout.css";
-import Head from 'next/head'
-
-import data from '@/data/portfolio.json'
 import {getAllData} from "@/lib/getData";
 import {I18nProviderClient} from '@/locales/client'
-import Script from "next/script";
-import PageTransition from "@/app/components/PageTransition";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -29,75 +17,68 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-      default: "Benoît Guchet | Full-stack freelance developer",
-      absolute: "",
-      template: "%s | Benoît Guchet | Full-stack freelance developer"
-  },
-  description: "Portfolio de Benoît Guchet",
+    title: {
+        default: "Benoît Guchet | Full-stack freelance developer",
+        absolute: "",
+        template: "%s | Benoît Guchet | Full-stack freelance developer"
+    },
+    description: "Portfolio de Benoît Guchet",
 };
-/*
-<script type="text/javascript">{`
-                    var _iub = _iub || [];
-                    _iub.csConfiguration = {"siteId":4001707,"cookiePolicyId":64747451,"lang":"en","storage":{"useSiteId":true}};
-                    `}
-                </script>
-                <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/4001707.js"></script>
-                <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
-                <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charSet="UTF-8" async></script>
- */
+
 export default async function RootLayout({params, children}:
-    Readonly<{ params: Promise<{ locale: string }>, children: React.ReactNode;}>)
-{
+                                         Readonly<{
+                                             params: Promise<{ locale: string }>,
+                                             children: React.ReactNode;
+                                         }>) {
     const {locale} = await params;
     return (
-            <html lang={locale}>
-            <head>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-EL0JKV2RPQ"></script>
-                <script>{`
+        <html lang={locale}>
+        <head>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-EL0JKV2RPQ"></script>
+            <script>{`
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
 
                   gtag('config', 'G-EL0JKV2RPQ');
                   `}
-                </script>
+            </script>
 
 
-                <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com"/>
-                <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap"
-                      rel="stylesheet"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com"/>
+            <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap"
+                  rel="stylesheet"/>
 
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-                    rel="stylesheet"
-                />
-                <link type="image/png" sizes="16x16" rel="icon"
-                      href={'/icons8-brackets-external-basicons-solid-edtgraphics-16.png'}/>
-                <link type="image/png" sizes="32x32" rel="icon"
-                      href={'/icons8-brackets-external-basicons-solid-edtgraphics-32.png'}/>
-                <link type="image/png" sizes="96x96" rel="icon"
-                      href={'/icons8-brackets-external-basicons-solid-edtgraphics-96.png'}/>
-                <link type="image/png" sizes="72x72" rel="icon"
-                      href={'/icons8-brackets-external-basicons-solid-edtgraphics-72.png'}/>
-                <link type="image/png" sizes="96x96" rel="icon"
-                      href={'/icons8-brackets-external-basicons-solid-edtgraphics-96.png'}/>
-            </head>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+                rel="stylesheet"
+            />
+            <link type="image/png" sizes="16x16" rel="icon"
+                  href={'/icons8-brackets-external-basicons-solid-edtgraphics-16.png'}/>
+            <link type="image/png" sizes="32x32" rel="icon"
+                  href={'/icons8-brackets-external-basicons-solid-edtgraphics-32.png'}/>
+            <link type="image/png" sizes="96x96" rel="icon"
+                  href={'/icons8-brackets-external-basicons-solid-edtgraphics-96.png'}/>
+            <link type="image/png" sizes="72x72" rel="icon"
+                  href={'/icons8-brackets-external-basicons-solid-edtgraphics-72.png'}/>
+            <link type="image/png" sizes="96x96" rel="icon"
+                  href={'/icons8-brackets-external-basicons-solid-edtgraphics-96.png'}/>
+        </head>
 
-            <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-            >
-            <I18nProviderClient locale={locale}>
-                <NavBar data={getAllData()}></NavBar>
-                <div style={{ position: 'relative' }}>
-                    <>
-                        {children}
-                    </>
-                </div>
-            </I18nProviderClient>
-            </body>
-            </html>
+        <body
+            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+        <I18nProviderClient locale={locale}>
+            <NavBar data={getAllData()}></NavBar>
+            <div style={{position: 'relative'}}>
+                <>
+                    {children}
+                </>
+            </div>
+        </I18nProviderClient>
+        </body>
+        </html>
 
     );
 }

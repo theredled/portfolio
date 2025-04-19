@@ -48,7 +48,7 @@ export default function CardsScroller({children}: any) {
 
         const handleTitleClick = (e: any) => {
             console.log('handleTitleClick', e);
-            const cardIndex = Array.from(allTitles).indexOf(e.target);
+            const cardIndex = Array.from(allTitles).indexOf(e.currentTarget);
             console.log('cardIndex', cardIndex);
             scrollToCard(cardIndex);
         }

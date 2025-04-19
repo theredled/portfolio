@@ -13,7 +13,7 @@ export default {
   'navbar.projects.web': 'Web projects',
   'navbar.projects.audio': 'MIDI/Audio projects',
   'skills': 'Skills',
-  'contact': 'Contact',
+  'contact': 'Get in touch',
   'contact.me': 'Get in touch',
 
   'home': 'Home',

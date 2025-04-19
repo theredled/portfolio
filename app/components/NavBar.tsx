@@ -43,8 +43,9 @@ export default  function NavBar(params: any) {
 
     const navLinks = [
         {label: t('about'), url: '/about'},
-        {label: t('navbar.projects.web'), url: '/projects'},
-        {label: t('navbar.projects.audio'), url: '/projects-category/audio'},
+        //{label: t('navbar.projects.web'), url: '/projects'},
+        //{label: t('navbar.projects.audio'), url: '/projects-category/audio'},
+        {label: t('projects'), url: '/projects'},
         {label: t('skills'), url: '/skills'},
         {label: t('contact'), url: '/contact'}
     ];

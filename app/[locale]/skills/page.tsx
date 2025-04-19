@@ -28,6 +28,7 @@ export default async function Skills() {
             <Breadcrumbs breadcrumbsList={[
                 {label: t('skills')},
             ]}></Breadcrumbs>
+            <main id="main">
 
             <CardsScroller>
                 <div className="card">
@@ -70,6 +71,7 @@ export default async function Skills() {
                 </div>
 
             </CardsScroller>
+            </main>
         </div>
     );
 }
