@@ -30,7 +30,7 @@ h2 { font-size: 1.4rem; }
 h3 { font-size: 1.1rem; margin-top: var(--spacing-m); /*color: var(--color-complement);*/ color: #333; }
 p { margin-bottom: var(--spacing-m); }
 a { color: var(--color-accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a:hover { text-decoration: none; }
 ul { list-style-type: none; padding-left: 0; }
 
 
@@ -104,6 +104,9 @@ button.link {border: none; background: none; cursor: pointer}
 .tech.important li {font-size: 90% }
 .tech.important li.bigger {background: black}
 .tech li.etc {background: none;    color: black; font-weight: bold; font-family: inherit;}
+.tech .see-more a {color: white; }
+.tech .see-more  {background: none; border: 1px solid white; opacity: .6;  }
+.tech svg {vertical-align: bottom; }
 
 .features {background-color: #f0f0f0;    padding: var(--spacing-s) var(--spacing-m);    border-left: 3px solid var(--color-accent);
     margin-bottom: var(--spacing-m);}
@@ -122,7 +125,6 @@ button.link {border: none; background: none; cursor: pointer}
 .about-grid{display: grid;    grid-template-columns: 1.8fr 1.2fr; grid-gap: 2em; grid-template-rows: 1fr 1fr}
 .about-grid .secondary-skills {grid-column: 2; grid-row: 2}
 .about-grid .presentation {grid-column: 1; grid-row-start: 1; grid-row-end: 3}
-
 
 .projects-list {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-column-gap: .5rem; grid-row-gap: 1rem; }
 

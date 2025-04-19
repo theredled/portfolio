@@ -35,6 +35,7 @@ export default {
   languages: "Spoken Languages",
   'features': "Features",
   'Tech': "Tech",
-  'visit': 'Visit'
+  'visit': 'Visit',
+  'see.more': 'See more'
 
 } as const

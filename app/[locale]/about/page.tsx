@@ -12,7 +12,9 @@ import {getDocumentContent} from "@/lib/getServerData";
 import {getI18n} from "@/locales/server";
 import CardsScroller from "@/app/components/CardsScroller";
 import {DataListItem} from "@/app/components/DataListItem";
-
+import Link from "next/link";
+import SkipNextIcon from '@mui/icons-material/SkipNext';
+import FastForwardIcon from '@mui/icons-material/FastForward';
 export async function generateMetadata(): Promise<Metadata> {
     const t = await getI18n();
 
@@ -44,7 +46,13 @@ export default async function About() {
                 {data.a_propos.learning.map((name: string, i: number) =>
                     <DataListItem key={i} name={name}></DataListItem>
                 )}
+                <li className="see-more"><Link href={'/skills'}>
+                    {t('see.more')}<FastForwardIcon></FastForwardIcon>
+                    <FastForwardIcon></FastForwardIcon>
+                    <FastForwardIcon></FastForwardIcon>
+                </Link></li>
             </ul>
+
         </section>
         </>;
 

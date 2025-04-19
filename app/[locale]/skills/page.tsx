@@ -57,8 +57,9 @@ export default async function Skills() {
                 <div className="card">
                     <h2 className="card-title">{t('formations')}</h2>
                     <ul className="section-content">
-                        {data.misc.formation_distinctions.map((item: Record<any, any>) => <li><TimedItem item={item}/>
-                        </li>)}
+                        {data.misc.formation_distinctions.map((item: Record<any, any>) =>
+                            <TimedItem item={item}/>
+                        )}
                     </ul>
                 </div>
                 <div className="card">
