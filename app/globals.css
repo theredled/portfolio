@@ -260,7 +260,7 @@ button.link {border: none; background: none; cursor: pointer}
     #main-header .title {}
     #main-header .subtitle {font-size: 70%}
     #main-header {height: 70px}
-    #navbar .navbar-toggler {height: 78px; width: 60px;}
+    #navbar .navbar-toggler {height: 70px; width: 60px;}
     .timed-item {display: block; margin-bottom: 1em;}
 
     .breadcrumbs {padding-left: 0}
