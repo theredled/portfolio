@@ -208,7 +208,7 @@ button.link {border: none; background: none; cursor: pointer}
 .modal {    background-color: var(--color-contrast) }
 .modal img {  outline: none}
 
-.MuiBackdrop-root {z-index: 5}
+.MuiBackdrop-root {z-index: 5; backdrop-filter: blur(3px);}
 
 #locale-menu {/*position: absolute; */    right: 10px; margin-left: auto; /*margin-right: 10px*/}
 #locale-menu button {border: none; background: none; /*position: absolute; right: 0; top: 0*/ color: #ccc;
@@ -237,16 +237,16 @@ button.link {border: none; background: none; cursor: pointer}
         position: fixed;}
     #navbar.open {background: black; width: 100%; }
 
-    #navbar-toggler {display: block; background: var(--color-contrast-light); border: none; /*top: .6em;*/ right: 0;
+    #navbar .navbar-toggler {display: block; background: var(--color-contrast-light); border: none; /*top: .6em;*/ right: 0;
         height: 100px; /* opacity: .9; */width: 80px; position: relative; border-radius: .5em 4em 4em 0;}
-    #navbar.open #navbar-toggler{background: none; color: white; padding-left: var(--spacing-m)}
+    #navbar.open .navbar-toggler{background: none; color: white; padding-left: var(--spacing-m)}
     /*#navbar-toggler {display: none}*/
     #navbar ul {flex-direction: column; display: none; padding-bottom: 1em;   }
     #navbar a {display: block}
     #navbar.open ul {display: flex}
     #navbar a.link::after {display: none}
 
-    .projets-list {grid-template-columns: repeat(1, 1fr);}
+    .projects-list {grid-template-columns: repeat(1, 1fr);}
 
     .skills-list  {display: block;}
     .skills-list .tech {display: block}
@@ -260,7 +260,7 @@ button.link {border: none; background: none; cursor: pointer}
     #main-header .title {}
     #main-header .subtitle {font-size: 70%}
     #main-header {height: 70px}
-    #navbar-toggler {height: 78px; width: 60px;}
+    #navbar .navbar-toggler {height: 78px; width: 60px;}
     .timed-item {display: block; margin-bottom: 1em;}
 
     .breadcrumbs {padding-left: 0}

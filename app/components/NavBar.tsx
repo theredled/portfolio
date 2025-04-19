@@ -67,7 +67,7 @@ export default  function NavBar(params: any) {
             <Backdrop open={menuOpen}></Backdrop>
             <nav id="navbar" className={menuOpen ? 'open' : ''} >
 
-                <button id="navbar-toggler" onClick={() => setMenuOpen(!menuOpen)} ref={menuTogglerRef}>
+                <button className="navbar-toggler" onClick={() => setMenuOpen(!menuOpen)} ref={menuTogglerRef}>
                     <SortIcon fontSize="large">Menu</SortIcon>
                 </button>
                 <ul>
