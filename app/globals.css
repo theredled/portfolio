@@ -15,7 +15,7 @@
     --spacing-m: 1rem;
     --spacing-l: 2rem;
 }
-
+::selection {background: var(--color-contrast); color: var(--color-bg); }
 .martian-mono { font-family: "Martian Mono", monospace;font-optical-sizing: auto;font-weight: 200;font-style: normal;
     font-variation-settings: "wdth" 100;}
 
@@ -32,6 +32,7 @@ p { margin-bottom: var(--spacing-m); }
 a { color: var(--color-accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 ul { list-style-type: none; padding-left: 0; }
+
 
 .text-with-icon svg {vertical-align: top; margin-right: .4em; filter: drop-shadow(2px 2px var(--color-complement)) drop-shadow(-2px 2px 4px green);}
 .title .side-infos {font-weight: normal; font-size: 80%; white-space: nowrap}
@@ -101,7 +102,8 @@ button.link {border: none; background: none; cursor: pointer}
 .tech li {display: inline-block; background: #333; color: #EEE; border-radius: 5px; padding: 3px 10px;
     margin-right: 5px; margin-bottom: 2px; font-family: "Martian Mono", monospace; font-size: 70% }
 .tech.important li {font-size: 90% }
-.tech li.etc {background: none;    color: black; font-family: inherit;}
+.tech.important li.bigger {background: black}
+.tech li.etc {background: none;    color: black; font-weight: bold; font-family: inherit;}
 
 .features {background-color: #f0f0f0;    padding: var(--spacing-s) var(--spacing-m);    border-left: 3px solid var(--color-accent);
     margin-bottom: var(--spacing-m);}

@@ -16,10 +16,9 @@
   },
   "a_propos": {
     "competences_techniques": [
-      "Symfony / PHP",
+      "!Symfony / PHP",
       "React / NextJS",
-      "Architecture / Clean Code / DDD",
-      "Vanilla JS",
+      "!Architecture / Clean Code / DDD",
       {
         "fr": "CSS modulaire / Sass",
         "en": "Modular CSS / Sass"
@@ -29,17 +28,16 @@
         "en": "Testing (PHPUnit)"
       },
       {
-        "fr": "API REST / JSON",
-        "en": "REST API / JSON"
+        "fr": "!API REST / JSON",
+        "en": "!REST API / JSON"
       }
     ],
     "learning": [
-      "Typescript",
       "Python",
-
+      "!Vanilla JS",
           {
-            "fr": "SQL avancé",
-            "en": "Advanced SQL"
+            "fr": "!SQL avancé",
+            "en": "!Advanced SQL"
           }
     ]
   },
@@ -47,7 +45,7 @@
     {
       "date": "2010+",
       "title": {
-        "fr": "Architecte / Développeur web freelance",
+        "fr": "Développeur / architecte web freelance",
         "en": "Freelance Web Architect / Developer"
       }
     },
@@ -59,7 +57,7 @@
       }
     },
     {
-      "date": "2022+",
+      "date": "*2022+",
       "title": {
         "fr": "Conception de périphériques audio/MIDI impliquant micro-contrôleurs et électronique.",
         "en": "Designing audio/MIDI devices involving microcontrollers and electronics."
@@ -73,7 +71,7 @@
       }
     },
     {
-      "date": "2002 — 2005",
+      "date": "*2002 — 2005",
       "title": {
         "fr": "Divers travaux étudiants : ouvrier d'usine, réceptionniste d'hôtel, travailleur du bâtiment, vendanges.",
         "en": "Various student jobs: factory worker, hotel receptionist, construction worker, grape picking."
@@ -82,8 +80,8 @@
     {
       "date": "2002+",
       "title": {
-        "fr": "Musicien",
-        "en": "Musician"
+        "fr": "Musicien / compositeur",
+        "en": "Musician / producer"
       }
     }
   ],
@@ -832,8 +830,8 @@
       {
         "date": "1995 — 1998",
         "title": {
-          "fr": "Apprentissage de la programmation en autodidacte – production de jeux et programmes utilitaires (Langages QBasic / Pascal / Visual Basic)",
-          "en": "Self-taught programming – development of games and utility programs (Languages: QBasic / Pascal / Visual Basic)"
+          "fr": "Apprentissage de la programmation en autodidacte – production de jeux et outils (Langages QBasic / Pascal / Visual Basic)",
+          "en": "Self-taught programming – development of games and tools (Languages: QBasic / Pascal / Visual Basic)"
         }
       }
     ],

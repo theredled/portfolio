@@ -1,3 +1,6 @@
+**Curieux**, **rigoureux**, j’interviens efficacement sur des missions courtes où il faut comprendre vite, livrer propre et s’adapter rapidement.
+
+--
 
 Je suis développeur freelance, spécialisé en Symfony, architecture back-end, Vanilla JS et architecture CSS. Curieux,
 rigoureux, et à l’aise sur des missions courtes où il faut comprendre vite, livrer propre et s’adapter rapidement.

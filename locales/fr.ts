@@ -4,7 +4,7 @@ export default {
 
   'expertises.principales': 'Expertises principales',
   'appetence.pour': 'Autres compétences',
-  'parcours': 'Parcours',
+  'parcours': 'Parcours pro',
 
   'category.selection': 'sélection',
   'projects': 'Projets',

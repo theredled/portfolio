@@ -11,6 +11,7 @@ import {polyfill} from 'interweave-ssr';
 import {getDocumentContent} from "@/lib/getServerData";
 import {getI18n} from "@/locales/server";
 import CardsScroller from "@/app/components/CardsScroller";
+import {DataListItem} from "@/app/components/DataListItem";
 
 export async function generateMetadata(): Promise<Metadata> {
     const t = await getI18n();
@@ -32,15 +33,17 @@ export default async function About() {
         <section className="tech important primary-skills">
             <h2>{t('expertises.principales')}</h2>
             <ul>
-                {data.a_propos.competences_techniques.map((name: string, i: number) => <li
-                    key={i}>{tData(name)}</li>)}
+                {data.a_propos.competences_techniques.map((name: string, i: number) =>
+                    <DataListItem key={i} name={name}></DataListItem>
+                )}
             </ul>
         </section>
         <section className="tech important secondary-skills">
             <h2>{t('appetence.pour')}</h2>
             <ul>
-                {data.a_propos.learning.map((name: string, i: number) => <li
-                    key={i}>{tData(name)}</li>)}
+                {data.a_propos.learning.map((name: string, i: number) =>
+                    <DataListItem key={i} name={name}></DataListItem>
+                )}
             </ul>
         </section>
         </>;
@@ -72,9 +75,9 @@ export default async function About() {
                     <div className="card">
                         <h2 className="card-title">{t('parcours')}</h2>
                         <ul className="section-content">
-                            {data.parcours.map((job: string) => <li>
+                            {data.parcours.map((job: string) =>
                                 <TimedItem item={job}/>
-                            </li>)}
+                           )}
                         </ul>
                     </div>
                 </CardsScroller>
