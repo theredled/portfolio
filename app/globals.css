@@ -70,7 +70,7 @@ button.link {border: none; background: none; cursor: pointer}
 #navbar .link:focus span,
 #navbar .link.active span {opacity: .8;}
     /*transform: scale(1.1);vertical-align: middle;*/
-#navbar #navbar-toggler {display: none}
+#navbar .navbar-toggler {display: none}
 
 /*-- Anim background mobile / soulignement */
 #navbar .link  {position: relative;display: inline-block;text-decoration: none; }
