@@ -13,6 +13,7 @@ import SkipNextIcon from '@mui/icons-material/SkipNext';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import AlbumIcon from '@mui/icons-material/Album';
 import {getI18n} from "@/locales/server";
+import {BreadcrumbsSetter} from "@/app/components/BreadcrumbsSetter";
 
 
 
@@ -29,11 +30,10 @@ export default async function Contact() {
     const t = await getI18n();
 
     return (
-        <div>
-            <Breadcrumbs breadcrumbsList={[
+        <>
+            <BreadcrumbsSetter list={[
                 {label: t('contact')},
-            ]}></Breadcrumbs>
-            <main id="main">
+            ]}></BreadcrumbsSetter>
 
             <h1>{t('contact.me')}</h1>
             <div className="section-content">
@@ -66,7 +66,6 @@ export default async function Contact() {
                     </ul>
                 </div>
             </section>
-            </main>
-        </div>
+        </>
     );
 }

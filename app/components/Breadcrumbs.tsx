@@ -1,9 +1,14 @@
+'use client'
 import Link from "next/link";
 import HouseIcon from '@mui/icons-material/House';
-import { getI18n } from '@/locales/server'; // Import de la fonction de traduction
+import { useI18n } from '@/locales/client';
+import {useContext} from "react";
+import {BreadcrumbsContext, useBreadcrumbs} from "@/app/components/BreadcrumbsContext"; // Import de la fonction de traduction
 
-export default async function Breadcrumbs({ breadcrumbsList }: { breadcrumbsList: any }) {
-    const t = await getI18n(); // Initialisation de la fonction de traduction
+export default function Breadcrumbs({  }: {  }) {
+    const t = useI18n(); // Initialisation de la fonction de traduction
+    const {breadcrumbsList} = useBreadcrumbs();
+    console.log('Breadcrumbs', breadcrumbsList);
 
     return (
         <ul className="breadcrumbs">

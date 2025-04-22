@@ -9,6 +9,7 @@ import {tData} from "@/lib/getServerData";
 import {getI18n} from "@/locales/server";
 import CardsScroller from "@/app/components/CardsScroller";
 import ProjectsList from "@/app/components/ProjectsList";
+import {BreadcrumbsSetter} from "@/app/components/BreadcrumbsSetter";
 //import {useRouter} from "next/navigation";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -33,32 +34,27 @@ export default async function Projects(params: any) {
     console.log('cats', data.categories, Object.keys(data.categories));
 
     return (
-        <div>
-            <Breadcrumbs breadcrumbsList={[
-                {label: t('projects')},
-                //{label: pageTitle}
-            ]}></Breadcrumbs>
-            <main id="main">
-                <CardsScroller>
-                {
-                    Object.keys(data.categories).map((catToken: string, i:number) => {
-                        const projectsList = data.projets.filter((project: Record<any, any>) => project.category == catToken);
-                        const categoryName = tData(data.categories[catToken]);
-                        const HeaderTag = i == 0 ? 'h1' : 'h2';
+        <>
+            <BreadcrumbsSetter list={[{label: t('projects')}, ]}></BreadcrumbsSetter>
+            <CardsScroller>
+            {
+                Object.keys(data.categories).map((catToken: string, i:number) => {
+                    const projectsList = data.projets.filter((project: Record<any, any>) => project.category == catToken);
+                    const categoryName = tData(data.categories[catToken]);
+                    const HeaderTag = i == 0 ? 'h1' : 'h2';
 
-                        return (
-                                <div className="card">
-                                    <HeaderTag className="card-title page-title">
-                                        {categoryName}
-                                        <span className="weak"> – {t('category.selection')}</span>
-                                    </HeaderTag>
-                                    <ProjectsList projects={projectsList}></ProjectsList>
-                                </div>
-                        );
-                    })
-                }
-                </CardsScroller>
-            </main>
-        </div>
+                    return (
+                            <div className="card">
+                                <HeaderTag className="card-title page-title">
+                                    {categoryName}
+                                    <span className="weak"> – {t('category.selection')}</span>
+                                </HeaderTag>
+                                <ProjectsList projects={projectsList}></ProjectsList>
+                            </div>
+                    );
+                })
+            }
+            </CardsScroller>
+        </>
     );
 }

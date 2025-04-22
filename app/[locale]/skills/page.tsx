@@ -7,6 +7,7 @@ import Breadcrumbs from "@/app/components/Breadcrumbs";
 import {getI18n} from "@/locales/server";
 import {tData, getAllData} from "@/lib/getServerData";
 import CardsScroller from "@/app/components/CardsScroller";
+import {BreadcrumbsSetter} from "@/app/components/BreadcrumbsSetter";
 
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -22,13 +23,9 @@ export default async function Skills() {
     const t: any = await getI18n();
     const techList = data.competences.tech;
 
-
     return (
-        <div>
-            <Breadcrumbs breadcrumbsList={[
-                {label: t('skills')},
-            ]}></Breadcrumbs>
-            <main id="main">
+        <>
+            <BreadcrumbsSetter list={[{label: t('skills')}]}></BreadcrumbsSetter>
 
             <CardsScroller>
                 <div className="card">
@@ -72,7 +69,6 @@ export default async function Skills() {
                 </div>
 
             </CardsScroller>
-            </main>
-        </div>
+        </>
     );
 }

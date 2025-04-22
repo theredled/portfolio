@@ -5,9 +5,10 @@ import {tData} from "@/lib/getServerData";
 import {getI18n} from "@/locales/server";
 import LinkIcon from '@mui/icons-material/Link';
 import GitHubIcon from "@mui/icons-material/GitHub";
+import {BreadcrumbsSetter} from "@/app/components/BreadcrumbsSetter";
 
-export default async function Project({params}: {params: any}) {
-    const paramsList =  await params;
+export default async function Project({params}: { params: any }) {
+    const paramsList = await params;
     const id = paramsList.id;
     const data = getAllData();
     const t = await getI18n();
@@ -18,18 +19,17 @@ export default async function Project({params}: {params: any}) {
     //project.gallery = project.gallery || [];
 
     return (
-        <div>
-            <Breadcrumbs breadcrumbsList={[
+        <>
+            <BreadcrumbsSetter list={[
                 {label: t('projects')},
                 {label: categoryName, url: '/projects/?category=' + project.category},
                 {label: tData(project.titre)}
-            ]}></Breadcrumbs>
+            ]}></BreadcrumbsSetter>
 
-            <main id="main" className="project single-project">
-
-                <h1 className="title"><span>{ tData(project.titre)}</span>
+            <div className="project single-project">
+                <h1 className="title"><span>{tData(project.titre)}</span>
                     {project.date &&
-                        <time className="side-infos"> ({ project.date })</time>
+                        <time className="side-infos"> ({project.date})</time>
                     }
                     <span className=" category">{categoryName}</span>
                     {project.url &&
@@ -58,14 +58,15 @@ export default async function Project({params}: {params: any}) {
                     <section className="features">
                         <h3>{t('features')}</h3>
 
-                        <ul className="section-content">{project.features.map((name:string) => <li>{tData(name)}</li>)}</ul>
+                        <ul className="section-content">{project.features.map((name: string) =>
+                            <li>{tData(name)}</li>)}</ul>
                     </section>
                 }
 
                 {project.gallery &&
                     <Gallery project={project}/>
                 }
-            </main>
-        </div>
+            </div>
+        </>
     );
 }

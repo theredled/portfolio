@@ -5,6 +5,8 @@ import "./projects/styles.css";
 import NavBar from "@/app/components/NavBar";
 import {getAllData} from "@/lib/getData";
 import {I18nProviderClient} from '@/locales/client'
+import Breadcrumbs from "@/app/components/Breadcrumbs";
+import {BreadcrumbsContextProvider} from "@/app/components/BreadcrumbsContext";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -30,6 +32,7 @@ export default async function RootLayout({params, children}:
                                              params: Promise<{ locale: string }>,
                                              children: React.ReactNode;
                                          }>) {
+
     const {locale} = await params;
     return (
         <html lang={locale}>
@@ -71,11 +74,12 @@ export default async function RootLayout({params, children}:
         >
         <I18nProviderClient locale={locale}>
             <NavBar data={getAllData()}></NavBar>
-            <div style={{position: 'relative'}}>
-                <>
+            <BreadcrumbsContextProvider>
+                <Breadcrumbs/>
+                <main id="main">
                     {children}
-                </>
-            </div>
+                </main>
+            </BreadcrumbsContextProvider>
         </I18nProviderClient>
         </body>
         </html>

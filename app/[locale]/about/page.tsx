@@ -15,6 +15,7 @@ import {DataListItem} from "@/app/components/DataListItem";
 import Link from "next/link";
 import SkipNextIcon from '@mui/icons-material/SkipNext';
 import FastForwardIcon from '@mui/icons-material/FastForward';
+import {BreadcrumbsSetter} from "@/app/components/BreadcrumbsSetter";
 export async function generateMetadata(): Promise<Metadata> {
     const t = await getI18n();
 
@@ -32,6 +33,7 @@ export default async function About() {
     const presentation: string = await getDocumentContent("presentation");
 
     const techSection = <>
+
         <section className="tech important primary-skills">
             <h2>{t('expertises.principales')}</h2>
             <ul>
@@ -57,39 +59,36 @@ export default async function About() {
         </>;
 
     return (
-        <div>
-            <Breadcrumbs breadcrumbsList={[
-                {label: t('about')}
-            ]}></Breadcrumbs>
-            <main id="main">
-                <CardsScroller>
-                    <div className="card">
-                        <h1 className="card-title">{t('about')}</h1>
-                        <div className="about-grid">
-                            <section className="presentation">
-                                <div className="">
-                                    <div><Interweave disableFilters={true} content={presentation}/></div>
-                                </div>
-                            </section>
-                            <div className="no-mobile">
-                                {techSection}
+        <>
+            <BreadcrumbsSetter list={[{label: t('about')}]} ></BreadcrumbsSetter>
+
+            <CardsScroller>
+                <div className="card">
+                    <h1 className="card-title">{t('about')}</h1>
+                    <div className="about-grid">
+                        <section className="presentation">
+                            <div className="">
+                                <div><Interweave disableFilters={true} content={presentation}/></div>
                             </div>
+                        </section>
+                        <div className="no-mobile">
+                            {techSection}
                         </div>
                     </div>
-                    <div className="card mobile-only">
-                        <h2 className="card-title mobile-only">{t('Tech')}</h2>
-                        {techSection}
-                    </div>
-                    <div className="card">
-                        <h2 className="card-title">{t('parcours')}</h2>
-                        <ul className="section-content">
-                            {data.parcours.map((job: string) =>
-                                <TimedItem item={job}/>
-                           )}
-                        </ul>
-                    </div>
-                </CardsScroller>
-            </main>
-        </div>
+                </div>
+                <div className="card mobile-only">
+                    <h2 className="card-title mobile-only">{t('Tech')}</h2>
+                    {techSection}
+                </div>
+                <div className="card">
+                    <h2 className="card-title">{t('parcours')}</h2>
+                    <ul className="section-content">
+                        {data.parcours.map((job: string) =>
+                            <TimedItem item={job}/>
+                       )}
+                    </ul>
+                </div>
+            </CardsScroller>
+        </>
     );
 }
