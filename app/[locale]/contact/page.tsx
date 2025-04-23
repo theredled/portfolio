@@ -7,6 +7,7 @@ import Breadcrumbs from "@/app/components/Breadcrumbs";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MusicVideoIcon from '@mui/icons-material/MusicVideo';
+import LinkIcon from '@mui/icons-material/Link';
 import EmailIcon from '@mui/icons-material/Email';
 import CallIcon from '@mui/icons-material/Call';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
@@ -14,8 +15,6 @@ import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import AlbumIcon from '@mui/icons-material/Album';
 import {getI18n} from "@/locales/server";
 import {BreadcrumbsSetter} from "@/app/components/BreadcrumbsSetter";
-
-
 
 export async function generateMetadata(): Promise<Metadata> {
     const t = await getI18n();
@@ -47,6 +46,8 @@ export default async function Contact() {
                         <a href="https://github.com/theredled">Github</a></p>
                     <p className="text-with-icon"><LinkedInIcon></LinkedInIcon>
                         <a href="https://www.linkedin.com/in/benoitguchet/">Linkedin</a></p>
+                    <p className="text-with-icon"><LinkIcon></LinkIcon>
+                        <a href="https://www.linkedin.com/in/benoitguchet/">Stack Overflow</a></p>
                 </div>
             </section>
             <section className="music-section">

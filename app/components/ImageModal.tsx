@@ -1,56 +1,78 @@
 "use client"
 
-import {useState} from 'react';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import {useRef, useState} from 'react';
 import Modal from '@mui/material/Modal';
 import {Fade} from "@mui/material";
 
-/*const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
-};*/
+export default function ImageModal({imagesListRef, shownIndex, isOpen}) {
+    const [modalImage, setModalImage] = useState("false");
+    const [modalImageIndex, setModalImageIndex] = useState(shownIndex);
+    const [modalOpen, setModalOpen] = useState(isOpen);
+    const modalRef = useRef<HTMLDivElement>(null);
 
-export default function ImageModal() {
-    const [image, setImage] = useState("false");
-    const [open, setOpen] = useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+
+    const handleOpen = (index: number) => {
+        setImageFromIndex(index);
+        return setModalOpen(true);
+    }
+
+    const handleClose = (e: Event) => {
+        if (e.target === e.currentTarget)
+            return setModalOpen(false);
+    }
+
+    const handlePreviousLink = () => {
+        if (modalImageIndex > 0)
+            setImageFromIndex(modalImageIndex - 1);
+    }
+
+    const handleNextLink = () => {
+        if (modalImageIndex < imagesListRef.current.length - 2)
+            setImageFromIndex(modalImageIndex + 1);
+    }
+
+    const setImageFromIndex = (index: number) => {
+        setModalImageIndex(index);
+        const $li = imagesListRef.current?.querySelector('li:nth-child(' + (index + 1) + ')');
+        const imageUrl = $li?.getAttribute('data-fullsize-url');
+        const contentType = $li?.getAttribute('data-content-type');
+        if (!contentType || !['video', 'image'].includes(contentType))
+            return;
+        //modalRef.current?.querySelector(`.image-container :has[data-content-type]:not[data-content-type="${contentType}"]`)?.remove();
+        if (imageUrl)
+            setModalImage(imageUrl);
+    }
 
     return (
-        <div>
-            <Button onClick={handleOpen}>Open modal</Button>
-            <Modal className="modal"
-                   open={open}
+        <>
+            <Modal className="modal image-modal"
+                   ref={modalRef}
+                   open={modalOpen}
                    onClose={handleClose}
                    aria-labelledby="modal-modal-title"
                    aria-describedby="modal-modal-description"
             >
+                <Fade in={modalOpen} timeout={500}>
+                    <div className="content">
 
-                <Fade in={open} timeout={500}>
-                    <img src={image}
-                         alt=""
-                         style={{maxHeight: "90%", maxWidth: "90%"}}
-                    />
+                        <div className="image-container">
+                            <img src={modalImage} alt=""/>
+                            <video controls></video>
+                        </div>
+                        <div className="overlay" onClick={handleClose}>
+                            {modalImageIndex > 0 &&
+                                <button className="nav-button previous" onClick={handlePreviousLink}>
+                                    <SkipPreviousIcon fontSize="large">Précédent</SkipPreviousIcon>
+                                </button>
+                            }
+                            {modalImageIndex < allImages.length - 2 &&
+                                <button className="nav-button next" onClick={handleNextLink}>
+                                    <SkipNextIcon fontSize="large">Suivant</SkipNextIcon>
+                                </button>
+                            }
+                        </div>
+                    </div>
                 </Fade>
-
             </Modal>
-        </div>
-    );
-}
-/*
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
- */
+
+            }

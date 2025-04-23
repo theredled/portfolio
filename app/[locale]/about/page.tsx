@@ -1,19 +1,14 @@
 import type {Metadata, ResolvingMetadata} from 'next'
 
-import Image from "next/image";
-import Head from "next/head";
 import {getAllData, tData} from "@/lib/getServerData";
 import TimedItem from "@/app/components/TimedItem";
-//import {Metadata} from "next";
-import Breadcrumbs from "@/app/components/Breadcrumbs";
-import {Markup, Interweave} from 'interweave';
+import {Interweave} from 'interweave';
 import {polyfill} from 'interweave-ssr';
 import {getDocumentContent} from "@/lib/getServerData";
 import {getI18n} from "@/locales/server";
 import CardsScroller from "@/app/components/CardsScroller";
 import {DataListItem} from "@/app/components/DataListItem";
 import Link from "next/link";
-import SkipNextIcon from '@mui/icons-material/SkipNext';
 import FastForwardIcon from '@mui/icons-material/FastForward';
 import {BreadcrumbsSetter} from "@/app/components/BreadcrumbsSetter";
 export async function generateMetadata(): Promise<Metadata> {

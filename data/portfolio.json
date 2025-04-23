@@ -219,6 +219,11 @@
       "titre": "Oteam.io",
       "image": "Qualispace-6.jpg",
       "gallery": [
+        {
+          "thumbFileName": "Qualispace-6.jpg",
+          "fileName": "Qualispace-video-1.mp4",
+          "type": "video/mp4"
+        },
         "Qualispace-1.jpg",
         "Qualispace-2.jpg",
         "Qualispace-3.jpg",
