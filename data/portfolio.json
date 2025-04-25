@@ -205,6 +205,30 @@
         "Typescript",
         "NoSQL / MongoDB"
       ]
+    },{
+      "id": 30,
+      "category": [
+        "web"
+      ],
+      "titre": {
+        "fr": "FairyFiles",
+        "en": "FairyFiles"
+      },
+      "github": "https://github.com/theredled/fairyfiles",
+
+      "date": "2024",
+      "image":null,
+      "description": {
+        "fr": "Service personnel de transfert de fichiers : versions, dossiers, sécurité, suivi des téléchargements...",
+        "en": "Custom file transfer service: versionning, folders, security, downloads history..."
+      },
+      "tech": [
+        "Symfony 6",
+        "DevOps",
+        "i18n",
+        "Frontend",
+        "Tests"
+      ]
     },
     {
       "id": 4,

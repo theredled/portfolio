@@ -199,8 +199,7 @@ button.link {border: none; background: none; cursor: pointer}
     &:hover .image-container {
         clip-path: polygon(100% 0%, 0% 0%, 0% 66.7%, 6.25% 66.7%, 6.25% 77.8%, 12.5% 77.8%, 12.5% 88.9%, 18.75% 88.9%, 18.75% 100%, 100% 100%)}
     /* 1 pixel = X 6.25% Y 11.1% */
-    & .project-image {transition: transform .5s ease; transform-origin: 50.9% 49.98%;; transform: scale(1); image-rendering: pixelated;;
-    }
+    & .project-image {transition: transform .5s ease; transform-origin: 50.9% 49.98%;; transform: scale(1);     }
     &:hover .project-image {transform: scale(67.5); image-rendering: pixelated;}
 
     & .description {margin: .5em 0}

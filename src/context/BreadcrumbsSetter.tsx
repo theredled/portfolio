@@ -1,7 +1,7 @@
 'use client'
 
 import {useContext, useEffect} from "react";
-import {BreadcrumbsContext, useBreadcrumbs} from "@/app/components/BreadcrumbsContext";
+import {BreadcrumbsContext, useBreadcrumbs} from "@/src/context/BreadcrumbsContext";
 
 export function BreadcrumbsSetter({list}: {list: any[]}) {
     const {setBreadcrumbsList} = useBreadcrumbs();

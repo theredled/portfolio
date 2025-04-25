@@ -6,7 +6,7 @@ import {useEffect, useRef, useState} from "react";
 import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
 import {Backdrop} from "@mui/material";
 import {useI18n, useScopedI18n, useCurrentLocale, useChangeLocale} from '@/locales/client'
-import {tData} from "@/lib/getData";
+import {tData} from "@/src/lib/getData";
 import {usePathname} from "next/navigation";
 
 export default  function NavBar(params: any) {
@@ -53,7 +53,7 @@ export default  function NavBar(params: any) {
     return (
         <>
             <header id="main-header">
-                <Link href="/"><Image alt="" src={'/images/header.jpg'} width="150" height="100"/></Link>
+                <Link href="/portfolio/public"><Image alt="" src={'/images/header.jpg'} width="150" height="100"/></Link>
                 <h1>
                     <span className="title">
                         Benoît Guchet

@@ -1,10 +1,12 @@
 import Image from "next/image";
-import {tData} from "@/lib/getServerData";
+import {tData} from "@/src/lib/getServerData";
+import {IPotentialI18nData} from "@/src/types/I18n";
+import {IProject} from "@/src/types";
 
-export default function ProjectsList({projects} :{projects: any[]}) {
+export default function ProjectsList({projects} :{projects: IProject[]}) {
     return (
         <ul className="projects-list">
-            {projects.map((project: Record<any, any>, index: number) => (
+            {projects.map((project: IProject, index: number) => (
                 <li key={index} className="project-item">
                     <a href={"/projects/" + project.id} className="block-link">
                         <div className="image-container">
@@ -30,7 +32,7 @@ export default function ProjectsList({projects} :{projects: any[]}) {
                         {project.tech &&
                             <section className="tech">
                                 <ul>
-                                    {project.tech.slice(0, 6).map((name: string) => <li>{tData(name)}</li>)}
+                                    {project.tech.slice(0, 6).map((name: IPotentialI18nData) => <li>{tData(name)}</li>)}
                                     {project.tech.length > 6 &&
                                         <li className="etc">...</li>
                                     }

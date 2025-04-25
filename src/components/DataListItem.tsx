@@ -1,4 +1,4 @@
-import {tData} from "@/lib/getServerData";
+import {tData} from "@/src/lib/getServerData";
 
 export async function DataListItem({name}: {name: string | object}) {
     let bigger = false;

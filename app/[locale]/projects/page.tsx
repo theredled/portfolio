@@ -1,15 +1,15 @@
 import Image from "next/image";
 import Head from "next/head";
-import {getAllData} from "@/lib/getData";
+import {getAllData} from "@/src/lib/getData";
 import Link from "next/link";
 import { Metadata } from 'next'
-import WrapLink from "@/app/bg/WrapLink";
-import Breadcrumbs from "@/app/components/Breadcrumbs";
-import {tData} from "@/lib/getServerData";
+import WrapLink from "@/src/bg/WrapLink";
+import Breadcrumbs from "@/src/components/Breadcrumbs";
+import {tData} from "@/src/lib/getServerData";
 import {getI18n} from "@/locales/server";
-import CardsScroller from "@/app/components/CardsScroller";
-import ProjectsList from "@/app/components/ProjectsList";
-import {BreadcrumbsSetter} from "@/app/components/BreadcrumbsSetter";
+import CardsScroller from "@/src/components/CardsScroller";
+import ProjectsList from "@/src/components/ProjectsList";
+import {BreadcrumbsSetter} from "@/src/context/BreadcrumbsSetter";
 //import {useRouter} from "next/navigation";
 
 export async function generateMetadata(): Promise<Metadata> {

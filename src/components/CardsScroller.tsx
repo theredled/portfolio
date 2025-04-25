@@ -1,9 +1,9 @@
 "use client"
-import {useEffect, useRef} from "react";
+import {ReactNode, useEffect, useRef} from "react";
 declare class SnapEvent {}
 
 
-export default function CardsScroller({children}: any) {
+export default function CardsScroller({children}: {children: ReactNode[]}) {
     const containerRef = useRef<HTMLDivElement>(null);
     const titlesRef = useRef<HTMLDivElement>(null);
     const scrollerRef = useRef<HTMLDivElement>(null);
@@ -35,21 +35,17 @@ export default function CardsScroller({children}: any) {
         }
 
         const handleScroll = (e: any) => {
-            console.log('handleScroll');
             if (!scrollerRef.current)
                 return;
 
             const cardIndex = browserSupportsSnapEvents
                 ? Array.from(allCards).indexOf(e.snapTargetInline)
                 : Math.round(e.target.scrollLeft / scrollerRef.current.clientWidth);
-            console.log('handleScroll', browserSupportsSnapEvents, cardIndex, e.target.scrollLeft, scrollerRef.current.clientWidth);
             selectTitle(cardIndex);
         }
 
         const handleTitleClick = (e: any) => {
-            console.log('handleTitleClick', e);
             const cardIndex = Array.from(allTitles).indexOf(e.currentTarget);
-            console.log('cardIndex', cardIndex);
             scrollToCard(cardIndex);
         }
 
@@ -59,7 +55,6 @@ export default function CardsScroller({children}: any) {
             title.addEventListener('click', handleTitleClick);
         });
 
-        console.log('browserSupportsSnapEvents', browserSupportsSnapEvents);
         //-- scrollend non pris en charge par Safari
         scrollerRef.current.addEventListener(browserSupportsSnapEvents ? 'scrollsnapchanging' : 'scroll', handleScroll);
         selectTitle(0);

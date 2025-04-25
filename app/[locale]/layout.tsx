@@ -1,12 +1,11 @@
 import type {Metadata} from "next";
 import {Geist, Geist_Mono} from "next/font/google";
 import "../globals.css";
-import "./projects/styles.css";
-import NavBar from "@/app/components/NavBar";
-import {getAllData} from "@/lib/getData";
+import NavBar from "@/src/components/NavBar";
+import {getAllData} from "@/src/lib/getData";
 import {I18nProviderClient} from '@/locales/client'
-import Breadcrumbs from "@/app/components/Breadcrumbs";
-import {BreadcrumbsContextProvider} from "@/app/components/BreadcrumbsContext";
+import Breadcrumbs from "@/src/components/Breadcrumbs";
+import {BreadcrumbsContextProvider} from "@/src/context/BreadcrumbsContext";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",

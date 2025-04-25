@@ -1,6 +1,7 @@
-import {tData} from "@/lib/getServerData";
+import {tData} from "@/src/lib/getServerData";
+import {ITimedItem} from "@/src/types";
 
-export default async function TimedItem({item}: {item: any}) {
+export default async function TimedItem({item}: {item: ITimedItem}) {
     let tDate = await tData(item.date);
     if (tDate.at(0) == '*') {
         return null;

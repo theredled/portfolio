@@ -1,11 +1,13 @@
-import {getAllData} from "@/lib/getData";
-import Breadcrumbs from "@/app/components/Breadcrumbs";
-import Gallery from "@/app/components/Gallery";
-import {tData} from "@/lib/getServerData";
+import {getAllData} from "@/src/lib/getData";
+import Breadcrumbs from "@/src/components/Breadcrumbs";
+import Gallery from "@/src/components/Gallery";
+import {tData} from "@/src/lib/getServerData";
 import {getI18n} from "@/locales/server";
 import LinkIcon from '@mui/icons-material/Link';
 import GitHubIcon from "@mui/icons-material/GitHub";
-import {BreadcrumbsSetter} from "@/app/components/BreadcrumbsSetter";
+import {BreadcrumbsSetter} from "@/src/context/BreadcrumbsSetter";
+import {IPotentialI18nData} from "@/src/types/I18n";
+import {IProject} from "@/src/types";
 
 export default async function Project({params}: { params: any }) {
     const paramsList = await params;
@@ -13,8 +15,14 @@ export default async function Project({params}: { params: any }) {
     const data = getAllData();
     const t = await getI18n();
 
-    const project = data.projets.filter((p: Record<any, any>) => p.id.toString() == id).at(0);
-    const categoryName = tData(data.categories[project.category]);
+
+    const project: IProject = data.projets.filter((p: Record<any, any>) => p.id.toString() == id).at(0);
+
+    const projectCat = project.category.at(0);
+    if (!projectCat)
+        throw new Error('No category for project ' + id);
+
+    const categoryName = tData(data.categories[projectCat]);
     console.log('project.gallery', project.gallery);
     //project.gallery = project.gallery || [];
 
@@ -22,7 +30,7 @@ export default async function Project({params}: { params: any }) {
         <>
             <BreadcrumbsSetter list={[
                 {label: t('projects')},
-                {label: categoryName, url: '/projects/?category=' + project.category},
+                {label: categoryName, url: '/projects/?category=' + projectCat},
                 {label: tData(project.titre)}
             ]}></BreadcrumbsSetter>
 
@@ -51,14 +59,14 @@ export default async function Project({params}: { params: any }) {
                 {project.tech &&
                     <section className="tech">
                         <h3>Stack :</h3>
-                        <ul>{project.tech.map((name: string) => <li>{tData(name)}</li>)}</ul>
+                        <ul>{project.tech.map((name: IPotentialI18nData) => <li>{tData(name)}</li>)}</ul>
                     </section>
                 }
                 {project.features &&
                     <section className="features">
                         <h3>{t('features')}</h3>
 
-                        <ul className="section-content">{project.features.map((name: string) =>
+                        <ul className="section-content">{project.features.map((name: IPotentialI18nData) =>
                             <li>{tData(name)}</li>)}</ul>
                     </section>
                 }

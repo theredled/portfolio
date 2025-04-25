@@ -1,16 +1,17 @@
 import type {Metadata, ResolvingMetadata} from 'next'
 
-import {getAllData, tData} from "@/lib/getServerData";
-import TimedItem from "@/app/components/TimedItem";
+import {getAllData, tData} from "@/src/lib/getServerData";
+import TimedItem from "@/src/components/TimedItem";
 import {Interweave} from 'interweave';
 import {polyfill} from 'interweave-ssr';
-import {getDocumentContent} from "@/lib/getServerData";
+import {getDocumentContent} from "@/src/lib/getServerData";
 import {getI18n} from "@/locales/server";
-import CardsScroller from "@/app/components/CardsScroller";
-import {DataListItem} from "@/app/components/DataListItem";
+import CardsScroller from "@/src/components/CardsScroller";
+import {DataListItem} from "@/src/components/DataListItem";
 import Link from "next/link";
 import FastForwardIcon from '@mui/icons-material/FastForward';
-import {BreadcrumbsSetter} from "@/app/components/BreadcrumbsSetter";
+import {BreadcrumbsSetter} from "@/src/context/BreadcrumbsSetter";
+import {ITimedItem} from "@/src/types";
 export async function generateMetadata(): Promise<Metadata> {
     const t = await getI18n();
 
@@ -78,7 +79,7 @@ export default async function About() {
                 <div className="card">
                     <h2 className="card-title">{t('parcours')}</h2>
                     <ul className="section-content">
-                        {data.parcours.map((job: string) =>
+                        {data.parcours.map((job: ITimedItem) =>
                             <TimedItem item={job}/>
                        )}
                     </ul>

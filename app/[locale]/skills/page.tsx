@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Head from "next/head";
 //import {getAllData} from "@/lib/getData";
-import TimedItem from "@/app/components/TimedItem";
+import TimedItem from "@/src/components/TimedItem";
 import {Metadata} from "next";
-import Breadcrumbs from "@/app/components/Breadcrumbs";
+import Breadcrumbs from "@/src/components/Breadcrumbs";
 import {getI18n} from "@/locales/server";
-import {tData, getAllData} from "@/lib/getServerData";
-import CardsScroller from "@/app/components/CardsScroller";
-import {BreadcrumbsSetter} from "@/app/components/BreadcrumbsSetter";
+import {tData, getAllData} from "@/src/lib/getServerData";
+import CardsScroller from "@/src/components/CardsScroller";
+import {BreadcrumbsSetter} from "@/src/context/BreadcrumbsSetter";
+import {ITimedItem} from "@/src/types";
 
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -54,7 +55,7 @@ export default async function Skills() {
                 <div className="card">
                     <h2 className="card-title">{t('formations')}</h2>
                     <ul className="section-content">
-                        {data.misc.formation_distinctions.map((item: Record<any, any>) =>
+                        {data.misc.formation_distinctions.map((item: ITimedItem) =>
                             <TimedItem item={item}/>
                         )}
                     </ul>

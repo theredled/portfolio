@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Head from "next/head";
-import {getAllData} from "@/lib/getData";
-import TimedItem from "@/app/components/TimedItem";
+import {getAllData} from "@/src/lib/getData";
+import TimedItem from "@/src/components/TimedItem";
 import {Metadata} from "next";
-import Breadcrumbs from "@/app/components/Breadcrumbs";
+import Breadcrumbs from "@/src/components/Breadcrumbs";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MusicVideoIcon from '@mui/icons-material/MusicVideo';
@@ -14,7 +14,7 @@ import SkipNextIcon from '@mui/icons-material/SkipNext';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import AlbumIcon from '@mui/icons-material/Album';
 import {getI18n} from "@/locales/server";
-import {BreadcrumbsSetter} from "@/app/components/BreadcrumbsSetter";
+import {BreadcrumbsSetter} from "@/src/context/BreadcrumbsSetter";
 
 export async function generateMetadata(): Promise<Metadata> {
     const t = await getI18n();

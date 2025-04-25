@@ -1,10 +1,6 @@
 'use client'
 import {createContext, useContext, useState} from "react";
-
-interface IBreadcrumb {
-    label: string,
-    url: string
-}
+import {IBreadcrumb} from "@/src/types";
 
 interface IBreadcrumbsContext {
   breadcrumbsList: IBreadcrumb[];
@@ -18,8 +14,6 @@ export const BreadcrumbsContext = createContext<IBreadcrumbsContext>({
 
 export const BreadcrumbsContextProvider = ({ children }: {children: any}) => {
   const [breadcrumbsList, setBreadcrumbsList] = useState<IBreadcrumb[]>([]);
-
-  console.log('BreadcrumbsContextProvider', breadcrumbsList);
 
   return (
     <BreadcrumbsContext.Provider value={{ breadcrumbsList, setBreadcrumbsList }}>
