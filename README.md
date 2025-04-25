@@ -1,8 +1,8 @@
 I'm Benoît Guchet and this is my Portfolio
 
-## Getting Started
+## Installation
 
-Don't know why you would do that but just 
+Don't know why anyone would do that but just:
 - clone the repo
 - run `npm install`
 - run `npm run dev`
