@@ -1,3 +1,5 @@
+/**--- REUSABLE STYLES ----*/
+
 :root {
     --font-body: 'Helvetica Neue', sans-serif;
     --font-heading: 'Helvetica Neue', sans-serif;
@@ -49,9 +51,26 @@ button.link {border: none; background: none; cursor: pointer}
 
 .mobile-only {display: none}
 
+.tech li {display: inline-block; background: #333; color: #EEE; border-radius: 5px; padding: 3px 10px;
+    margin-right: 5px; margin-bottom: 2px; font-family: "Martian Mono", monospace; font-size: 70% }
+.tech.important li {font-size: 90% }
+.tech.important li.bigger {background: black}
+.tech li.etc {background: none;    color: black; font-weight: bold; font-family: inherit;}
+.tech .see-more a {color: white; }
+.tech .see-more  {background: none; border: 1px solid white; opacity: .6;  }
+.tech svg {vertical-align: bottom; }
 
+.features {background-color: #f0f0f0;    padding: var(--spacing-s) var(--spacing-m);    border-left: 3px solid var(--color-accent);
+    margin-bottom: var(--spacing-m);}
+
+.timed-item {display: flex; margin-bottom: .5em;}
+.timed-item .date {width: 7rem; flex-shrink: 0;}
+.timed-item .title {margin: 0}
+
+/** -- COMPONENTS */
 
 .cards-scroller {overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; width: 100%; display: flex;}
+.cards-scroller::-webkit-scrollbar { display: none; }
 .cards-scroller .card {width: 100%; flex-shrink: 0; scroll-snap-align: start; padding: 1em 0; border-radius: .5em;
     box-sizing: border-box}
 .cards-scroller-titles {display: flex;    align-items: baseline; column-gap: 4vw;flex-wrap: wrap;
@@ -60,6 +79,7 @@ button.link {border: none; background: none; cursor: pointer}
 .cards-scroller-titles .card-title.active {opacity: 1;}
 .cards-scroller .card>.section-content {padding-left: 0}
 
+/** -- GENERAL FRAME */
 
 #main {max-width: 960px; margin: auto/*background: white;     padding: 0 1em 1em; border-radius: .5em;    border-top: 1px solid #CCC;*/}
 
@@ -114,18 +134,6 @@ button.link {border: none; background: none; cursor: pointer}
 .breadcrumbs li:last-of-type {color: black}
 
 
-.tech li {display: inline-block; background: #333; color: #EEE; border-radius: 5px; padding: 3px 10px;
-    margin-right: 5px; margin-bottom: 2px; font-family: "Martian Mono", monospace; font-size: 70% }
-.tech.important li {font-size: 90% }
-.tech.important li.bigger {background: black}
-.tech li.etc {background: none;    color: black; font-weight: bold; font-family: inherit;}
-.tech .see-more a {color: white; }
-.tech .see-more  {background: none; border: 1px solid white; opacity: .6;  }
-.tech svg {vertical-align: bottom; }
-
-.features {background-color: #f0f0f0;    padding: var(--spacing-s) var(--spacing-m);    border-left: 3px solid var(--color-accent);
-    margin-bottom: var(--spacing-m);}
-
 .weak {font-size: 80%; font-weight: normal;}
 
 #main-header {display: flex; height: 100px; border-radius: .5em .5em 0 0; overflow: hidden; margin-top: .5em;}
@@ -133,9 +141,8 @@ button.link {border: none; background: none; cursor: pointer}
 #main-header h1 {margin-left: .5em}
 #main-header .subtitle {display: block; font-size: 80% }
 
-.timed-item {display: flex; margin-bottom: .5em;}
-.timed-item .date {width: 7rem; flex-shrink: 0;}
-.timed-item .title {margin: 0}
+
+/** -- SPECIFIC PAGES */
 
 .about-grid{display: grid;    grid-template-columns: 1.8fr 1.2fr; grid-gap: 2em; grid-template-rows: 1fr 1fr}
 .about-grid .secondary-skills {grid-column: 2; grid-row: 2}
@@ -148,14 +155,14 @@ button.link {border: none; background: none; cursor: pointer}
 
     & .image-container {position: relative; overflow: hidden}
     & .project-image {aspect-ratio: 1.78;width: 100%;height: fit-content;filter: saturate(1.4);object-fit: cover;
-        display: block; transform-origin: 0 0; }
+        display: block; transform-origin: 0 0; will-change: transform;}
     & .pixel-image {display: none}
 
-    /* EFFET 1 Clip path Bulle */
-    & .image-container {clip-path: circle(100% at 50% 50%); transition: clip-path .5s ease; overflow: hidden}
+    /* EFFET 1 BULLE */
+    /*& .image-container {clip-path: circle(100% at 50% 50%); transition: clip-path .5s ease; overflow: hidden}
     &:hover .image-container {clip-path: circle(43% at 33% 50%);}
     & .project-image { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); transition: .5s ease; }
-    &:hover .project-image {transform: scale(1.3);}
+    &:hover .project-image {transform: scale(1.3);}*/
 
     /*clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);*/
     /*-- Escalier */
@@ -186,6 +193,15 @@ button.link {border: none; background: none; cursor: pointer}
         image-rendering: pixelated; width: 100%; height: 100%; object-fit: cover;}
     &:hover .pixel-image {display: none}
     &:hover .project-image {transform: scale(1.3);}*/
+
+    /* EFFET 4 PIXELS ZOOM */
+    & .image-container { overflow: hidden; clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);transition: clip-path .5s ease; }
+    &:hover .image-container {
+        clip-path: polygon(100% 0%, 0% 0%, 0% 66.7%, 6.25% 66.7%, 6.25% 77.8%, 12.5% 77.8%, 12.5% 88.9%, 18.75% 88.9%, 18.75% 100%, 100% 100%)}
+    /* 1 pixel = X 6.25% Y 11.1% */
+    & .project-image {transition: transform .5s ease; transform-origin: 50.9% 49.98%;; transform: scale(1); image-rendering: pixelated;;
+    }
+    &:hover .project-image {transform: scale(67.5); image-rendering: pixelated;}
 
     & .description {margin: .5em 0}
 }
