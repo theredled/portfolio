@@ -8,6 +8,13 @@ import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import CloseIcon from '@mui/icons-material/Close';
+
+interface IGalleryItem {
+    fileName: string;
+    thumbFileName: string | undefined;
+    type: string | undefined;
+}
+
 export default function Gallery({project}: {project: Record<any, any>}) {
     const [modalImage, setModalImage] = useState("false");
     const [modalImageIndex, setModalImageIndex] = useState(0);
@@ -25,8 +32,10 @@ export default function Gallery({project}: {project: Record<any, any>}) {
         return setModalOpen(true);
     }
 
-    const handleClose = (e: Event) => {
+    const handleClose = (e: React.MouseEvent) => {
         console.log('handleClose', e)
+        if (!(e.currentTarget instanceof HTMLElement))
+            return false;
         if (e.target === e.currentTarget || e.currentTarget?.classList.contains('close'))
             return setModalOpen(false);
     }
@@ -71,7 +80,7 @@ export default function Gallery({project}: {project: Record<any, any>}) {
                                 </video>
                             }
                             {modalContentType === 'image' &&
-                                <img src={modalImage} alt="" onClick={handleClose} />
+                                <img src={modalImage} alt="" onClick={e => handleClose(e)} />
                             }
                         </div>
                         <div className="overlay"  onClick={handleClose}>
@@ -96,7 +105,7 @@ export default function Gallery({project}: {project: Record<any, any>}) {
             <section className="gallery">
                 <h2>{t('gallery.apercu')}</h2>
                 <ul ref={imagesListRef}>
-                    {allImages.map((fileName: string | object, index: number) => {
+                    {allImages.map((fileName: string | IGalleryItem, index: number) => {
                         let fullSizeImageUrl, thumbUrl, type;
                         if (typeof fileName === 'object') {
                             fullSizeImageUrl = '/images/' + fileName.fileName;

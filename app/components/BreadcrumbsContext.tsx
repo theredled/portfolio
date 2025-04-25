@@ -1,16 +1,26 @@
 'use client'
 import {createContext, useContext, useState} from "react";
 
-export const BreadcrumbsContext = createContext([]);
+interface IBreadcrumb {
+    label: string,
+    url: string
+}
 
-// Fournisseur de contexte (composant qui partage l'état)
-export const BreadcrumbsContextProvider = ({ children }) => {
-  const [breadcrumbsList, setBreadcrumbsList] = useState([]);
+interface IBreadcrumbsContext {
+  breadcrumbsList: IBreadcrumb[];
+  setBreadcrumbsList: React.Dispatch<React.SetStateAction<IBreadcrumb[]>>;
+}
+export const BreadcrumbsContext = createContext<IBreadcrumbsContext>({
+    breadcrumbsList: [],
+    setBreadcrumbsList: () => {}
+});
+
+
+export const BreadcrumbsContextProvider = ({ children }: {children: any}) => {
+  const [breadcrumbsList, setBreadcrumbsList] = useState<IBreadcrumb[]>([]);
 
   console.log('BreadcrumbsContextProvider', breadcrumbsList);
 
-  // Ici, tu as une fonction pour mettre à jour l'état,
-  // qui sera utilisée par les composants pour échanger des données.
   return (
     <BreadcrumbsContext.Provider value={{ breadcrumbsList, setBreadcrumbsList }}>
       {children}
@@ -19,4 +29,4 @@ export const BreadcrumbsContextProvider = ({ children }) => {
 };
 
 
-export const useBreadcrumbs = () => useContext(BreadcrumbsContext);
+export const useBreadcrumbs = (): IBreadcrumbsContext => useContext(BreadcrumbsContext);
