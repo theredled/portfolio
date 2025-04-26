@@ -67,8 +67,6 @@ button.link {border: none; background: none; cursor: pointer}
 .timed-item .date {width: 7rem; flex-shrink: 0;}
 .timed-item .title {margin: 0}
 
-.weak {font-size: 80%; font-weight: normal;}
-
 /** -- COMPONENTS */
 
 .cards-scroller {overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; width: 100%; display: flex;}
@@ -136,6 +134,7 @@ button.link {border: none; background: none; cursor: pointer}
 .breadcrumbs li:last-of-type {color: black}
 
 
+.weak {font-size: 80%; font-weight: normal;}
 
 #main-header {display: flex; height: 100px; border-radius: .5em .5em 0 0; overflow: hidden; margin-top: .5em;}
 #main-header img { object-fit: cover;height: 100%;}
@@ -145,7 +144,7 @@ button.link {border: none; background: none; cursor: pointer}
 
 /** -- SPECIFIC PAGES */
 
-.about-grid{display: grid;    grid-template-columns: 1.8fr 1.2fr; grid-gap: 4em; grid-template-rows: 1fr 1fr}
+.about-grid{display: grid;    grid-template-columns: 1.8fr 1.2fr; grid-gap: 2em; grid-template-rows: 1fr 1fr}
 .about-grid .secondary-skills {grid-column: 2; grid-row: 2}
 .about-grid .presentation {grid-column: 1; grid-row-start: 1; grid-row-end: 3}
 
@@ -200,7 +199,8 @@ button.link {border: none; background: none; cursor: pointer}
     &:hover .image-container {
         clip-path: polygon(100% 0%, 0% 0%, 0% 66.7%, 6.25% 66.7%, 6.25% 77.8%, 12.5% 77.8%, 12.5% 88.9%, 18.75% 88.9%, 18.75% 100%, 100% 100%)}
     /* 1 pixel = X 6.25% Y 11.1% */
-    & .project-image {transition: transform .5s ease; transform-origin: 50.9% 49.98%;; transform: scale(1);     }
+    & .project-image {transition: transform .5s ease; transform-origin: 50.9% 49.98%;; transform: scale(1); image-rendering: pixelated;;
+    }
     &:hover .project-image {transform: scale(67.5); image-rendering: pixelated;}
 
     & .description {margin: .5em 0}
@@ -265,7 +265,7 @@ button.link {border: none; background: none; cursor: pointer}
 .skills-list .level-section:not(.level-expertise) .tech li {background-color: rgba(0, 0, 0, .5); font-size:70%}
 
 .skills-list .level-section.level-bases {grid-column: 1 ; grid-row: 3; }
-.skills-list .level-section.level-outils_annexes {grid-column: 2 ; grid-row-start: 3; grid-row-end: 4}
+.skills-list .level-section.level-outils_annexes {grid-column: 2 ; grid-row-start: 2; grid-row-end: 4}
 .skills-list .tech-category {margin-bottom: 4px}
 
 @media (max-width: 900px) {
