@@ -30,7 +30,7 @@ export default {
   os: "OS",
   outils: "Outils",
   ides: "IDEs",
-  divers: "Divers",
+  "divers": "IDE/Divers",
   formations: "Formations / Certifications",
   languages: "Langues",
     'features': "Fonctionnalités",
@@ -38,5 +38,7 @@ export default {
   'visit': 'Visiter',
 
   'see.more': ' ',
+  "devops": "DevOps",
+  "pratiques": "Pratiques",
 
 } as const

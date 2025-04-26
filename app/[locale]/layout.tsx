@@ -3,7 +3,7 @@ import {Geist, Geist_Mono} from "next/font/google";
 import "../globals.css";
 import NavBar from "@/src/components/NavBar";
 import {getAllData} from "@/src/lib/getData";
-import {I18nProviderClient} from '@/locales/client'
+import {I18nProviderClient} from '@/src/locales/client'
 import Breadcrumbs from "@/src/components/Breadcrumbs";
 import {BreadcrumbsContextProvider} from "@/src/context/BreadcrumbsContext";
 

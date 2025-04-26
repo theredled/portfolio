@@ -5,13 +5,14 @@ import TimedItem from "@/src/components/TimedItem";
 import {Interweave} from 'interweave';
 import {polyfill} from 'interweave-ssr';
 import {getDocumentContent} from "@/src/lib/getServerData";
-import {getI18n} from "@/locales/server";
+import {getI18n} from "@/src/locales/server";
 import CardsScroller from "@/src/components/CardsScroller";
 import {DataListItem} from "@/src/components/DataListItem";
 import Link from "next/link";
 import FastForwardIcon from '@mui/icons-material/FastForward';
 import {BreadcrumbsSetter} from "@/src/context/BreadcrumbsSetter";
-import {ITimedItem} from "@/src/types";
+import {ITimedItemData} from "@/src/types";
+import {IPotentialI18nData} from "@/src/types/I18n";
 export async function generateMetadata(): Promise<Metadata> {
     const t = await getI18n();
 
@@ -33,7 +34,7 @@ export default async function About() {
         <section className="tech important primary-skills">
             <h2>{t('expertises.principales')}</h2>
             <ul>
-                {data.a_propos.competences_techniques.map((name: string, i: number) =>
+                {data.a_propos.competences_techniques.map((name: IPotentialI18nData, i: number) =>
                     <DataListItem key={i} name={name}></DataListItem>
                 )}
             </ul>
@@ -41,7 +42,7 @@ export default async function About() {
         <section className="tech important secondary-skills">
             <h2>{t('appetence.pour')}</h2>
             <ul>
-                {data.a_propos.learning.map((name: string, i: number) =>
+                {data.a_propos.learning.map((name: IPotentialI18nData, i: number) =>
                     <DataListItem key={i} name={name}></DataListItem>
                 )}
                 <li className="see-more"><Link href={'/skills'}>
@@ -79,7 +80,7 @@ export default async function About() {
                 <div className="card">
                     <h2 className="card-title">{t('parcours')}</h2>
                     <ul className="section-content">
-                        {data.parcours.map((job: ITimedItem) =>
+                        {data.parcours.map((job: ITimedItemData) =>
                             <TimedItem item={job}/>
                        )}
                     </ul>

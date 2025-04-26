@@ -3,7 +3,7 @@
 import Image from "next/image";
 import {Fade, Modal} from "@mui/material";
 import {useRef, useState} from "react";
-import {useI18n} from "@/locales/client";
+import {useI18n} from "@/src/locales/client";
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';

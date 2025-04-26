@@ -1,12 +1,12 @@
 import Image from "next/image";
 import {tData} from "@/src/lib/getServerData";
 import {IPotentialI18nData} from "@/src/types/I18n";
-import {IProject} from "@/src/types";
+import {IProjectData} from "@/src/types";
 
-export default function ProjectsList({projects} :{projects: IProject[]}) {
+export default function ProjectsList({projects} :{projects: IProjectData[]}) {
     return (
         <ul className="projects-list">
-            {projects.map((project: IProject, index: number) => (
+            {projects.map((project: IProjectData, index: number) => (
                 <li key={index} className="project-item">
                     <a href={"/projects/" + project.id} className="block-link">
                         <div className="image-container">

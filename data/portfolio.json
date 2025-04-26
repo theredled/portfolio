@@ -34,6 +34,7 @@
     ],
     "learning": [
       "Python",
+      "!DevOps",
       "!Vanilla JS",
           {
             "fr": "!SQL avancé",
@@ -308,7 +309,7 @@
           "en": "Statistics"
         },
         {
-          "fr": "Diagramme de Grant dynamique",
+          "fr": "Diagramme de Gantt dynamique",
           "en": "Dynamic Gantt chart"
         },
         {
@@ -772,6 +773,7 @@
           "Wordpress"
         ],
         "langages": [
+          "Typescript",
           "Python",
           "C++",
           "C",
@@ -786,7 +788,6 @@
       "bases": {
         "langages": [
           "Ruby",
-          "Typescript",
           "*VB",
           "*Basic",
           "*Pascal",
@@ -798,12 +799,21 @@
           "*Zend Framework"
         ]
       },
-      "outils_annexes": {
+      "devops": {
         "outils": [
           "Docker",
           "Git / Github / Gitlab",
           "Webpack",
-          "Apache",
+          "Apache"
+        ],
+        "pratiques": [
+          "CI/CD",
+          "Monitoring",
+          "Déploiement sur VPS / Cloud"
+        ]
+      },
+      "outils_annexes": {
+        "outils": [
           "SASS"
         ],
         "os": [
@@ -811,12 +821,13 @@
           "Windows",
           "Mac OS"
         ],
-        "ides": [
-          "IntelliJ/PhpStorm",
+        "*ides": [
+          "*IntelliJ/PhpStorm",
           "*Eclipse",
           "*Netbeans"
         ],
         "divers": [
+          "IntelliJ/PhpStorm",
           "Photoshop",
           "Illustrator",
           "*Flash",

@@ -1,4 +1,4 @@
-import { useI18n, useScopedI18n, useCurrentLocale } from '@/locales/client'
+import { useI18n, useScopedI18n, useCurrentLocale } from '@/src/locales/client'
 
 // /lib/getData.ts
 let cache: object | null = null;

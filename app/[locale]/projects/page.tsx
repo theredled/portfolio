@@ -1,16 +1,10 @@
-import Image from "next/image";
-import Head from "next/head";
 import {getAllData} from "@/src/lib/getData";
-import Link from "next/link";
 import { Metadata } from 'next'
-import WrapLink from "@/src/bg/WrapLink";
-import Breadcrumbs from "@/src/components/Breadcrumbs";
 import {tData} from "@/src/lib/getServerData";
-import {getI18n} from "@/locales/server";
+import {getI18n} from "@/src/locales/server";
 import CardsScroller from "@/src/components/CardsScroller";
 import ProjectsList from "@/src/components/ProjectsList";
 import {BreadcrumbsSetter} from "@/src/context/BreadcrumbsSetter";
-//import {useRouter} from "next/navigation";
 
 export async function generateMetadata(): Promise<Metadata> {
     const t = await getI18n();
@@ -25,13 +19,7 @@ export default async function Projects(params: any) {
     const category = params.category || null;
 
     const t = await getI18n();
-
     const data = getAllData();
-
-    //const pageTitle = categoryName;
-
-    //const projectsList = data.projets.filter((project: Record<any, any>) => project.category == category);
-    console.log('cats', data.categories, Object.keys(data.categories));
 
     return (
         <>

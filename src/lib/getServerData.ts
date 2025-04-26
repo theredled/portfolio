@@ -1,7 +1,7 @@
 import {micromark} from 'micromark'
 import { promises as fs } from 'fs';
 //import {useCurrentLocale} from "@/locales/client";
-import { getI18n, getScopedI18n, getCurrentLocale } from '@/locales/server'
+import { getI18n, getScopedI18n, getCurrentLocale } from '@/src/locales/server'
 
 export async function getDocumentContent(name: string) {
     const locale = await getCurrentLocale();
@@ -13,6 +13,7 @@ export async function getDocumentContent(name: string) {
 }
 
 import data from '@/data/portfolio.json'
+import {IPotentialI18nData} from "@/src/types/I18n";
 
 let cache: object | null = null;
 
@@ -25,7 +26,7 @@ export function getAllData(): Record<any, any> {
     return json;
 }
 
-export async function tData(i18nData: any): Promise<string> {
+export async function tData(i18nData: IPotentialI18nData): Promise<string> {
     const locale = await getCurrentLocale();
 
     if (typeof i18nData === 'string')

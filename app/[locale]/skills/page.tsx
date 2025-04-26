@@ -4,11 +4,13 @@ import Head from "next/head";
 import TimedItem from "@/src/components/TimedItem";
 import {Metadata} from "next";
 import Breadcrumbs from "@/src/components/Breadcrumbs";
-import {getI18n} from "@/locales/server";
+import {getI18n} from "@/src/locales/server";
 import {tData, getAllData} from "@/src/lib/getServerData";
 import CardsScroller from "@/src/components/CardsScroller";
 import {BreadcrumbsSetter} from "@/src/context/BreadcrumbsSetter";
-import {ITimedItem} from "@/src/types";
+import {ITimedItemData} from "@/src/types";
+import {DataListItem} from "@/src/components/DataListItem";
+import {IPotentialI18nData} from "@/src/types/I18n";
 
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -22,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Skills() {
     const data = getAllData();
     const t: any = await getI18n();
-    const techList = data.competences.tech;
+    const techList: Record<any, any> = data.competences.tech;
 
     return (
         <>
@@ -33,17 +35,20 @@ export default async function Skills() {
                     <h1 className="card-title">{t('skills')}</h1>
                     <p>{tData(data.competences.conception_methodologie)}</p>
                     <ul className="skills-list">
-                        {['expertise', 'bon_niveau', 'bases', 'outils_annexes'].map((levelName: string) => (
+                        {['expertise', 'bon_niveau', 'bases', 'devops', 'outils_annexes'].map((levelName: string) => (
                             <li key={levelName} className={'level-section level-' + levelName}>
                                 <h2>{t(levelName)}</h2>
                                 <ul className="section-content">
-                                    {Object.entries(techList[levelName]).map(([catName, list]: any, i: number) =>
+                                    {Object.keys(techList[levelName])
+                                            .filter((catName: string): boolean => catName.charAt(0) != '*')
+                                            .map((catName: string) =>
                                         <li key={catName} className="tech-category">
                                             <section className="tech">
                                                 <strong>{t(catName)}</strong>
                                                 <ul className="">
-                                                    {list.filter((name: string) => name.charAt(0) != '*')
-                                                        .map((name: string) => <li>{name}</li>)}
+                                                    {techList[levelName][catName].map((name: IPotentialI18nData) =>
+                                                        <DataListItem name={name}></DataListItem>
+                                                    )}
                                                 </ul>
                                             </section>
                                         </li>)}
@@ -55,7 +60,7 @@ export default async function Skills() {
                 <div className="card">
                     <h2 className="card-title">{t('formations')}</h2>
                     <ul className="section-content">
-                        {data.misc.formation_distinctions.map((item: ITimedItem) =>
+                        {data.misc.formation_distinctions.map((item: ITimedItemData) =>
                             <TimedItem item={item}/>
                         )}
                     </ul>

@@ -5,7 +5,7 @@ import SortIcon from '@mui/icons-material/Sort';
 import {useEffect, useRef, useState} from "react";
 import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
 import {Backdrop} from "@mui/material";
-import {useI18n, useScopedI18n, useCurrentLocale, useChangeLocale} from '@/locales/client'
+import {useI18n, useScopedI18n, useCurrentLocale, useChangeLocale} from '@/src/locales/client'
 import {tData} from "@/src/lib/getData";
 import {usePathname} from "next/navigation";
 

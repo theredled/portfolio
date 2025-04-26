@@ -30,12 +30,15 @@ export default {
   os: "Operating Systems",
   outils: "Tools",
   ides: "IDEs",
-  divers: "Miscellaneous",
+  divers: "IDE/Misc.",
   formations: "Education / Certifications",
   languages: "Spoken Languages",
   'features': "Features",
   'Tech': "Tech",
   'visit': 'Visit',
-  'see.more': 'See more'
+  'see.more': 'See more',
+  "devops": "DevOps",
+  "pratiques": "Actions"
+
 
 } as const

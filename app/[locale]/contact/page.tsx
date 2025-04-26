@@ -13,7 +13,7 @@ import CallIcon from '@mui/icons-material/Call';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import AlbumIcon from '@mui/icons-material/Album';
-import {getI18n} from "@/locales/server";
+import {getI18n} from "@/src/locales/server";
 import {BreadcrumbsSetter} from "@/src/context/BreadcrumbsSetter";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -37,7 +37,7 @@ export default async function Contact() {
             <h1>{t('contact.me')}</h1>
             <div className="section-content">
                 <p className="text-with-icon"><EmailIcon>Email :</EmailIcon> benoit.guchet<b className="hidden">baokdkkd</b>@gmail.com</p>
-                <p className="text-with-icon"><CallIcon>Téléphone :</CallIcon> (+33)671<b className="hidden">985</b>093314</p>
+                <p className="text-with-icon"><CallIcon>Téléphone :</CallIcon> (+33)671<b className="hidden">pflmsld</b>093314</p>
             </div>
             <section>
                 <h2>{t('reseaux')}</h2>

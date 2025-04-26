@@ -2,12 +2,12 @@ import {getAllData} from "@/src/lib/getData";
 import Breadcrumbs from "@/src/components/Breadcrumbs";
 import Gallery from "@/src/components/Gallery";
 import {tData} from "@/src/lib/getServerData";
-import {getI18n} from "@/locales/server";
+import {getI18n} from "@/src/locales/server";
 import LinkIcon from '@mui/icons-material/Link';
 import GitHubIcon from "@mui/icons-material/GitHub";
 import {BreadcrumbsSetter} from "@/src/context/BreadcrumbsSetter";
 import {IPotentialI18nData} from "@/src/types/I18n";
-import {IProject} from "@/src/types";
+import {IProjectData} from "@/src/types";
 
 export default async function Project({params}: { params: any }) {
     const paramsList = await params;
@@ -16,15 +16,13 @@ export default async function Project({params}: { params: any }) {
     const t = await getI18n();
 
 
-    const project: IProject = data.projets.filter((p: Record<any, any>) => p.id.toString() == id).at(0);
+    const project: IProjectData = data.projets.filter((p: IProjectData) => p.id.toString() == id).at(0);
 
     const projectCat = project.category.at(0);
     if (!projectCat)
         throw new Error('No category for project ' + id);
 
     const categoryName = tData(data.categories[projectCat]);
-    console.log('project.gallery', project.gallery);
-    //project.gallery = project.gallery || [];
 
     return (
         <>

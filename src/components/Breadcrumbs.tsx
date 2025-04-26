@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import HouseIcon from '@mui/icons-material/House';
-import { useI18n } from '@/locales/client';
+import { useI18n } from '@/src/locales/client';
 import {useContext} from "react";
 import {BreadcrumbsContext, useBreadcrumbs} from "@/src/context/BreadcrumbsContext"; // Import de la fonction de traduction
 
