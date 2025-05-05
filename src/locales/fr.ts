@@ -41,4 +41,7 @@ export default {
   "devops": "DevOps",
   "pratiques": "Pratiques",
 
+  "Download resume": "Télécharger le CV",
+  "Resume": "CV",
+
 } as const
