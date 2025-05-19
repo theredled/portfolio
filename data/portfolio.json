@@ -93,7 +93,7 @@
         "audio"
       ],
       "image": "MidiMagic-1.jpg",
-      "date": "2023-2024",
+      "date": "2023–2024",
 
       "titre": {
         "fr": "Boîtier MIDI multi-usages pour clavier",
@@ -212,12 +212,12 @@
         "web"
       ],
       "titre": {
-        "fr": "FairyFiles",
-        "en": "FairyFiles"
+        "fr": "Briefcase",
+        "en": "Briefcase"
       },
-      "github": "https://github.com/theredled/fairyfiles",
+      "github": "https://github.com/theredled/briefcase",
 
-      "date": "2024",
+      "date": "2023–2025",
       "image":null,
       "description": {
         "fr": "Service personnel de transfert de fichiers : versions, dossiers, sécurité, suivi des téléchargements...",
@@ -254,7 +254,7 @@
         "zoom-position":"0% 100%"
       },
       "url": "https://oteam.io",
-      "date": "2020-2022",
+      "date": "2020–2022",
       "titre": "Oteam.io",
       "image": "Qualispace-6.jpg",
       "gallery": [
@@ -366,7 +366,7 @@
     },
     {
       "id": 5,
-      "date": "2017-2020",
+      "date": "2017–2020",
       "category": [
         "web"
       ],
@@ -430,7 +430,7 @@
       "url": "https://www.larchitecturedaujourdhui.fr",
 
       "titre": "Larchitecturedaujourdhui.fr",
-      "date": "2015-2017",
+      "date": "2015–2017",
       "image": "AA-1.jpg",
       "description": {
         "fr": "Site officiel d'un magazine historique d'architecture. Développement Backend, fusion WP/Prestashop.",
@@ -469,7 +469,7 @@
       ],
       "titre": "Tresbienmerci.fr",
       "image": "TBM-1.jpg",
-      "date": "2014-2015",
+      "date": "2014–2015",
       "description": {
         "fr": "E-commerce. Développement backend, implémentation de modules et personnalisation lourde de Magento",
         "en": "E-commerce. Backend development, heavy customisation and designing modules for Magento "
@@ -496,7 +496,7 @@
       "category": [
         "web"
       ],
-      "date": "2013-2016",
+      "date": "2013–2016",
       "image": "Elystel-1.png",
       "titre": "Elystel",
       "description": {
@@ -526,7 +526,7 @@
         "web"
       ],
       "titre": "Vinylunity.com",
-      "date": "2010-2013",
+      "date": "2010–2013",
       "image": "Vinylunity-1.jpg",
       "url": "https://www.vinylunity.com/",
       "description": {
@@ -590,7 +590,7 @@
       "category": [
         "web"
       ],
-      "date": "2009-2013",
+      "date": "2009–2013",
       "titre": "BB&PP / Uuneek",
       "image": "Ondemand-1.jpg",
       "description": {
@@ -661,7 +661,7 @@
         "web"
       ],
       "image": "Hellfest-1.jpg",
-      "date": "2009-2016",
+      "date": "2009–2016",
       "titre": "Hellfestshop.com, Pavageau.fr, Directlub.com",
       "description": {
         "fr": "E-commerce basés sur Magento.",
@@ -691,7 +691,7 @@
       "category": [
         "web"
       ],
-      "date": "2007-2009",
+      "date": "2007–2009",
       "titre": "Bubblebeat.com",
       "image": "Bubblebeat-1.jpg",
       "description": {
