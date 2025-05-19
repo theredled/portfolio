@@ -1,13 +1,14 @@
-Je suis développeur freelance, basé sur Nantes et spécialisé en **Symfony**, **architecture back-end**, **React/Next.js** et **intégration soignée**.
+Je suis développeur freelance, basé sur Nantes et spécialisé en **Symfony**, **architecture back-end**, **React/Next.js**, **intégration soignée**.
 
-**Formé dès l'enfance** en autodidacte, j’ai appris en construisant, en poussant à fond les outils d'antan à ma disposition (Turbo Pascal, VB). Cette inventivité sous contrainte m'a donné des bases conceptuelles ancrées (POO, qualité du code, documentation), et m'a forgé l'idée que, techniquement, rien n'est jamais impossible.
+**Formé dans l'enfance** en autodidacte, j’ai appris en construisant, en poussant à fond les langages d'antan (Turbo Pascal, VB). Cette inventivité sous contrainte m'a donné des bases conceptuelles ancrées (POO, qualité du code, documentation), et m'a formé dans l'idée que rien n'est jamais impossible.
 
-Après **15+ ans d’expérience** pro aujourd'hui, je conçois, intègre et maintiens des applications web complexes (*SaaS, i18n, API...*), principalement avec **Symfony**.
+Après **18+ ans d’expérience** pro, je conçois, intègre et maintiens des applications web complexes (*SaaS, i18n, API...*), principalement avec **Symfony**.
 J’ai également une solide expérience en développement d'extensions pour CMS (**Magento**, **Drupal**, **Wordpress**...).
 
-Bien que spécialisé back-end, je possède un vrai savoir-faire **frontend**, notamment en intégration **pixel-perfect**, **responsive** et en **interfaces dynamiques** via JS Vanilla et plus récemment React/Next.js.
-Solo ou en équipe.
+Spécialisé back-end, j'ai aussi un vrai savoir-faire **frontend**, en intégration **pixel-perfect**, **responsive** et en **interfaces dynamiques** via JS Vanilla et plus récemment React/Next.js.
 
-Curieux en général, je suis ouvert à toutes les technos, et ayant un parcours parallèle de **musicien** je m'intéresse aussi beaucoup à ce qui rapproche code et son (Audio/MIDI).
+Curieux en général, j'ai pratiqué et suis ouvert à toutes sortes de technos ; et m'attelant parallèlement à un parcours de **musicien** je m'intéresse aussi à ce qui rapproche code et son (**Audio/MIDI**).
 
-Partant pour des missions freelance, de la mission courte bien précise au projet ambitieux, à discuter ensemble si besoin.
+Ma pratique s'attache à toujours mettre le curseur au bon endroit entre rigueur et pragmatisme, pour des projets fonctionnels rapidement, évolutifs facilement et maintenables sur la durée.
+
+Partant pour des missions freelance, des missions courtes bien précises aux projets ambitieux à structurer ensemble.
