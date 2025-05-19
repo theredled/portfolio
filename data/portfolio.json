@@ -224,12 +224,25 @@
         "en": "Custom file transfer service: versionning, folders, security, downloads history..."
       },
       "tech": [
-        "Symfony 6",
-        "DevOps",
+        "Symfony 7",
+        "Laravel",
+        "React",
         "i18n",
+        "DevOps",
+        "Tests (PHPUnit)",
+        "Filament",
         "Frontend",
-        "Tests",
         "EasyAdmin"
+      ],
+      "features": [
+        {
+          "en": "Admin Easyadmin sous Symfony 7",
+          "fr": "Easyadmin Admin under Symfony 7"
+        },
+        {
+          "en": "Migrating Symfony > Laravel (Filament admin)",
+          "fr": "Migration Symfony > Laravel (admin Filament)"
+        }
       ]
     },
     {
@@ -282,8 +295,8 @@
           "en": "Pixel-perfect and responsive integration"
         },
         {
-          "fr": "Développement d'un framework MVC frontend (JS)",
-          "en": "Development of a frontend MVC framework"
+          "fr": "Développement d'un framework MVP frontend (JS, stockage local)",
+          "en": "Development of a frontend MVP framework (JS, offline storage)"
         },
         {
           "fr": "Développement d'une bibliothèque de composants frontend (JS)",
