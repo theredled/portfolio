@@ -1,6 +1,5 @@
 {
   "categories": {
-
     "web": {
       "fr": "Web",
       "en": "Web"
@@ -36,10 +35,10 @@
       "Python",
       "!DevOps",
       "!Vanilla JS",
-          {
-            "fr": "!SQL avancé",
-            "en": "!Advanced SQL"
-          }
+      {
+        "fr": "!SQL avancé",
+        "en": "!Advanced SQL"
+      }
     ]
   },
   "parcours": [
@@ -94,7 +93,6 @@
       ],
       "image": "MidiMagic-1.jpg",
       "date": "2023–2024",
-
       "titre": {
         "fr": "Boîtier MIDI multi-usages pour clavier",
         "en": "Multi-purpose MIDI box for keyboard"
@@ -180,6 +178,49 @@
       ]
     },
     {
+      "category": [
+        "web"
+      ],
+      "date": "2023–2025",
+      "description": {
+        "fr": "Service personnel de transfert de fichiers : versions, dossiers, sécurité, suivi des téléchargements, application mobile...",
+        "en": "Custom file transfer service: versionning, folders, security, downloads history, mobile app..."
+      },
+      "features": [
+        {
+          "en": "Admin Easyadmin sous Symfony 7",
+          "fr": "Easyadmin Admin under Symfony 7"
+        },
+        {
+          "en": "Mobile app (React Native / API Platform)",
+          "fr": "Application Mobile (React Native / API Platform)"
+        },
+        {
+          "en": "Migrating Symfony > Laravel (Filament admin)",
+          "fr": "Migration Symfony > Laravel (admin Filament)"
+        }
+      ],
+      "github": "https://github.com/theredled/briefcase",
+      "id": 30,
+      "image": "Briefcase-1.jpg",
+      "tech": [
+        "Symfony 7",
+        "React Native",
+        "Laravel",
+        "API Plaform",
+        "Tests (PHPUnit)",
+        "i18n",
+        "DevOps",
+        "Filament",
+        "Frontend",
+        "EasyAdmin"
+      ],
+      "titre": {
+        "fr": "Briefcase",
+        "en": "Briefcase"
+      }
+    },
+    {
       "id": 3,
       "category": [
         "web"
@@ -189,7 +230,7 @@
         "en": "This portfolio"
       },
       "hover": {
-        "zoom-position":"0% 0%"
+        "zoom-position": "0% 0%"
       },
       "url": "/",
       "github": "https://github.com/theredled/portfolio",
@@ -200,49 +241,11 @@
         "en": "Development of a simple multilingual portfolio to gain proficiency in NextJS / React"
       },
       "tech": [
-        "NextJS / React",
-        "Strapi",
+        "React / NextJS",
         "i18n",
         "Typescript",
+        "Strapi",
         "NoSQL / MongoDB"
-      ]
-    },{
-      "id": 30,
-      "category": [
-        "web"
-      ],
-      "titre": {
-        "fr": "Briefcase",
-        "en": "Briefcase"
-      },
-      "github": "https://github.com/theredled/briefcase",
-
-      "date": "2023–2025",
-      "image":null,
-      "description": {
-        "fr": "Service personnel de transfert de fichiers : versions, dossiers, sécurité, suivi des téléchargements...",
-        "en": "Custom file transfer service: versionning, folders, security, downloads history..."
-      },
-      "tech": [
-        "Symfony 7",
-        "Laravel",
-        "React",
-        "i18n",
-        "DevOps",
-        "Tests (PHPUnit)",
-        "Filament",
-        "Frontend",
-        "EasyAdmin"
-      ],
-      "features": [
-        {
-          "en": "Admin Easyadmin sous Symfony 7",
-          "fr": "Easyadmin Admin under Symfony 7"
-        },
-        {
-          "en": "Migrating Symfony > Laravel (Filament admin)",
-          "fr": "Migration Symfony > Laravel (admin Filament)"
-        }
       ]
     },
     {
@@ -251,7 +254,7 @@
         "web"
       ],
       "hover": {
-        "zoom-position":"0% 100%"
+        "zoom-position": "0% 100%"
       },
       "url": "https://oteam.io",
       "date": "2020–2022",
@@ -419,7 +422,7 @@
         "Génération de PDF",
         "PHP",
         "MySQL",
-                "Git"
+        "Git"
       ]
     },
     {
@@ -428,7 +431,6 @@
         "web"
       ],
       "url": "https://www.larchitecturedaujourdhui.fr",
-
       "titre": "Larchitecturedaujourdhui.fr",
       "date": "2015–2017",
       "image": "AA-1.jpg",
@@ -462,7 +464,8 @@
         },
         "Git"
       ]
-    },{
+    },
+    {
       "id": "100",
       "category": [
         "web"
@@ -471,8 +474,8 @@
       "image": "TBM-1.jpg",
       "date": "2014–2015",
       "description": {
-        "fr": "E-commerce. Développement backend, implémentation de modules et personnalisation lourde de Magento",
-        "en": "E-commerce. Backend development, heavy customisation and designing modules for Magento "
+        "fr": "E-commerce (marque Fleury Michon). Développement backend, implémentation de modules et personnalisation lourde de Magento",
+        "en": "E-commerce (Fleury Michon). Backend development, heavy customisation and designing modules for Magento "
       },
       "features": [
         {
@@ -543,33 +546,33 @@
           "en": "Payment integration with Paypal and other APIs"
         },
         {
-            "fr": "Moteur de recherche",
-            "en": "Search engine"
-          },
-          {
-            "fr": "Catalogue en ligne",
-            "en": "Online catalog"
-          },
-          {
-            "fr": "Vente en ligne",
-            "en": "Online sales"
-          },
-          {
-            "fr": "Forum de discussions",
-            "en": "Discussion forum"
-          },
-          {
-            "fr": "Messages envoyés aux vendeurs et aux acheteurs",
-            "en": "Messages sent to sellers and buyers"
-          },
-          {
-            "fr": "Espace membre sécurisé particulier",
-            "en": "Secure member area for individuals"
-          },
-          {
-            "fr": "Espace membre sécurisé professionnel",
-            "en": "Secure member area for professionals"
-          }
+          "fr": "Moteur de recherche",
+          "en": "Search engine"
+        },
+        {
+          "fr": "Catalogue en ligne",
+          "en": "Online catalog"
+        },
+        {
+          "fr": "Vente en ligne",
+          "en": "Online sales"
+        },
+        {
+          "fr": "Forum de discussions",
+          "en": "Discussion forum"
+        },
+        {
+          "fr": "Messages envoyés aux vendeurs et aux acheteurs",
+          "en": "Messages sent to sellers and buyers"
+        },
+        {
+          "fr": "Espace membre sécurisé particulier",
+          "en": "Secure member area for individuals"
+        },
+        {
+          "fr": "Espace membre sécurisé professionnel",
+          "en": "Secure member area for professionals"
+        }
       ],
       "tech": [
         "Symfony 2",
@@ -711,26 +714,26 @@
           "fr": "Développement backend et frontend",
           "en": "Backend and frontend development"
         },
-          {
-            "fr": "Création d'un framework sur mesure",
-            "en": "Creation of a custom framework"
-          },
-          {
-            "fr": "Fonctionnalités e-commerce from scratch",
-            "en": "E-commerce features developed from scratch"
-          },
-          {
-            "fr": "Gestion de droits",
-            "en": "Right management"
-          },
-          {
-            "fr": "Liaison API avec les agrégateurs",
-            "en": "API integration with aggregators"
-          },
-          {
-            "fr": "Force de proposition",
-            "en": "Proactive contribution"
-          }
+        {
+          "fr": "Création d'un framework sur mesure",
+          "en": "Creation of a custom framework"
+        },
+        {
+          "fr": "Fonctionnalités e-commerce from scratch",
+          "en": "E-commerce features developed from scratch"
+        },
+        {
+          "fr": "Gestion de droits",
+          "en": "Right management"
+        },
+        {
+          "fr": "Liaison API avec les agrégateurs",
+          "en": "API integration with aggregators"
+        },
+        {
+          "fr": "Force de proposition",
+          "en": "Proactive contribution"
+        }
       ],
       "tech": [
         "PHP/MySQL",
