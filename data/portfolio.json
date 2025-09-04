@@ -622,6 +622,10 @@
           "en": "Server admin"
         },
         {
+          "fr": "Optimisation BDD : monitoring, dénormalisation...",
+          "en": "DB optimization: monitoring, denormalization..."
+        },
+        {
           "fr": "Migration d'un frontend Flash/AS3 à HTML/CSS/JS",
           "en": "Migration of a Flash/AS3 frontend to HTML/CSS/JS"
         },
