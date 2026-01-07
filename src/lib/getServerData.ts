@@ -2,11 +2,13 @@ import {micromark} from 'micromark'
 import { promises as fs } from 'fs';
 //import {useCurrentLocale} from "@/locales/client";
 import { getI18n, getScopedI18n, getCurrentLocale } from '@/src/locales/server'
+import path from 'path';
 
 export async function getDocumentContent(name: string) {
     const locale = await getCurrentLocale();
 
-    const fileContent: string = await fs.readFile(`${process.cwd()}/data/${name}-${locale}.md`, 'utf8') ;
+    const filePath = path.join(process.cwd(), `/data/${name}-${locale}.md`);
+    const fileContent: string = await fs.readFile(filePath, 'utf8');
     //const fileContent: string = await req.text() ;
     const html: string = micromark(fileContent);
     return html;
