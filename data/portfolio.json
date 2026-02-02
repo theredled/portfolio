@@ -1,941 +1,956 @@
 {
-  "categories": {
-    "web": {
-      "fr": "Web",
-      "en": "Web"
+    "categories": {
+        "web": {
+            "fr": "Web",
+            "en": "Web"
+        },
+        "audio": {
+            "fr": "Audio / MIDI",
+            "en": "Audio / MIDI"
+        }
     },
-    "audio": {
-      "fr": "Audio / MIDI",
-      "en": "Audio / MIDI"
-    }
-  },
-  "title": {
-    "fr": "Développeur full-stack freelance – Symfony / React",
-    "en": "Full-stack freelance developer – Symfony / React"
-  },
-  "a_propos": {
-    "competences_techniques": [
-      "!Symfony / PHP",
-      "React / NextJS",
-      "!Architecture / Clean Code / DDD",
-      {
-        "fr": "CSS modulaire / Sass",
-        "en": "Modular CSS / Sass"
-      },
-      {
-        "fr": "Tests (PHPUnit)",
-        "en": "Testing (PHPUnit)"
-      },
-      {
-        "fr": "!API REST / JSON",
-        "en": "!REST API / JSON"
-      }
+    "title": {
+        "fr": "Développeur full-stack freelance – Symfony / React",
+        "en": "Full-stack freelance developer – Symfony / React"
+    },
+    "a_propos": {
+        "competences_techniques": [
+            "!Symfony / PHP",
+            "React / NextJS",
+            "!Architecture / Clean Code / DDD",
+            {
+                "fr": "CSS modulaire / Sass",
+                "en": "Modular CSS / Sass"
+            },
+            {
+                "fr": "Tests (PHPUnit)",
+                "en": "Testing (PHPUnit)"
+            },
+            {
+                "fr": "!API REST / JSON",
+                "en": "!REST API / JSON"
+            }
+        ],
+        "learning": [
+            "Python",
+            "!DevOps",
+            "!Vanilla JS",
+            {
+                "fr": "!SQL avancé",
+                "en": "!Advanced SQL"
+            }
+        ]
+    },
+    "parcours": [
+        {
+            "date": "2010+",
+            "title": {
+                "fr": "Développeur / architecte web freelance",
+                "en": "Freelance Web Architect / Developer"
+            }
+        },
+        {
+            "date": "2010+",
+            "title": {
+                "fr": "Contributions à des projets open-source (modules Symfony, plugins PhpStorm, Mastodon...)",
+                "en": "Contributions to open-source projects (Symfony modules, PhpStorm plugins, Mastodon...)"
+            }
+        },
+        {
+            "date": "*2022+",
+            "title": {
+                "fr": "Conception de périphériques audio/MIDI impliquant micro-contrôleurs et électronique.",
+                "en": "Designing audio/MIDI devices involving microcontrollers and electronics."
+            }
+        },
+        {
+            "date": "2006 — 2012",
+            "title": {
+                "fr": "Lead developer full-stack chez Flydesigners / BB&PP / Uuneek",
+                "en": "Lead full-stack developer at Flydesigners / BB&PP / Uuneek"
+            }
+        },
+        {
+            "date": "*2002 — 2005",
+            "title": {
+                "fr": "Divers travaux étudiants : ouvrier d'usine, réceptionniste d'hôtel, travailleur du bâtiment, vendanges.",
+                "en": "Various student jobs: factory worker, hotel receptionist, construction worker, grape picking."
+            }
+        },
+        {
+            "date": "2002+",
+            "title": {
+                "fr": "Musicien / compositeur",
+                "en": "Musician / producer"
+            }
+        }
     ],
-    "learning": [
-      "Python",
-      "!DevOps",
-      "!Vanilla JS",
-      {
-        "fr": "!SQL avancé",
-        "en": "!Advanced SQL"
-      }
-    ]
-  },
-  "parcours": [
-    {
-      "date": "2010+",
-      "title": {
-        "fr": "Développeur / architecte web freelance",
-        "en": "Freelance Web Architect / Developer"
-      }
-    },
-    {
-      "date": "2010+",
-      "title": {
-        "fr": "Contributions à des projets open-source (modules Symfony, plugins PhpStorm, Mastodon...)",
-        "en": "Contributions to open-source projects (Symfony modules, PhpStorm plugins, Mastodon...)"
-      }
-    },
-    {
-      "date": "*2022+",
-      "title": {
-        "fr": "Conception de périphériques audio/MIDI impliquant micro-contrôleurs et électronique.",
-        "en": "Designing audio/MIDI devices involving microcontrollers and electronics."
-      }
-    },
-    {
-      "date": "2006 — 2012",
-      "title": {
-        "fr": "Lead developer full-stack chez Flydesigners / BB&PP / Uuneek",
-        "en": "Lead full-stack developer at Flydesigners / BB&PP / Uuneek"
-      }
-    },
-    {
-      "date": "*2002 — 2005",
-      "title": {
-        "fr": "Divers travaux étudiants : ouvrier d'usine, réceptionniste d'hôtel, travailleur du bâtiment, vendanges.",
-        "en": "Various student jobs: factory worker, hotel receptionist, construction worker, grape picking."
-      }
-    },
-    {
-      "date": "2002+",
-      "title": {
-        "fr": "Musicien / compositeur",
-        "en": "Musician / producer"
-      }
-    }
-  ],
-  "projets": [
-    {
-      "id": 1,
-      "category": [
-        "audio"
-      ],
-      "image": "MidiMagic-1.jpg",
-      "date": "2023–2024",
-      "titre": {
-        "fr": "Boîtier MIDI multi-usages pour clavier",
-        "en": "Multi-purpose MIDI box for keyboard"
-      },
-      "description": {
-        "fr": "Conception d'un boitier MIDI sous Rasperry PI : contrôle de vélocité, presets, sampler...",
-        "en": "Design of a MIDI box using Raspberry PI: velocity management, presets, sampler..."
-      },
-      "features": [
+    "projets": [
         {
-          "fr": "Conception modulaire",
-          "en": "Modular design"
+            "id": 1,
+            "category": [
+                "audio"
+            ],
+            "image": "MidiMagic-1.jpg",
+            "date": "2023–2024",
+            "titre": {
+                "fr": "Boîtier MIDI multi-usages pour clavier",
+                "en": "Multi-purpose MIDI box for keyboard"
+            },
+            "description": {
+                "fr": "Conception d'un boitier MIDI sous Rasperry PI : contrôle de vélocité, presets, sampler...",
+                "en": "Design of a MIDI box using Raspberry PI: velocity management, presets, sampler..."
+            },
+            "features": [
+                {
+                    "fr": "Conception modulaire",
+                    "en": "Modular design"
+                },
+                {
+                    "fr": "Contrôle de vélocité",
+                    "en": "Velocity control"
+                },
+                "Arpeggiator",
+                "Sampler",
+                {
+                    "fr": "Sauvegarde de presets",
+                    "en": "Preset saving"
+                },
+                "Plug and play",
+                {
+                    "fr": "Périphériques multiples",
+                    "en": "Multi-devices"
+                },
+                {
+                    "fr": "Utilisation live",
+                    "en": "Live music usage"
+                }
+            ],
+            "tech": [
+                "Python",
+                "Raspberry PI",
+                "MIDI",
+                "DSP",
+                {
+                    "fr": "Fonctionnalités propriétaires",
+                    "en": "Proprietary features"
+                },
+                "C"
+            ]
         },
         {
-          "fr": "Contrôle de vélocité",
-          "en": "Velocity control"
+            "id": 2,
+            "category": [
+                "audio"
+            ],
+            "image": "ChaosBox-1.jpg",
+            "date": "2024",
+            "titre": "Chaos Box",
+            "description": {
+                "fr": "Générateur de signal CV aléatoire pondéré",
+                "en": "Weighted random CV signal generator"
+            },
+            "features": [
+                {
+                    "fr": "Circuit de contrôle (potentiomètres)",
+                    "en": "Control circuit (potentiometers)"
+                },
+                {
+                    "fr": "Génération de signal",
+                    "en": "Signal generation"
+                },
+                {
+                    "fr": "Filtres HP et LP",
+                    "en": "HP and LP filters"
+                }
+            ],
+            "tech": [
+                "C",
+                "Arduino",
+                {
+                    "fr": "Électronique",
+                    "en": "Electronics"
+                },
+                {
+                    "fr": "Algèbre",
+                    "en": "Algebra"
+                }
+            ]
         },
-        "Arpeggiator",
-        "Sampler",
         {
-          "fr": "Sauvegarde de presets",
-          "en": "Preset saving"
+            "category": [
+                "web"
+            ],
+            "date": "2023–2025",
+            "description": {
+                "fr": "Service personnel de transfert de fichiers : versions, dossiers, sécurité, suivi des téléchargements, application mobile...",
+                "en": "Custom file transfer service: versionning, folders, security, downloads history, mobile app..."
+            },
+            "features": [
+                {
+                    "en": "Admin Easyadmin sous Symfony 7",
+                    "fr": "Easyadmin Admin under Symfony 7"
+                },
+                {
+                    "en": "Mobile app (React Native / API Platform)",
+                    "fr": "Application Mobile (React Native / API Platform)"
+                },
+                {
+                    "en": "Migrating Symfony > Laravel (Filament admin)",
+                    "fr": "Migration Symfony > Laravel (admin Filament)"
+                }
+            ],
+            "github": "https://github.com/theredled/briefcase",
+            "id": 30,
+            "image": "Briefcase-1.jpg",
+            "tech": [
+                "Symfony",
+                "API Plaform",
+                "React / NextJS",
+                "React Native",
+                "Tests (PHPUnit)",
+                "i18n",
+                "Docker",
+                "EasyAdmin"
+            ],
+            "titre": {
+                "fr": "Briefcase",
+                "en": "Briefcase"
+            }
         },
-        "Plug and play",
         {
-          "fr": "Périphériques multiples",
-          "en": "Multi-devices"
+            "id": 3,
+            "category": [
+                "web"
+            ],
+            "titre": {
+                "fr": "Ce portfolio",
+                "en": "This portfolio"
+            },
+            "hover": {
+                "zoom-position": "0% 0%"
+            },
+            "url": "/",
+            "github": "https://github.com/theredled/portfolio",
+            "date": "2025",
+            "image": "Portfolio-3-blanc.jpg",
+            "description": {
+                "fr": "Développement d'un portfolio multilingue pour montée en compétence NextJS / React",
+                "en": "Development of a simple multilingual portfolio to gain proficiency in NextJS / React"
+            },
+            "tech": [
+                "React / NextJS",
+                "i18n",
+                "Typescript",
+                "Strapi",
+                "NoSQL / MongoDB"
+            ]
         },
         {
-          "fr": "Utilisation live",
-          "en": "Live music usage"
+            "id": 4,
+            "category": [
+                "web"
+            ],
+            "hover": {
+                "zoom-position": "0% 100%"
+            },
+            "url": "https://oteam.io",
+            "date": "2020–2022",
+            "titre": "Oteam.io",
+            "image": "Qualispace-6.jpg",
+            "gallery": [
+                {
+                    "thumbFileName": "Qualispace-6.jpg",
+                    "fileName": "Qualispace-video-1.mp4",
+                    "type": "video/mp4"
+                },
+                "Qualispace-1.jpg",
+                "Qualispace-2.jpg",
+                "Qualispace-3.jpg",
+                "Qualispace-4.jpg",
+                "Qualispace-5.jpg"
+            ],
+            "description": {
+                "fr": "Évolution de Qualispace.fr vers un SaaS multi-tenant. Développeur Lead.",
+                "en": "Evolution of Qualispace.fr into a multi-tenant SaaS. Lead Developer."
+            },
+            "features": [
+                {
+                    "fr": "Évolution vers un SaaS commercialisé",
+                    "en": "Transition to a commercialized SaaS"
+                },
+                {
+                    "fr": "Direction d'équipe",
+                    "en": "Team leadership"
+                },
+                {
+                    "fr": "Formalisation du modèle via UML (70 entités)",
+                    "en": "Model formalization using UML (70 entities)"
+                },
+                {
+                    "fr": "Application utilisable hors-ligne",
+                    "en": "Offline usage"
+                },
+                {
+                    "fr": "Intégration pixel-perfect et responsive",
+                    "en": "Pixel-perfect and responsive integration"
+                },
+                {
+                    "fr": "Développement d'un framework MVP frontend (JS, stockage local)",
+                    "en": "Development of a frontend MVP framework (JS, offline storage)"
+                },
+                {
+                    "fr": "Développement d'une bibliothèque de composants frontend (JS)",
+                    "en": "Development of a frontend components library (JS)"
+                },
+                {
+                    "fr": "Gestion fine des droits d’accès",
+                    "en": "Granular access rights management"
+                },
+                {
+                    "fr": "Notifications in-app / mail",
+                    "en": "In-app / email notifications"
+                },
+                {
+                    "fr": "Développement d'extensions de Twig",
+                    "en": "Development of Twig extensions"
+                },
+                {
+                    "fr": "Documentation sous Wiki",
+                    "en": "Wiki-based documentation"
+                },
+                {
+                    "fr": "Statistiques",
+                    "en": "Statistics"
+                },
+                {
+                    "fr": "Diagramme de Gantt dynamique",
+                    "en": "Dynamic Gantt chart"
+                },
+                {
+                    "fr": "Plannings",
+                    "en": "Schedules"
+                },
+                {
+                    "fr": "Cartes customisées sous Google Maps",
+                    "en": "Customized maps using Google Maps"
+                },
+                {
+                    "fr": "Gestion d'un fort volume d'images et documents",
+                    "en": "Management of a large volume of images and documents"
+                },
+                {
+                    "fr": "Versionning",
+                    "en": "Version control"
+                }
+            ],
+            "tech": [
+                "Symfony",
+                "SaaS",
+                {
+                    "fr": "Tests (PHPUnit - couverture > 90%)",
+                    "en": "Tests (PHPUnit - coverage > 90%)"
+                },
+                "API REST",
+                "Webpack",
+                "CI/CD",
+                "Docker",
+                "UML",
+                "JS",
+                "Offline app",
+                {
+                    "fr": "Intégration web responsive",
+                    "en": "Responsive web integration"
+                },
+                "Git / Github / Gitlab"
+            ]
+        },
+        {
+            "id": 5,
+            "date": "2017–2020",
+            "category": [
+                "web"
+            ],
+            "image": "Qualispace-1.jpg",
+            "titre": "Qualispace.fr",
+            "url": "https://oteam.io",
+            "description": {
+                "fr": "Application métier, domaine de la maîtrise d'œuvre. Développeur Lead.",
+                "en": "Business application in the building sector. Lead dev."
+            },
+            "features": [
+                {
+                    "fr": "Conception d'un framework JS fullstack/component-based",
+                    "en": "Design of a Vanilla JS toolkit/framework"
+                },
+                {
+                    "fr": "Diagramme de Grant dynamique",
+                    "en": "Dynamic Gantt chart"
+                },
+                {
+                    "fr": "Gestion fine d'authentification et autorisation",
+                    "en": "Granular access rights management"
+                },
+                {
+                    "fr": "Application hors-ligne",
+                    "en": "Offline application"
+                },
+                {
+                    "fr": "Plannings",
+                    "en": "Schedules"
+                },
+                {
+                    "fr": "Cartes customisées sous Google Maps",
+                    "en": "Customized maps using Google Maps"
+                }
+            ],
+            "tech": [
+                "Symfony",
+                {
+                    "fr": "Tests (PHPUnit)",
+                    "en": "Testing (PHPUnit)"
+                },
+                {
+                    "fr": "Intégration web responsive",
+                    "en": "Responsive web integration"
+                },
+                "Vanilla JS",
+                "Bootstrap",
+                "WebSocket / Local Storage",
+                "Génération de PDF",
+                "PHP",
+                "MySQL",
+                "Git"
+            ]
+        },
+        {
+            "id": 6,
+            "category": [
+                "web"
+            ],
+            "url": "https://www.larchitecturedaujourdhui.fr",
+            "titre": "Larchitecturedaujourdhui.fr",
+            "date": "2015–2017",
+            "image": "AA-1.jpg",
+            "description": {
+                "fr": "Site officiel d'un magazine historique d'architecture. Développement Backend, fusion WP/Prestashop.",
+                "en": "Offical website of a historic architecture magazine. Backend development, WP/Prestashop merging."
+            },
+            "features": [
+                {
+                    "fr": "Vente en ligne et gestion des abonnements",
+                    "en": "Online sales and subscription management"
+                },
+                {
+                    "fr": "Conception d'un module de fusion Wordpress/Prestashop",
+                    "en": "Implementation of a Wordpress/Prestashop merging module"
+                },
+                {
+                    "fr": "Intégration d'APIs externes : Milibris, ",
+                    "en": "Integration of external APIs"
+                }
+            ],
+            "tech": [
+                "Prestashop",
+                "Wordpress",
+                "i18n",
+                "MySQL",
+                "PHP",
+                {
+                    "fr": "API externes",
+                    "en": "External APIs"
+                },
+                "Git"
+            ]
+        },
+        {
+            "id": "100",
+            "category": [
+                "web"
+            ],
+            "titre": "Tresbienmerci.fr",
+            "image": "TBM-1.jpg",
+            "date": "2014–2015",
+            "description": {
+                "fr": "E-commerce (marque Fleury Michon). Développement backend, implémentation de modules et personnalisation lourde de Magento",
+                "en": "E-commerce (Fleury Michon). Backend development, heavy customisation and designing modules for Magento "
+            },
+            "features": [
+                {
+                    "fr": "Implémentation de modules et personnalisation pour le CMS d'e-commerce Magento",
+                    "en": "heavy customisation and designing modules for Magento "
+                }
+            ],
+            "tech": [
+                "Magento",
+                "API REST",
+                "PHP",
+                "MySQL",
+                {
+                    "fr": "API prestataires",
+                    "en": "External APIs"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "category": [
+                "web"
+            ],
+            "date": "2013–2016",
+            "image": "Elystel-1.png",
+            "titre": "Elystel",
+            "description": {
+                "fr": "Hôtels de luxe, multi-tenant, multilingue. Développement Backend.",
+                "en": "Luxury hotels, multi-tenant, multilingual. Backend development."
+            },
+            "features": [
+                {
+                    "fr": "Site multi-domaine et multi-language",
+                    "en": "Multi-domain and multi-language site"
+                },
+                {
+                    "fr": "Customisation de Drupal pour des besoins spécifiques",
+                    "en": "Customization of Drupal for specific needs"
+                }
+            ],
+            "tech": [
+                "Drupal",
+                "PHP",
+                "i18n",
+                "MySQL"
+            ]
+        },
+        {
+            "id": 8,
+            "category": [
+                "web"
+            ],
+            "titre": "Vinylunity.com",
+            "date": "2010–2013",
+            "image": "Vinylunity-1.jpg",
+            "url": "https://www.vinylunity.com/",
+            "description": {
+                "fr": "Vente/Échange de disques vinyles. Développement Backend.",
+                "en": "Sale/Exchange of vinyl records. Backend development."
+            },
+            "features": [
+                {
+                    "fr": "Vente et échange de disques vinyles en ligne",
+                    "en": "Online sale and exchange of vinyl records"
+                },
+                {
+                    "fr": "Développement modules de paiement : Paypal, ATOS",
+                    "en": "Payment integration with Paypal and other APIs"
+                },
+                {
+                    "fr": "Moteur de recherche",
+                    "en": "Search engine"
+                },
+                {
+                    "fr": "Catalogue en ligne",
+                    "en": "Online catalog"
+                },
+                {
+                    "fr": "Vente en ligne",
+                    "en": "Online sales"
+                },
+                {
+                    "fr": "Forum de discussions",
+                    "en": "Discussion forum"
+                },
+                {
+                    "fr": "Messages envoyés aux vendeurs et aux acheteurs",
+                    "en": "Messages sent to sellers and buyers"
+                },
+                {
+                    "fr": "Espace membre sécurisé particulier",
+                    "en": "Secure member area for individuals"
+                },
+                {
+                    "fr": "Espace membre sécurisé professionnel",
+                    "en": "Secure member area for professionals"
+                }
+            ],
+            "tech": [
+                "Symfony",
+                {
+                    "fr": "Tests automatisés (PHPUnit)",
+                    "en": "Automated tests (PHPUnit)"
+                },
+                "API Paypal",
+                {
+                    "fr": "API externes",
+                    "en": "External APIs"
+                },
+                "i18n",
+                {
+                    "fr": "Paiement",
+                    "en": "Payment"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "category": [
+                "web"
+            ],
+            "date": "2009–2013",
+            "titre": "BB&PP / Uuneek",
+            "image": "Ondemand-1.jpg",
+            "description": {
+                "fr": "Plateforme SaaS conceptuelle de musique utilisée par plus de 30 artistes (David Guetta, Akhenaton...). Développeur Lead.",
+                "en": "Conceptual SaaS music platform used by 30+ artists  (David Guetta, Akhenaton...). Lead dev."
+            },
+            "features": [
+                {
+                    "fr": "Plateforme utilisée par 30+ artistes",
+                    "en": "Platform used by 30+ artists"
+                },
+                {
+                    "fr": "Multi-tenant / SaaS / marque blanche",
+                    "en": "Multi-tenant / SaaS / white-label management"
+                },
+                {
+                    "fr": "Conception d'un e-commerce from scratch",
+                    "en": "Design of an e-commerce from scratch"
+                },
+                {
+                    "fr": "Cluster de serveurs",
+                    "en": "Server clustering"
+                },
+                {
+                    "fr": "Administration serveur",
+                    "en": "Server admin"
+                },
+                {
+                    "fr": "Optimisation BDD : monitoring, dénormalisation...",
+                    "en": "DB optimization: monitoring, denormalization..."
+                },
+                {
+                    "fr": "Migration d'un frontend Flash/AS3 à HTML/CSS/JS",
+                    "en": "Migration of a Flash/AS3 frontend to HTML/CSS/JS"
+                },
+                {
+                    "fr": "Rencontres avec les clients, fournisseurs et partenaires",
+                    "en": "Meetings with clients, suppliers, and partners"
+                },
+                {
+                    "fr": "Scaling à grande échelle",
+                    "en": "Large-scale scaling"
+                },
+                {
+                    "fr": "Force de proposition",
+                    "en": "Proactive contribution"
+                },
+              {
+                  "fr": "Paiement",
+                  "en": "Payment"
+              }
+
+            ],
+            "tech": [
+                "Symfony",
+                "SaaS",
+                "API REST",
+                "HTML/CSS",
+                "JS / Jquery",
+                "i18n",
+                {
+                    "fr": "Tests automatisés (PHPUnit)",
+                    "en": "Automated tests (PHPUnit)"
+                },
+                "MySQL",
+                "Doctrine ORM",
+                "Frontend",
+                "XML",
+                "Apache",
+                "Linux",
+                "Clustering"
+            ]
+        },
+        {
+            "id": 10,
+            "category": [
+                "web"
+            ],
+            "image": "Hellfest-1.jpg",
+            "date": "2009–2016",
+            "titre": "Hellfestshop.com, Pavageau.fr, Directlub.com",
+            "description": {
+                "fr": "E-commerce basés sur Magento.",
+                "en": "E-commerce based on Magento."
+            },
+            "features": [
+                {
+                    "fr": "Développement e-commerce sur Magento",
+                    "en": "E-commerce development on Magento"
+                },
+                {
+                    "fr": "Personnalisation avancée des modules",
+                    "en": "Advanced module customization"
+                }
+            ],
+            "tech": [
+                "Magento",
+                "Zend Framework",
+                "HTML/CSS",
+                "UML",
+                "Apache",
+                "Linux"
+            ]
+        },
+        {
+            "id": 11,
+            "category": [
+                "web"
+            ],
+            "date": "2007–2009",
+            "titre": "Bubblebeat.com",
+            "image": "Bubblebeat-1.jpg",
+            "description": {
+                "fr": "Plateforme de musique électronique. Plus de 40,000 références. Développeur Lead.",
+                "en": "Electronic music platform. Over 40,000 references. Lead Dev."
+            },
+            "features": [
+                {
+                    "fr": "Plateforme de musique électronique avec plus de 40,000 références",
+                    "en": "Electronic music platform with over 40,000 references"
+                },
+                {
+                    "fr": "Conception d'un framework MVC (PHP)",
+                    "en": "Design of an MVC framework (PHP)"
+                },
+                {
+                    "fr": "Développement backend et frontend",
+                    "en": "Backend and frontend development"
+                },
+                {
+                    "fr": "Création d'un framework sur mesure",
+                    "en": "Creation of a custom framework"
+                },
+                {
+                    "fr": "Fonctionnalités e-commerce from scratch",
+                    "en": "E-commerce features developed from scratch"
+                },
+                {
+                    "fr": "Gestion de droits",
+                    "en": "Right management"
+                },
+                {
+                    "fr": "Liaison API avec les agrégateurs",
+                    "en": "API integration with aggregators"
+                },
+                {
+                    "fr": "Force de proposition",
+                    "en": "Proactive contribution"
+                },
+              {
+                  "fr": "Paiement",
+                  "en": "Payment"
+              }
+            ],
+            "tech": [
+                "PHP/MySQL",
+                {
+                    "fr": "Conception d'un framework MVC homemade",
+                    "en": "Design of a homemade MVC framework"
+                },
+                "i18n",
+                "HTML / CSS / JS",
+                "Backends multiples",
+                "Versionning",
+                "Admin serveur",
+              {
+                  "fr": "Paiement",
+                  "en": "Payment"
+              }
+            ]
         }
-      ],
-      "tech": [
-        "Python",
-        "Raspberry PI",
-        "MIDI",
-        "DSP",
-        {
-          "fr": "Fonctionnalités propriétaires",
-          "en": "Proprietary features"
-        },
-        "C"
-      ]
-    },
-    {
-      "id": 2,
-      "category": [
-        "audio"
-      ],
-      "image": "ChaosBox-1.jpg",
-      "date": "2024",
-      "titre": "Chaos Box",
-      "description": {
-        "fr": "Générateur de signal CV aléatoire pondéré",
-        "en": "Weighted random CV signal generator"
-      },
-      "features": [
-        {
-          "fr": "Circuit de contrôle (potentiomètres)",
-          "en": "Control circuit (potentiometers)"
-        },
-        {
-          "fr": "Génération de signal",
-          "en": "Signal generation"
-        },
-        {
-          "fr": "Filtres HP et LP",
-          "en": "HP and LP filters"
-        }
-      ],
-      "tech": [
-        "C",
-        "Arduino",
-        {
-          "fr": "Électronique",
-          "en": "Electronics"
-        },
-        {
-          "fr": "Algèbre",
-          "en": "Algebra"
-        }
-      ]
-    },
-    {
-      "category": [
-        "web"
-      ],
-      "date": "2023–2025",
-      "description": {
-        "fr": "Service personnel de transfert de fichiers : versions, dossiers, sécurité, suivi des téléchargements, application mobile...",
-        "en": "Custom file transfer service: versionning, folders, security, downloads history, mobile app..."
-      },
-      "features": [
-        {
-          "en": "Admin Easyadmin sous Symfony 7",
-          "fr": "Easyadmin Admin under Symfony 7"
-        },
-        {
-          "en": "Mobile app (React Native / API Platform)",
-          "fr": "Application Mobile (React Native / API Platform)"
-        },
-        {
-          "en": "Migrating Symfony > Laravel (Filament admin)",
-          "fr": "Migration Symfony > Laravel (admin Filament)"
-        }
-      ],
-      "github": "https://github.com/theredled/briefcase",
-      "id": 30,
-      "image": "Briefcase-1.jpg",
-      "tech": [
-        "Symfony 7",
-        "React Native",
-        "Laravel",
-        "API Plaform",
-        "Tests (PHPUnit)",
-        "i18n",
-        "DevOps",
-        "Filament",
-        "Frontend",
-        "EasyAdmin"
-      ],
-      "titre": {
-        "fr": "Briefcase",
-        "en": "Briefcase"
-      }
-    },
-    {
-      "id": 3,
-      "category": [
-        "web"
-      ],
-      "titre": {
-        "fr": "Ce portfolio",
-        "en": "This portfolio"
-      },
-      "hover": {
-        "zoom-position": "0% 0%"
-      },
-      "url": "/",
-      "github": "https://github.com/theredled/portfolio",
-      "date": "2025",
-      "image": "Portfolio-3-blanc.jpg",
-      "description": {
-        "fr": "Développement d'un portfolio multilingue pour montée en compétence NextJS / React",
-        "en": "Development of a simple multilingual portfolio to gain proficiency in NextJS / React"
-      },
-      "tech": [
-        "React / NextJS",
-        "i18n",
-        "Typescript",
-        "Strapi",
-        "NoSQL / MongoDB"
-      ]
-    },
-    {
-      "id": 4,
-      "category": [
-        "web"
-      ],
-      "hover": {
-        "zoom-position": "0% 100%"
-      },
-      "url": "https://oteam.io",
-      "date": "2020–2022",
-      "titre": "Oteam.io",
-      "image": "Qualispace-6.jpg",
-      "gallery": [
-        {
-          "thumbFileName": "Qualispace-6.jpg",
-          "fileName": "Qualispace-video-1.mp4",
-          "type": "video/mp4"
-        },
-        "Qualispace-1.jpg",
-        "Qualispace-2.jpg",
-        "Qualispace-3.jpg",
-        "Qualispace-4.jpg",
-        "Qualispace-5.jpg"
-      ],
-      "description": {
-        "fr": "Évolution de Qualispace.fr vers un SaaS multi-tenant. Développeur Lead.",
-        "en": "Evolution of Qualispace.fr into a multi-tenant SaaS. Lead Developer."
-      },
-      "features": [
-        {
-          "fr": "Évolution vers un SaaS commercialisé",
-          "en": "Transition to a commercialized SaaS"
-        },
-        {
-          "fr": "Direction d'équipe",
-          "en": "Team leadership"
-        },
-        {
-          "fr": "Formalisation du modèle via UML (70 entités)",
-          "en": "Model formalization using UML (70 entities)"
-        },
-        {
-          "fr": "Application utilisable hors-ligne",
-          "en": "Offline usage"
-        },
-        {
-          "fr": "Intégration pixel-perfect et responsive",
-          "en": "Pixel-perfect and responsive integration"
-        },
-        {
-          "fr": "Développement d'un framework MVP frontend (JS, stockage local)",
-          "en": "Development of a frontend MVP framework (JS, offline storage)"
-        },
-        {
-          "fr": "Développement d'une bibliothèque de composants frontend (JS)",
-          "en": "Development of a frontend components library (JS)"
-        },
-        {
-          "fr": "Gestion fine des droits d’accès",
-          "en": "Granular access rights management"
-        },
-        {
-          "fr": "Notifications in-app / mail",
-          "en": "In-app / email notifications"
-        },
-        {
-          "fr": "Développement d'extensions de Twig",
-          "en": "Development of Twig extensions"
-        },
-        {
-          "fr": "Documentation sous Wiki",
-          "en": "Wiki-based documentation"
-        },
-        {
-          "fr": "Statistiques",
-          "en": "Statistics"
-        },
-        {
-          "fr": "Diagramme de Gantt dynamique",
-          "en": "Dynamic Gantt chart"
-        },
-        {
-          "fr": "Plannings",
-          "en": "Schedules"
-        },
-        {
-          "fr": "Cartes customisées sous Google Maps",
-          "en": "Customized maps using Google Maps"
-        },
-        {
-          "fr": "Gestion d'un fort volume d'images et documents",
-          "en": "Management of a large volume of images and documents"
-        },
-        {
-          "fr": "Versionning",
-          "en": "Version control"
-        }
-      ],
-      "tech": [
-        "Symfony 5",
-        "SaaS",
-        {
-          "fr": "Tests (PHPUnit - couverture > 90%)",
-          "en": "Tests (PHPUnit - coverage > 90%)"
-        },
-        "API REST",
-        "Webpack",
-        "CI/CD",
-        "Docker",
-        "UML",
-        "JS",
-        "Offline app",
-        {
-          "fr": "Intégration web responsive",
-          "en": "Responsive web integration"
-        },
-        "Git / Github / Gitlab"
-      ]
-    },
-    {
-      "id": 5,
-      "date": "2017–2020",
-      "category": [
-        "web"
-      ],
-      "image": "Qualispace-1.jpg",
-      "titre": "Qualispace.fr",
-      "url": "https://oteam.io",
-      "description": {
-        "fr": "Application métier, domaine de la maîtrise d'œuvre. Développeur Lead.",
-        "en": "Business application in the building sector. Lead dev."
-      },
-      "features": [
-        {
-          "fr": "Conception d'un toolkit/framework Vanilla JS",
-          "en": "Design of a Vanilla JS toolkit/framework"
-        },
-        {
-          "fr": "Diagramme de Grant dynamique",
-          "en": "Dynamic Gantt chart"
-        },
-        {
-          "fr": "Gestion fine des droits d’accès",
-          "en": "Granular access rights management"
-        },
-        {
-          "fr": "Application hors-ligne",
-          "en": "Offline application"
-        },
-        {
-          "fr": "Plannings",
-          "en": "Schedules"
-        },
-        {
-          "fr": "Cartes customisées sous Google Maps",
-          "en": "Customized maps using Google Maps"
-        }
-      ],
-      "tech": [
-        "Symfony 4",
-        {
-          "fr": "Tests (PHPUnit)",
-          "en": "Testing (PHPUnit)"
-        },
-        {
-          "fr": "Intégration web responsive",
-          "en": "Responsive web integration"
-        },
-        "Vanilla JS",
-        "Bootstrap",
-        "WebSocket / Local Storage",
-        "Génération de PDF",
-        "PHP",
-        "MySQL",
-        "Git"
-      ]
-    },
-    {
-      "id": 6,
-      "category": [
-        "web"
-      ],
-      "url": "https://www.larchitecturedaujourdhui.fr",
-      "titre": "Larchitecturedaujourdhui.fr",
-      "date": "2015–2017",
-      "image": "AA-1.jpg",
-      "description": {
-        "fr": "Site officiel d'un magazine historique d'architecture. Développement Backend, fusion WP/Prestashop.",
-        "en": "Offical website of a historic architecture magazine. Backend development, WP/Prestashop merging."
-      },
-      "features": [
-        {
-          "fr": "Vente en ligne et gestion des abonnements",
-          "en": "Online sales and subscription management"
-        },
-        {
-          "fr": "Conception d'un module de fusion de Wordpress et Prestashop",
-          "en": "Design of a merging module between Wordpress and Prestashop"
-        },
-        {
-          "fr": "Intégration d'APIs externes",
-          "en": "Integration of external APIs"
-        }
-      ],
-      "tech": [
-        "Prestashop",
-        "Wordpress",
-        "i18n",
-        "MySQL",
-        "PHP",
-        {
-          "fr": "API externes",
-          "en": "External APIs"
-        },
-        "Git"
-      ]
-    },
-    {
-      "id": "100",
-      "category": [
-        "web"
-      ],
-      "titre": "Tresbienmerci.fr",
-      "image": "TBM-1.jpg",
-      "date": "2014–2015",
-      "description": {
-        "fr": "E-commerce (marque Fleury Michon). Développement backend, implémentation de modules et personnalisation lourde de Magento",
-        "en": "E-commerce (Fleury Michon). Backend development, heavy customisation and designing modules for Magento "
-      },
-      "features": [
-        {
-          "fr": "Implémentation de modules et personnalisation pour le CMS d'e-commerce Magento",
-          "en": "heavy customisation and designing modules for Magento "
-        }
-      ],
-      "tech": [
-        "Magento",
-        "API REST",
-        "PHP",
-        "MySQL",
-        {
-          "fr": "API prestataires",
-          "en": "External APIs"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "category": [
-        "web"
-      ],
-      "date": "2013–2016",
-      "image": "Elystel-1.png",
-      "titre": "Elystel",
-      "description": {
-        "fr": "Hôtels de luxe, multi-tenant, multilingue. Développement Backend.",
-        "en": "Luxury hotels, multi-tenant, multilingual. Backend development."
-      },
-      "features": [
-        {
-          "fr": "Site multi-domaine et multi-language",
-          "en": "Multi-domain and multi-language site"
-        },
-        {
-          "fr": "Customisation de Drupal pour des besoins spécifiques",
-          "en": "Customization of Drupal for specific needs"
-        }
-      ],
-      "tech": [
-        "Drupal 7",
-        "PHP",
-        "i18n",
-        "MySQL"
-      ]
-    },
-    {
-      "id": 8,
-      "category": [
-        "web"
-      ],
-      "titre": "Vinylunity.com",
-      "date": "2010–2013",
-      "image": "Vinylunity-1.jpg",
-      "url": "https://www.vinylunity.com/",
-      "description": {
-        "fr": "Vente/Échange de disques vinyles. Développement Backend.",
-        "en": "Sale/Exchange of vinyl records. Backend development."
-      },
-      "features": [
-        {
-          "fr": "Vente et échange de disques vinyles en ligne",
-          "en": "Online sale and exchange of vinyl records"
-        },
-        {
-          "fr": "Intégration de paiement avec Paypal et autres APIs",
-          "en": "Payment integration with Paypal and other APIs"
-        },
-        {
-          "fr": "Moteur de recherche",
-          "en": "Search engine"
-        },
-        {
-          "fr": "Catalogue en ligne",
-          "en": "Online catalog"
-        },
-        {
-          "fr": "Vente en ligne",
-          "en": "Online sales"
-        },
-        {
-          "fr": "Forum de discussions",
-          "en": "Discussion forum"
-        },
-        {
-          "fr": "Messages envoyés aux vendeurs et aux acheteurs",
-          "en": "Messages sent to sellers and buyers"
-        },
-        {
-          "fr": "Espace membre sécurisé particulier",
-          "en": "Secure member area for individuals"
-        },
-        {
-          "fr": "Espace membre sécurisé professionnel",
-          "en": "Secure member area for professionals"
-        }
-      ],
-      "tech": [
-        "Symfony 2",
-        {
-          "fr": "Tests automatisés (PHPUnit)",
-          "en": "Automated tests (PHPUnit)"
-        },
-        "Paypal",
-        {
-          "fr": "API externes",
-          "en": "External APIs"
-        },
-        "i18n"
-      ]
-    },
-    {
-      "id": 9,
-      "category": [
-        "web"
-      ],
-      "date": "2009–2013",
-      "titre": "BB&PP / Uuneek",
-      "image": "Ondemand-1.jpg",
-      "description": {
-        "fr": "Plateforme SaaS conceptuelle de musique utilisée par plus de 30 artistes (David Guetta, Akhenaton...). Développeur Lead.",
-        "en": "Conceptual SaaS music platform used by 30+ artists  (David Guetta, Akhenaton...). Lead dev."
-      },
-      "features": [
-        {
-          "fr": "Plateforme utilisée par 30+ artistes",
-          "en": "Platform used by 30+ artists"
-        },
-        {
-          "fr": "Multi-tenant / SaaS / marque blanche",
-          "en": "Multi-tenant / SaaS / white-label management"
-        },
-        {
-          "fr": "Conception d'un e-commerce from scratch",
-          "en": "Design of an e-commerce from scratch"
-        },
-        {
-          "fr": "Cluster de serveurs",
-          "en": "Server clustering"
-        },
-        {
-          "fr": "Administration serveur",
-          "en": "Server admin"
-        },
-        {
-          "fr": "Optimisation BDD : monitoring, dénormalisation...",
-          "en": "DB optimization: monitoring, denormalization..."
-        },
-        {
-          "fr": "Migration d'un frontend Flash/AS3 à HTML/CSS/JS",
-          "en": "Migration of a Flash/AS3 frontend to HTML/CSS/JS"
-        },
-        {
-          "fr": "Rencontres avec les clients, fournisseurs et partenaires",
-          "en": "Meetings with clients, suppliers, and partners"
-        },
-        {
-          "fr": "Scaling à grande échelle",
-          "en": "Large-scale scaling"
-        },
-        {
-          "fr": "Force de proposition",
-          "en": "Proactive contribution"
-        }
-      ],
-      "tech": [
-        "Symfony 1",
-        "SaaS",
-        "API REST",
-        "HTML/CSS",
-        "JS / Jquery",
-        "i18n",
-        {
-          "fr": "Tests automatisés (PHPUnit)",
-          "en": "Automated tests (PHPUnit)"
-        },
-        "MySQL",
-        "Doctrine ORM",
-        "Frontend",
-        "XML",
-        "Apache",
-        "Linux",
-        "Clustering"
-      ]
-    },
-    {
-      "id": 10,
-      "category": [
-        "web"
-      ],
-      "image": "Hellfest-1.jpg",
-      "date": "2009–2016",
-      "titre": "Hellfestshop.com, Pavageau.fr, Directlub.com",
-      "description": {
-        "fr": "E-commerce basés sur Magento.",
-        "en": "E-commerce based on Magento."
-      },
-      "features": [
-        {
-          "fr": "Développement e-commerce sur Magento",
-          "en": "E-commerce development on Magento"
-        },
-        {
-          "fr": "Personnalisation avancée des modules",
-          "en": "Advanced module customization"
-        }
-      ],
-      "tech": [
-        "Magento",
-        "Zend Framework",
-        "HTML/CSS",
-        "UML",
-        "Apache",
-        "Linux"
-      ]
-    },
-    {
-      "id": 11,
-      "category": [
-        "web"
-      ],
-      "date": "2007–2009",
-      "titre": "Bubblebeat.com",
-      "image": "Bubblebeat-1.jpg",
-      "description": {
-        "fr": "Plateforme de musique électronique. Plus de 40,000 références. Développeur Lead.",
-        "en": "Electronic music platform. Over 40,000 references. Lead Dev."
-      },
-      "features": [
-        {
-          "fr": "Plateforme de musique électronique avec plus de 40,000 références",
-          "en": "Electronic music platform with over 40,000 references"
-        },
-        {
-          "fr": "Conception d'un framework MVC (PHP)",
-          "en": "Design of an MVC framework (PHP)"
-        },
-        {
-          "fr": "Développement backend et frontend",
-          "en": "Backend and frontend development"
-        },
-        {
-          "fr": "Création d'un framework sur mesure",
-          "en": "Creation of a custom framework"
-        },
-        {
-          "fr": "Fonctionnalités e-commerce from scratch",
-          "en": "E-commerce features developed from scratch"
-        },
-        {
-          "fr": "Gestion de droits",
-          "en": "Right management"
-        },
-        {
-          "fr": "Liaison API avec les agrégateurs",
-          "en": "API integration with aggregators"
-        },
-        {
-          "fr": "Force de proposition",
-          "en": "Proactive contribution"
-        }
-      ],
-      "tech": [
-        "PHP/MySQL",
-        {
-          "fr": "Conception d'un framework MVC homemade",
-          "en": "Design of a homemade MVC framework"
-        },
-        "i18n",
-        "HTML / CSS / JS",
-        "Backends multiples",
-        "Versionning",
-        "Admin serveur"
-      ]
-    }
-  ],
-  "competences": {
-    "conception_methodologie": {
-      "fr": "Développeur full-stack sensible à la qualité du code, à l’ergonomie et à la pérennité des applications. J’intègre les bonnes pratiques de l’OOP, des tests, de l’accessibilité, et du design responsive. Curieux et impliqué, je m'intéresse aux méthodes agiles (Scrum / XP), à l’UML, et je contribue activement à des projets open source.",
-      "en": "Full-stack developer focused on code quality, usability, and the sustainability of applications. I incorporate best practices in OOP, testing, accessibility, and responsive design. Curious and engaged, I’m interested in agile methods (Scrum / XP), UML, and I actively contribute to open-source projects."
-    },
-    "tech": {
-      "expertise": {
-        "langages": [
-          "PHP 8",
-          "MySQL 8",
-          "HTML 5",
-          "CSS 3",
-          "Javascript/ECMAScript 2025"
-        ],
-        "frameworks": [
-          "Symfony 6/7",
-          "Jquery"
-        ],
-        "cms": [
-          "Magento",
-          "Prestashop"
-        ],
-        "domaines": [
-          "SaaS",
-          "Architecture / Clean Code",
-          "Tests (Phpunit)",
-          "API REST",
-          "Versionning (Git)",
-          "Intégration web responsive"
-        ]
-      },
-      "bon_niveau": {
-        "frameworks": [
-          "React 19 / NextJS 15",
-          "Tailwind CSS"
-        ],
-        "cms": [
-          "Drupal",
-          "Wordpress"
-        ],
-        "langages": [
-          "Typescript",
-          "Python",
-          "C++",
-          "C",
-          "*BASH"
-        ],
-        "domaines": [
-          "Arduino / Raspberry PI",
-          "MIDI",
-          "DSP"
-        ]
-      },
-      "bases": {
-        "langages": [
-          "Ruby",
-          "*VB",
-          "*Basic",
-          "*Pascal",
-          "*Flash/AS3"
-        ],
-        "frameworks": [
-          "Django",
-          "Ruby on Rails",
-          "*Zend Framework"
-        ]
-      },
-      "devops": {
-        "outils": [
-          "Docker",
-          "Git / Github / Gitlab",
-          "Webpack",
-          "Apache"
-        ],
-        "pratiques": [
-          "CI/CD",
-          "Monitoring",
-          "Déploiement sur VPS / Cloud"
-        ]
-      },
-      "outils_annexes": {
-        "outils": [
-          "SASS"
-        ],
-        "os": [
-          "Linux",
-          "Windows",
-          "Mac OS"
-        ],
-        "*ides": [
-          "*IntelliJ/PhpStorm",
-          "*Eclipse",
-          "*Netbeans"
-        ],
-        "divers": [
-          "IntelliJ/PhpStorm",
-          "Photoshop",
-          "Illustrator",
-          "*Flash",
-          "MaxMSP",
-          "LaTeX"
-        ]
-      }
-    }
-  },
-  "misc": {
-    "formation_distinctions": [
-      {
-        "date": "2009",
-        "title": {
-          "fr": "Certification PHP (Zend Certified Engineer)",
-          "en": "PHP Certification (Zend Certified Engineer)"
-        }
-      },
-      {
-        "date": "2005 — 2006",
-        "title": {
-          "fr": "Licence Professionnelle de Création Multimédia, Université de La Rochelle (FR), AB",
-          "en": "Professional Bachelor's Degree in Multimedia Creation, University of La Rochelle (FR), AB"
-        }
-      },
-      {
-        "date": "2002 — 2005",
-        "title": {
-          "fr": "Licence de Musique et Musicologie – Option Recherche, Université de Tours (FR), AB",
-          "en": "Bachelor's Degree in Music and Musicology – Research Option, University of Tours (FR), AB"
-        }
-      },
-      {
-        "date": "2002",
-        "title": {
-          "fr": "Bac Scientifique, option Sciences de l'Ingénieur, B",
-          "en": "Scientific Baccalaureate, Engineering Sciences option, B"
-        }
-      },
-      {
-        "date": "1995 — 1998",
-        "title": {
-          "fr": "Apprentissage de la programmation en autodidacte – production de jeux et outils (Langages QBasic / Pascal / Visual Basic)",
-          "en": "Self-taught programming – development of games and tools (Languages: QBasic / Pascal / Visual Basic)"
-        }
-      }
     ],
-    "langues": [
-      {
-        "name": {
-          "fr": "Français",
-          "en": "French"
+    "competences": {
+        "conception_methodologie": {
+            "fr": "Développeur full-stack sensible à la qualité du code, à l’ergonomie et à la pérennité des applications. J’intègre scrupuleusement les principes DRY / YAGNI / KISS, les bonnes pratiques de l’OOP / SOLID, des tests, de l’accessibilité, et du design responsive. Curieux et impliqué, je m'intéresse aux méthodologies (Scrum / Agile, outils de formalisation...), et contribue activement à des projets open source.",
+            "en": "Full-stack developer focused on code quality, usability, and the sustainability of applications. I incorporate best practices in OOP, testing, accessibility, and responsive design. Curious and engaged, I’m interested in agile methods (Scrum / XP), UML, and I actively contribute to open-source projects."
         },
-        "level": {
-          "fr": "Langue maternelle",
-          "en": "Native language"
+        "tech": {
+            "expertise": {
+                "langages": [
+                    "PHP 8",
+                    "MySQL 8",
+                    "HTML 5",
+                    "CSS 3",
+                    "Javascript/ECMAScript 2025"
+                ],
+                "frameworks": [
+                    "Symfony 7",
+                    "Jquery"
+                ],
+                "cms": [
+                    "Magento",
+                    "Prestashop"
+                ],
+                "domaines": [
+                    "SaaS",
+                    "Architecture / Clean Code",
+                    "Tests (Phpunit)",
+                    "API REST",
+                    "Versionning (Git)",
+                    "Intégration web responsive"
+                ]
+            },
+            "bon_niveau": {
+                "frameworks": [
+                    "React 19 / NextJS 15",
+                    "Tailwind CSS"
+                ],
+                "cms": [
+                    "Drupal",
+                    "Wordpress"
+                ],
+                "langages": [
+                    "Typescript",
+                    "Python",
+                    "C++",
+                    "C",
+                    "*BASH"
+                ],
+                "domaines": [
+                    "Arduino / Raspberry PI",
+                    "MIDI",
+                    "DSP"
+                ]
+            },
+            "bases": {
+                "langages": [
+                    "Ruby",
+                    "*VB",
+                    "*Basic",
+                    "*Pascal",
+                    "*Flash/AS3"
+                ],
+                "frameworks": [
+                    "Django",
+                    "Ruby on Rails",
+                    "*Zend Framework"
+                ]
+            },
+            "devops": {
+                "outils": [
+                    "Docker",
+                    "Git / Github / Gitlab",
+                    "Webpack",
+                    "Apache"
+                ],
+                "pratiques": [
+                    "CI/CD",
+                    "Monitoring",
+                    "Déploiement sur VPS / Cloud"
+                ]
+            },
+            "outils_annexes": {
+                "outils": [
+                    "SASS"
+                ],
+                "os": [
+                    "Linux",
+                    "Windows",
+                    "Mac OS"
+                ],
+                "*ides": [
+                    "*IntelliJ/PhpStorm",
+                    "*Eclipse",
+                    "*Netbeans"
+                ],
+                "divers": [
+                    "IntelliJ/PhpStorm",
+                    "Photoshop",
+                    "Illustrator",
+                    "*Flash",
+                    "MaxMSP",
+                    "LaTeX"
+                ]
+            }
         }
-      },
-      {
-        "name": {
-          "fr": "Anglais",
-          "en": "English"
-        },
-        "level": {
-          "fr": "Courant",
-          "en": "Proficient / Fluent"
-        }
-      },
-      {
-        "name": {
-          "fr": "Italien",
-          "en": "Italian"
-        },
-        "level": {
-          "fr": "Bases",
-          "en": "Basic knowledge"
-        }
-      }
-    ],
-    "musique": "Multi-instrumentiste, compositeur, producteur et chanteur, création et participation à de nombreux projets, principalement entre pop, musique expérimentale et folk – ex. Fairy Tales in Yoghourt, Bantam Lyons.",
-    "interets": [
-      "Arts en général",
-      "sciences humaines",
-      "actualité",
-      "sciences dures",
-      "électronique",
-      "tempérament curieux"
-    ]
-  }
+    },
+    "misc": {
+        "formation_distinctions": [
+            {
+                "date": "2009",
+                "title": {
+                    "fr": "Certification PHP (Zend Certified Engineer)",
+                    "en": "PHP Certification (Zend Certified Engineer)"
+                }
+            },
+            {
+                "date": "2005 — 2006",
+                "title": {
+                    "fr": "Licence Professionnelle de Création Multimédia, Université de La Rochelle (FR), AB",
+                    "en": "Professional Bachelor's Degree in Multimedia Creation, University of La Rochelle (FR), AB"
+                }
+            },
+            {
+                "date": "2002 — 2005",
+                "title": {
+                    "fr": "Licence de Musique et Musicologie – Option Recherche, Université de Tours (FR), AB",
+                    "en": "Bachelor's Degree in Music and Musicology – Research Option, University of Tours (FR), AB"
+                }
+            },
+            {
+                "date": "2002",
+                "title": {
+                    "fr": "Bac Scientifique, option Sciences de l'Ingénieur, B",
+                    "en": "Scientific Baccalaureate, Engineering Sciences option, B"
+                }
+            },
+            {
+                "date": "1995 — 1998",
+                "title": {
+                    "fr": "Apprentissage de la programmation en autodidacte – production de jeux et outils (Langages QBasic / Pascal / Visual Basic)",
+                    "en": "Self-taught programming – development of games and tools (Languages: QBasic / Pascal / Visual Basic)"
+                }
+            }
+        ],
+        "langues": [
+            {
+                "name": {
+                    "fr": "Français",
+                    "en": "French"
+                },
+                "level": {
+                    "fr": "Langue maternelle",
+                    "en": "Native language"
+                }
+            },
+            {
+                "name": {
+                    "fr": "Anglais",
+                    "en": "English"
+                },
+                "level": {
+                    "fr": "Courant",
+                    "en": "Proficient / Fluent"
+                }
+            },
+            {
+                "name": {
+                    "fr": "Italien",
+                    "en": "Italian"
+                },
+                "level": {
+                    "fr": "Bases",
+                    "en": "Basic knowledge"
+                }
+            }
+        ],
+        "musique": "Multi-instrumentiste, compositeur, producteur et chanteur, création et participation à de nombreux projets, principalement entre pop, musique expérimentale et folk – ex. Fairy Tales in Yoghourt, Bantam Lyons.",
+        "interets": [
+            "Arts en général",
+            "sciences humaines",
+            "actualité",
+            "sciences dures",
+            "électronique",
+            "tempérament curieux"
+        ]
+    }
 }
