@@ -81,7 +81,7 @@ export default async function About() {
                         </section>
                         <div className="no-mobile">
                             {techSection}
-                            {resumeSection}
+
                         </div>
                     </div>
                 </div>
