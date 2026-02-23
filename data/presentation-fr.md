@@ -9,6 +9,6 @@ Spécialisé back-end, j'ai aussi un vrai savoir-faire **frontend**, en intégra
 
 Curieux en général, j'ai pratiqué et suis ouvert à toutes sortes de technos ; et m'attelant parallèlement à un parcours de **musicien** je m'intéresse aussi à ce qui rapproche code et son (**Audio/MIDI**).
 
-Guidée par des principes clés (_DRY_, _YAGNI_, _KISS_...), ma pratique s'attache à toujours mettre le curseur au bon endroit entre rigueur et pragmatisme, pour des projets fonctionnels rapidement, évolutifs facilement et très solides sur la durée.
+Guidée par des principes clés (_DRY_, _YAGNI_, _KISS_...), l'importance de la compréhension du domaine métier, du nommage et du choix des outils, ma pratique s'attache à toujours mettre le curseur au bon endroit entre rigueur et pragmatisme, pour des projets fonctionnels rapidement, évolutifs facilement et très solides sur la durée.
 
 Partant pour des missions freelance, des missions courtes bien précises aux projets ambitieux à structurer ensemble.

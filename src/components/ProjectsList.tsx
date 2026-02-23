@@ -7,7 +7,7 @@ export default function ProjectsList({projects} :{projects: IProjectData[]}) {
     return (
         <ul className="projects-list">
             {projects.map((project: IProjectData, index: number) => (
-                <li key={index} className="project-item">
+                <li key={index} className={'project-item' + (project.secondary ? ' item-secondary' : '')}>
                     <a href={"/projects/" + project.id} className="block-link">
                         <div className="image-container">
                             <Image src={'/images/' + (project.image || 'no-image.jpg')}

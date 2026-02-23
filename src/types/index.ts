@@ -12,6 +12,7 @@ export interface IProjectData {
     readonly category: string[],
     readonly features: IPotentialI18nData[]
     readonly gallery: []
+    readonly secondary?: boolean
 }
 
 export interface IBreadcrumb {

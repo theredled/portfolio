@@ -8,6 +8,8 @@ import {Backdrop} from "@mui/material";
 import {useI18n, useScopedI18n, useCurrentLocale, useChangeLocale} from '@/src/locales/client'
 import {tData} from "@/src/lib/getData";
 import {usePathname} from "next/navigation";
+import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
+import FileDownloadIcon from "@mui/icons-material/FileDownload";
 
 export default  function NavBar(params: any) {
     const data: Record<any, any> = params.data;
@@ -62,6 +64,12 @@ export default  function NavBar(params: any) {
                         {tData(data.title)}
                     </span>
                 </h1>
+                <a href={process.env.CV_URL} download target="_blank" className="cv-link">
+                    <PictureAsPdfIcon className="no-mobile"></PictureAsPdfIcon>
+                    <FileDownloadIcon></FileDownloadIcon>
+                    <span className="text hidden lg:block">{t('Download resume')}</span>
+                    <span className="text block lg:hidden">{t('Resume')}</span>
+                </a>
             </header>
 
             <Backdrop open={menuOpen}></Backdrop>

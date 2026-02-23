@@ -44,7 +44,7 @@ export default async function Project({params}: { params: any }) {
                         </a>
                     }
                     {project.github &&
-                        <a href={project.url} className="side-infos link">
+                        <a href={project.github} className="side-infos link">
                             <GitHubIcon>Github</GitHubIcon>
                         </a>
                     }
@@ -60,7 +60,7 @@ export default async function Project({params}: { params: any }) {
                         <ul>{project.tech.map((name: IPotentialI18nData) => <li>{tData(name)}</li>)}</ul>
                     </section>
                 }
-                {project.features &&
+                {project.features && project.features.length > 0 &&
                     <section className="features">
                         <h3>{t('features')}</h3>
 

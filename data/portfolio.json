@@ -19,8 +19,8 @@
             "React / NextJS",
             "!Architecture / Clean Code / DDD",
             {
-                "fr": "CSS modulaire / Sass",
-                "en": "Modular CSS / Sass"
+                "fr": "CSS moderne",
+                "en": "Modern CSS"
             },
             {
                 "fr": "Tests (PHPUnit)",
@@ -177,75 +177,7 @@
                 }
             ]
         },
-        {
-            "category": [
-                "web"
-            ],
-            "date": "2023–2025",
-            "description": {
-                "fr": "Service personnel de transfert de fichiers : versions, dossiers, sécurité, suivi des téléchargements, application mobile...",
-                "en": "Custom file transfer service: versionning, folders, security, downloads history, mobile app..."
-            },
-            "features": [
-                {
-                    "en": "Admin Easyadmin sous Symfony 7",
-                    "fr": "Easyadmin Admin under Symfony 7"
-                },
-                {
-                    "en": "Mobile app (React Native / API Platform)",
-                    "fr": "Application Mobile (React Native / API Platform)"
-                },
-                {
-                    "en": "Migrating Symfony > Laravel (Filament admin)",
-                    "fr": "Migration Symfony > Laravel (admin Filament)"
-                }
-            ],
-            "github": "https://github.com/theredled/briefcase",
-            "id": 30,
-            "image": "Briefcase-1.jpg",
-            "tech": [
-                "Symfony",
-                "API Plaform",
-                "React / NextJS",
-                "React Native",
-                "Tests (PHPUnit)",
-                "i18n",
-                "Docker",
-                "EasyAdmin"
-            ],
-            "titre": {
-                "fr": "Briefcase",
-                "en": "Briefcase"
-            }
-        },
-        {
-            "id": 3,
-            "category": [
-                "web"
-            ],
-            "titre": {
-                "fr": "Ce portfolio",
-                "en": "This portfolio"
-            },
-            "hover": {
-                "zoom-position": "0% 0%"
-            },
-            "url": "/",
-            "github": "https://github.com/theredled/portfolio",
-            "date": "2025",
-            "image": "Portfolio-3-blanc.jpg",
-            "description": {
-                "fr": "Développement d'un portfolio multilingue pour montée en compétence NextJS / React",
-                "en": "Development of a simple multilingual portfolio to gain proficiency in NextJS / React"
-            },
-            "tech": [
-                "React / NextJS",
-                "i18n",
-                "Typescript",
-                "Strapi",
-                "NoSQL / MongoDB"
-            ]
-        },
+
         {
             "id": 4,
             "category": [
@@ -271,8 +203,8 @@
                 "Qualispace-5.jpg"
             ],
             "description": {
-                "fr": "Évolution de Qualispace.fr vers un SaaS multi-tenant. Développeur Lead.",
-                "en": "Evolution of Qualispace.fr into a multi-tenant SaaS. Lead Developer."
+                "fr": "Évolution de Qualispace.fr vers un SaaS multi-tenant, 100+ utilisateurs. Développeur Lead.",
+                "en": "Evolution of Qualispace.fr into a multi-tenant SaaS, 100+ users. Lead Developer."
             },
             "features": [
                 {
@@ -280,39 +212,39 @@
                     "en": "Transition to a commercialized SaaS"
                 },
                 {
+                    "fr": "Cartes de suivi de chantier accessibles et modifiables hors-ligne : Service workers, indexedDb",
+                    "en": "Offline contruction plans management, viewable and editable :  Service workers, indexedDb"
+                },
+                 {
+                    "fr": "Couverture tests automatisés à plus de 90% sous PHPUnit",
+                    "en": "Test coverage 90+% (PHPUnit)"
+                },
+                {
                     "fr": "Direction d'équipe",
                     "en": "Team leadership"
                 },
                 {
-                    "fr": "Formalisation du modèle via UML (70 entités)",
-                    "en": "Model formalization using UML (70 entities)"
+                    "fr": "Intégration CSS pixel-perfect et responsive",
+                    "en": "Pixel-perfect and responsive CSS integration"
                 },
                 {
-                    "fr": "Application utilisable hors-ligne",
-                    "en": "Offline usage"
+                    "fr": "Conception d'un MVC dynamique frontend/backend orienté composants (Jquery puis Vanilla JS), graceful degradation",
+                    "en": "Development of a component-based dynamic frontend+backend MVC (JS), full graceful degradation"
                 },
                 {
-                    "fr": "Intégration pixel-perfect et responsive",
-                    "en": "Pixel-perfect and responsive integration"
+                    "fr": "Système fin d'authentication/authorization : rôles en arborescence administrables, tableau de droits, impersonnation",
+                    "en": "Granular authentication/authorization: manageable roles inheritence tree, table of rights, impersonation"
                 },
                 {
-                    "fr": "Développement d'un framework MVP frontend (JS, stockage local)",
-                    "en": "Development of a frontend MVP framework (JS, offline storage)"
-                },
-                {
-                    "fr": "Développement d'une bibliothèque de composants frontend (JS)",
-                    "en": "Development of a frontend components library (JS)"
-                },
-                {
-                    "fr": "Gestion fine des droits d’accès",
-                    "en": "Granular access rights management"
+                    "fr": "CI/CD (Docker, Github Actions)",
+                    "en": "CI/CD (Docker, Github Actions)"
                 },
                 {
                     "fr": "Notifications in-app / mail",
-                    "en": "In-app / email notifications"
+                    "en": "Live in-app / email notifications"
                 },
                 {
-                    "fr": "Développement d'extensions de Twig",
+                    "fr": "Développement d'extensions Twig",
                     "en": "Development of Twig extensions"
                 },
                 {
@@ -340,8 +272,8 @@
                     "en": "Management of a large volume of images and documents"
                 },
                 {
-                    "fr": "Versionning",
-                    "en": "Version control"
+                    "fr": "Formalisation du modèle via UML (70 entités)",
+                    "en": "Model formalization using UML (70 entities)"
                 }
             ],
             "tech": [
@@ -352,17 +284,119 @@
                     "en": "Tests (PHPUnit - coverage > 90%)"
                 },
                 "API REST",
-                "Webpack",
                 "CI/CD",
                 "Docker",
                 "UML",
                 "JS",
+                "Webpack",
                 "Offline app",
                 {
                     "fr": "Intégration web responsive",
                     "en": "Responsive web integration"
                 },
                 "Git / Github / Gitlab"
+            ]
+        },
+        {
+            "secondary":  true,
+            "category": [
+                "web"
+            ],
+            "date": "2024–2026",
+            "description": {
+                "fr": "Service personnel de transfert de fichiers : versions, dossiers, sécurité, suivi des téléchargements, application mobile...",
+                "en": "Custom file transfer service: versionning, folders, security, downloads history, mobile app..."
+            },
+            "hover": {
+                "zoom-position": "0% 0%"
+            },
+            "features": [
+                {
+                    "en": "Admin Easyadmin sous Symfony 7",
+                    "fr": "Easyadmin Admin under Symfony 7"
+                },
+                {
+                    "en": "Mobile app (React Native / API Platform)",
+                    "fr": "Application Mobile (React Native / API Platform)"
+                },
+                {
+                    "en": "Migrating Symfony > Laravel (Filament admin)",
+                    "fr": "Migration Symfony > Laravel (admin Filament)"
+                }
+            ],
+            "github": "https://github.com/theredled/briefcase",
+            "id": 30,
+            "image": "Briefcase-1.jpg",
+            "tech": [
+                "Symfony",
+                "API Plaform",
+                "React / NextJS",
+                "React Native",
+                "Tests (PHPUnit)",
+                "CI/CD",
+                "Docker",
+                "i18n",
+                "EasyAdmin"
+            ],
+            "titre": {
+                "fr": "Briefcase",
+                "en": "Briefcase"
+            }
+        },
+        {
+            "secondary":  true,
+            "category": [
+                "web"
+            ],
+            "date": "2026",
+            "description": {
+                "fr": "Data-journalisme / cartographie de positions publiques. Full-stack.",
+                "en": "Data journalism / mapping of public statements. Full-stack."
+            },
+            "features": [
+            ],
+            "github": "https://github.com/LaBarricade/ProjetGaza",
+            "id": 31,
+            "image": "La-Boussole-1.png",
+            "tech": [
+                "React / NextJS",
+                "PostgreSQL",
+                "Open Data",
+                "CI/CD",
+                "Supabase"
+            ],
+            "titre": {
+                "fr": "La Boussole",
+                "en": "La Boussole"
+            }
+        },
+        {
+            "secondary":  true,
+            "id": 3,
+            "category": [
+                "web"
+            ],
+            "titre": {
+                "fr": "Ce portfolio",
+                "en": "This portfolio"
+            },
+            "hover": {
+                "zoom-position": "0% 0%"
+            },
+            "url": "/",
+            "github": "https://github.com/theredled/portfolio",
+            "date": "2025",
+            "image": "Portfolio-3-blanc.jpg",
+            "description": {
+                "fr": "Développement d'un portfolio multilingue pour montée en compétence NextJS / React",
+                "en": "Development of a simple multilingual portfolio to gain proficiency in NextJS / React"
+            },
+            "tech": [
+                "React / NextJS",
+                "i18n",
+                "Typescript",
+                "Strapi",
+                "NoSQL / MongoDB"
             ]
         },
         {
@@ -493,6 +527,7 @@
             ]
         },
         {
+            "secondary": true,
             "id": 7,
             "category": [
                 "web"
@@ -599,7 +634,7 @@
             "titre": "BB&PP / Uuneek",
             "image": "Ondemand-1.jpg",
             "description": {
-                "fr": "Plateforme SaaS conceptuelle de musique utilisée par plus de 30 artistes (David Guetta, Akhenaton...). Développeur Lead.",
+                "fr": "Plateforme SaaS conceptuelle de musique utilisée par 30+ artistes (David Guetta, Akhenaton...). Développeur Lead.",
                 "en": "Conceptual SaaS music platform used by 30+ artists  (David Guetta, Akhenaton...). Lead dev."
             },
             "features": [
@@ -709,8 +744,8 @@
             "titre": "Bubblebeat.com",
             "image": "Bubblebeat-1.jpg",
             "description": {
-                "fr": "Plateforme de musique électronique. Plus de 40,000 références. Développeur Lead.",
-                "en": "Electronic music platform. Over 40,000 references. Lead Dev."
+                "fr": "Plateforme de musique électronique. 40,000+ références. Développeur Lead/Full-stack.",
+                "en": "Electronic music platform. 40,000+ references. Lead Dev."
             },
             "features": [
                 {

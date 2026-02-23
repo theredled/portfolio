@@ -1,4 +1,5 @@
 /**--- REUSABLE STYLES ----*/
+@import "tailwindcss";
 
 :root {
     --font-body: 'Helvetica Neue', sans-serif;
@@ -45,7 +46,7 @@ button.link {border: none; background: none; cursor: pointer}
 
 .wrap-link {cursor: pointer}
 
-.hidden {display: none}
+/*.hidden {display: none}*/
 
 .section-content {padding-left: 2em}
 
@@ -140,7 +141,9 @@ button.link {border: none; background: none; cursor: pointer}
 #main-header img { object-fit: cover;height: 100%;}
 #main-header h1 {margin-left: .5em}
 #main-header .subtitle {display: block; font-size: 80% }
-
+#main-header .cv-link {margin-left: auto; text-align: center; margin-right: 2em; align-self: center; }
+#main-header .cv-link svg {font-size: 3em}
+#main-header .cv-link .text {line-height: .8em; font-size: max(1vw, .9em);}
 
 /** -- SPECIFIC PAGES */
 
@@ -204,6 +207,11 @@ button.link {border: none; background: none; cursor: pointer}
     &:hover .project-image {transform: scale(67.5); image-rendering: pixelated;}
 
     & .description {margin: .5em 0}
+
+    &.item-secondary {transform: scale(.8)}
+    /*&.item-secondary .project-image {transform: scale(.7)}
+    &.item-secondary .description {transform: scale(.7)}
+    &.item-secondary .title {transform: scale(.7)}*/
 }
 
 
@@ -281,8 +289,8 @@ button.link {border: none; background: none; cursor: pointer}
     #navbar{font-size: 80%}
     #navbar ul{column-gap: 2.5em; padding: 0 var(--spacing-m);}
     .about-grid{ display: block}
-    .mobile-only {display: initial}
-    .no-mobile {display: none}
+    .mobile-only {display: initial!important}
+    .no-mobile {display: none!important}
 }
 
 @media (max-width: 600px) {

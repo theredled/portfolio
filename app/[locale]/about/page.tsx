@@ -59,7 +59,7 @@ export default async function About() {
         </>;
 
     const resumeSection = <section className="resume-section">
-        <a href="https://fairyfiles.ovh/d/cv_dev" download target="_blank">
+        <a href={process.env.CV_URL} download target="_blank">
             <PictureAsPdfIcon></PictureAsPdfIcon>
             <FileDownloadIcon></FileDownloadIcon>
             <span className="text">{t('Download resume')}</span>
