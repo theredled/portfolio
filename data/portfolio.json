@@ -815,11 +815,12 @@
                     "MySQL 8",
                     "HTML 5",
                     "CSS 3",
-                    "Javascript/ECMAScript 2025"
+                    "Javascript",
+                    "Typescript"
                 ],
                 "frameworks": [
-                    "Symfony 7",
-                    "Jquery"
+                    "Symfony 8",
+                    "React / Next.JS"
                 ],
                 "cms": [
                     "Magento",
@@ -830,21 +831,20 @@
                     "Architecture / Clean Code",
                     "Tests (Phpunit)",
                     "API REST",
-                    "Versionning (Git)",
                     "Intégration web responsive"
                 ]
             },
             "bon_niveau": {
                 "frameworks": [
-                    "React 19 / NextJS 15",
-                    "Tailwind CSS"
+                    "Tailwind CSS",
+                    "Jquery"
                 ],
                 "cms": [
                     "Drupal",
                     "Wordpress"
                 ],
                 "langages": [
-                    "Typescript",
+
                     "Python",
                     "C++",
                     "C",
@@ -910,6 +910,13 @@
     },
     "misc": {
         "formation_distinctions": [
+            {
+                "date": "2025",
+                "title": {
+                    "fr": "Auto-formation intensive sur React/NextJS, Symfony 8, Typescript",
+                    "en": "Intensive self-study : React/Next.js, Symfony 8, Typescript"
+                }
+            },
             {
                 "date": "2009",
                 "title": {
