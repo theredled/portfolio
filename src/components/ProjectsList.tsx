@@ -20,8 +20,8 @@ export default function ProjectsList({projects} :{projects: IProjectData[]}) {
                                    height={26}/>
 
                         </div>
-                        <h2 className="title">
-                            <span>{tData(project.titre)}</span>
+                        <h2 className="title text-wrap">
+                            <span className="mr-2">{tData(project.titre)}</span>
                             {project.date &&
                                 <time className="side-infos"> ({ project.date })</time>
                             }

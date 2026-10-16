@@ -38,7 +38,7 @@ ul { list-style-type: none; padding-left: 0; }
 
 
 .text-with-icon svg {vertical-align: top; margin-right: .4em; filter: drop-shadow(2px 2px var(--color-complement)) drop-shadow(-2px 2px 4px green);}
-.title .side-infos {font-weight: normal; font-size: 80%; white-space: nowrap}
+.title .side-infos {font-weight: normal; font-size: 80%; display: inline-block; }
 button.link {border: none; background: none; cursor: pointer}
 .block-link {color: inherit; display: block}
 .block-link:hover {color: inherit; text-decoration: inherit;}
@@ -202,9 +202,10 @@ button.link {border: none; background: none; cursor: pointer}
     &:hover .image-container {
         clip-path: polygon(100% 0%, 0% 0%, 0% 66.7%, 6.25% 66.7%, 6.25% 77.8%, 12.5% 77.8%, 12.5% 88.9%, 18.75% 88.9%, 18.75% 100%, 100% 100%)}
     /* 1 pixel = X 6.25% Y 11.1% */
-    & .project-image {transition: transform .5s ease; transform-origin: 50.9% 49.98%;; transform: scale(1); image-rendering: pixelated;;
+    & .project-image {transition: transform .5s ease; transform-origin: 49.69% 50.2%; transform: scale(1);
     }
-    &:hover .project-image {transform: scale(67.5); image-rendering: pixelated;}
+    /*67.5*/ /*calc(900 / 177)*/
+    &:hover .project-image {transform: scale(39.7); image-rendering: pixelated;}
 
     & .description {margin: .5em 0}
 
@@ -230,7 +231,9 @@ button.link {border: none; background: none; cursor: pointer}
 
 
 .single-project .title .side-infos {font-size: 60%;}
-.single-project .title .side-infos svg {vertical-align: bottom;}
+.single-project .title .side-infos.link {font-size: 15px;  letter-spacing: normal; @apply align-bottom}
+.single-project .title .side-infos.link i {@apply align-middle}
+.single-project .title .side-infos svg {@apply mr-1}
 .single-project .title .link:hover {filter: drop-shadow(2px 2px var(--color-complement)) drop-shadow(-2px 2px 4px green);}
 .single-project .title .link {vertical-align: bottom; margin-left: .5em}
 .single-project .tech h3 {display: none}

@@ -33,7 +33,8 @@ export default async function Project({params}: { params: any }) {
             ]}></BreadcrumbsSetter>
 
             <div className="project single-project">
-                <h1 className="title"><span>{tData(project.titre)}</span>
+                <h1 className="title">
+                    <span className="mr-2">{tData(project.titre)}</span>
                     {project.date &&
                         <time className="side-infos"> ({project.date})</time>
                     }
@@ -41,11 +42,13 @@ export default async function Project({params}: { params: any }) {
                     {project.url &&
                         <a href={project.url} className="side-infos link">
                             <LinkIcon>{t('visit')}</LinkIcon>
+                            Voir le site
                         </a>
                     }
                     {project.github &&
                         <a href={project.github} className="side-infos link">
                             <GitHubIcon>Github</GitHubIcon>
+                            Github
                         </a>
                     }
                 </h1>
@@ -55,13 +58,13 @@ export default async function Project({params}: { params: any }) {
                     <p>{tData(project.description)}</p>
                 }
                 {project.tech &&
-                    <section className="tech">
+                    <section className="tech mb-4">
                         <h3>Stack :</h3>
                         <ul>{project.tech.map((name: IPotentialI18nData) => <li>{tData(name)}</li>)}</ul>
                     </section>
                 }
                 {project.features && project.features.length > 0 &&
-                    <section className="features">
+                    <section className="features pt-6 pb-8!">
                         <h3>{t('features')}</h3>
 
                         <ul className="section-content">{project.features.map((name: IPotentialI18nData) =>

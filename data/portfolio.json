@@ -179,6 +179,61 @@
         },
 
         {
+            "id": 101,
+            "category": [
+                "web"
+            ],
+            "hover": {
+                "zoom-position": "0% 100%"
+            },
+            "url": "https://conferencedesbatonniers.com",
+            "date": "2026",
+            "titre": "Conférence des bâtonniers",
+            "image": "CDB/thumb-1.jpg",
+            "gallery": [
+                "CDB/1.png",
+                "CDB/5.png",
+                "CDB/4.png",
+                "CDB/2.png",
+                "CDB/3.png"
+            ],
+            "description": {
+                "fr": "Institutionnel. Refonte du frontend, adaptation du backend.",
+                "en": "Institutional. Website redesign."
+            },
+            "features": [
+                {
+                    "fr": "Conservation et évolution du backend existant (codebase admin, BDD)",
+                    "en": "Keeping and evolving the existing backend (admin codebase, database)"
+                },
+                {
+                    "fr": "Refonte complète du frontend",
+                    "en": "Total redesign of the frontend"
+                },
+                {
+                    "fr": "Factorisation importante du modèle dûe à un grand nombre de contenus",
+                    "en": "Big factorization of the model due to a large number of contents"
+                },
+                {
+                    "fr": "Choix d'AlpineJS et HTMX pour une interface dynamique efficace sans sacrifier la simplicité server-oriented du projet",
+                    "en": "Choice of AlpineJS and HTMX for an efficient dynamic interface without sacrificing the server-oriented simplicity of the project"
+                }
+            ],
+            "tech": [
+                "Symfony 8",
+                "AlpineJS",
+                "HTMX",
+                "Tailwind",
+                "Tests (PHPUnit)",
+                {
+                    "fr": "Intégration web responsive",
+                    "en": "Responsive web integration"
+                },
+                "Git"
+            ]
+        },
+
+        {
             "id": 4,
             "category": [
                 "web"
