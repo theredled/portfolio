@@ -211,8 +211,8 @@
                     "en": "Total redesign of the frontend"
                 },
                 {
-                    "fr": "Factorisation importante du modèle dûe à un grand nombre de contenus",
-                    "en": "Big factorization of the model due to a large number of contents"
+                    "fr": "Factorisation importante du modèle dûe à un grand nombre de contenus simililaires (interfaces, abstraction)",
+                    "en": "Big factorization of the model due to a large number of similar contents (interfaces, abstraction)"
                 },
                 {
                     "fr": "Choix d'AlpineJS et HTMX pour une interface dynamique efficace sans sacrifier la simplicité server-oriented du projet",
