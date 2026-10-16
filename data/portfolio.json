@@ -215,8 +215,8 @@
                     "en": "Big factorization of the model due to a large number of similar contents (interfaces, abstraction)"
                 },
                 {
-                    "fr": "Choix d'AlpineJS et HTMX pour une interface dynamique efficace sans sacrifier la simplicité server-oriented du projet",
-                    "en": "Choice of AlpineJS and HTMX for an efficient dynamic interface without sacrificing the server-oriented simplicity of the project"
+                    "fr": "Choix d'AlpineJS et HTMX pour une interface dynamique efficace sans sacrifier la simplicité server-rendered du projet",
+                    "en": "Choice of AlpineJS and HTMX for an efficient dynamic interface without sacrificing the server-rendered of the project"
                 }
             ],
             "tech": [
